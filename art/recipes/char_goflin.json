@@ -1,0 +1,68 @@
+{
+  // Goflin: a short goblin trader who loves gold. Big pointed ears, red waistcoat with brass buttons,
+  // a fat coin pouch in one hand and a coin glinting in his hand. Pure fantasy goblin design.
+  // Front 3/4 view, 16x24, light from top-left.
+  "sprite": "char_goflin",
+  "size": [16, 24],
+  "origin": [8, 23],
+  "seed": 1,
+  "outline": { "selout": false },
+  "materials": {
+    "skin":   { "ramp": ["2d5a35", "44803e", "6aa84a", "9fcf62", "d4ec8c"], "bands": [0.36, 0.62, 0.84] },
+    "shirt":  { "ramp": ["b8683f", "d99a63", "f0c896"], "bands": [0.42, 0.74] },
+    "vest":   { "ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.4, 0.72],
+                "variants": [["1b1d3f", "2c3070", "4250b0", "6a7fe0"]] },
+    "pants":  { "ramp": ["3b1f1d", "5e2f24", "8a4630"], "bands": [0.45, 0.75] },
+    "boots":  { "ramp": ["1a1422", "2b2433", "3d3447"], "bands": [0.45, 0.75] },
+    "pouch":  { "ramp": ["8a4630", "b8683f", "d99a63", "f0c896"], "bands": [0.4, 0.72] }
+  },
+  "bones": {
+    "root": { "at": [8, 23] },
+    "hips": { "parent": "root", "at": [0, -3.5] },
+    "legL": { "parent": "hips", "at": [-2, 0] },
+    "legR": { "parent": "hips", "at": [2, 0] },
+    "body": { "parent": "hips", "at": [0, -4] },
+    "head": { "parent": "body", "at": [0, -5.2] },
+    "armL": { "parent": "body", "at": [-4.6, -1.5] },
+    "armR": { "parent": "body", "at": [4.6, -1.5] }
+  },
+  "parts": [
+    { "name": "legL",  "bone": "legL", "shape": "rect", "c": [-1, 0], "r": [2, 2.6], "mat": "pants", "z": 0, "profile": "cyl" },
+    { "name": "legR",  "bone": "legR", "shape": "rect", "c": [-1, 0], "r": [2, 2.6], "mat": "pants", "z": 0, "profile": "cyl" },
+    { "name": "bootL", "bone": "legL", "shape": "rect", "c": [-2, 1.5], "r": [3.4, 2], "round": 0.8, "mat": "boots", "z": 0.5 },
+    { "name": "bootR", "bone": "legR", "shape": "rect", "c": [-1.4, 1.5], "r": [3.4, 2], "round": 0.8, "mat": "boots", "z": 0.5 },
+    { "name": "belly", "bone": "body", "shape": "ellipse", "c": [0, 1.4], "r": [4.2, 3.4], "mat": "shirt", "z": 2 },
+    { "name": "chest", "bone": "body", "shape": "poly", "pts": [[-3.4, -2.6], [3.4, -2.6], [4, 1], [-4, 1]], "mat": "shirt", "z": 1.9 },
+    { "name": "vest",  "bone": "body", "shape": "poly", "pts": [[-3.6, -2.6], [-0.8, -2.6], [-0.6, 4.2], [-2.4, 4.4], [-4.3, 2.6], [-4.2, 0]], "mat": "vest", "z": 2.2, "mirror": true },
+        { "name": "armL",  "bone": "armL", "shape": "rect", "c": [-0.4, -0.5], "r": [2, 4.4], "round": 0.9, "mat": "skin", "z": 2.6 },
+    { "name": "armR",  "bone": "armR", "shape": "rect", "c": [-1.6, -0.5], "r": [2, 4.4], "round": 0.9, "mat": "skin", "z": 2.4 },
+    { "name": "handL", "bone": "armL", "shape": "ellipse", "c": [0.6, 4.4], "r": [1.3, 1.2], "mat": "skin", "z": 2.7 },
+    { "name": "pouch", "bone": "armR", "shape": "ellipse", "c": [-0.2, 6.6], "r": [2.1, 2], "mat": "pouch", "z": 2.65 },
+    { "name": "handR", "bone": "armR", "shape": "ellipse", "c": [-0.6, 4.4], "r": [1.3, 1.2], "mat": "skin", "z": 2.7 },
+    { "name": "earL",  "bone": "head", "shape": "poly", "pts": [[-2.6, -1.2], [-7, -3], [-6.2, -1], [-2.8, 1.6]], "mat": "skin", "z": 3.9, "profile": "bevel" },
+    { "name": "earR",  "bone": "head", "shape": "poly", "pts": [[2.6, -1.2], [7, -3], [6.2, -1], [2.8, 1.6]], "mat": "skin", "z": 3.8, "profile": "bevel" },
+    { "name": "head",  "bone": "head", "shape": "ellipse", "c": [0, 0], "r": [3.6, 3.3], "mat": "skin", "z": 4 }
+  ],
+  "decals": [
+    { "name": "eyes",    "bone": "head", "at": [-2, -1], "rows": ["yk.yk"], "keys": { "y": "ffe26b", "k": "1a1422" } },
+    { "name": "blink",   "bone": "head", "at": [-2, -1], "rows": ["kk.kk"], "keys": { "k": "2d5a35" } },
+    { "name": "grin",    "bone": "head", "at": [-2, 1], "rows": ["kwwk"], "keys": { "k": "1a1422", "w": "f4ecea" } },
+    { "name": "buttons", "bone": "body", "at": [-1, -1], "rows": ["g", ".", "g"], "keys": { "g": "ffc23d" } },
+    { "name": "tie",     "bone": "armR", "at": [-1, 5], "rows": ["G"], "keys": { "G": "ffc23d" } },
+    { "name": "held",    "bone": "armL", "at": [0, 5], "rows": ["Gg"], "keys": { "G": "ffc23d", "g": "ffe26b" }, "emissive": ["g"] },
+    { "name": "glint",   "bone": "armL", "at": [0, 5], "rows": ["gw"], "keys": { "g": "ffe26b", "w": "fff3a6" }, "emissive": ["g", "w"] }
+  ],
+  "anims": {
+    "idle": { "fps": 3, "frames": [
+      { "hideDecals": ["blink", "glint"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["blink", "held"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["eyes", "glint"] }
+    ] },
+    "walk": { "fps": 8, "frames": [
+      { "bones": { "legL": [0, -1], "armL": [0, 1], "armR": [0, -1] }, "hideDecals": ["blink", "glint"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink", "glint"] },
+      { "bones": { "legR": [0, -1], "armR": [0, 1], "armL": [0, -1] }, "hideDecals": ["blink", "glint"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink", "glint"] }
+    ] }
+  }
+}
