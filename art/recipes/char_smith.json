@@ -1,0 +1,65 @@
+{
+  // Smith: broad blacksmith in a long white work smock with a leather apron, brass goggles on the brow,
+  // a bushy beard and a heavy hammer propped on his right shoulder. Front 3/4 view, 16x24, light from top-left.
+  "sprite": "char_smith",
+  "size": [16, 24],
+  "origin": [8, 23],
+  "seed": 2,
+  "materials": {
+    "coat":   { "ramp": ["7a6c85", "a596ab", "d4c6cf", "f4ecea", "ffffff"], "bands": [0.34, 0.58, 0.8], "spec": 0.97 },
+    "apron":  { "ramp": ["3b1f1d", "5e2f24", "8a4630", "b8683f"], "bands": [0.4, 0.72] },
+    "skin":   { "ramp": ["8a4630", "b8683f", "d99a63", "f0c896"], "bands": [0.36, 0.7], "base": 1 },
+    "beard":  { "ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.42, 0.74],
+                "variants": [["3b1f1d", "5e2f24", "8a4630", "b8683f"]] },
+    "pants":  { "ramp": ["1a1422", "2b2433", "3d3447"], "bands": [0.45, 0.75] },
+    "boots":  { "ramp": ["1a1422", "3b1f1d", "5e2f24"], "bands": [0.45, 0.75] },
+    "iron":   { "ramp": ["3d3447", "574b63", "7a6c85", "a596ab", "d4c6cf"], "bands": [0.35, 0.6, 0.82], "spec": 0.95 },
+    "handle": { "ramp": ["5e2f24", "8a4630", "b8683f"], "bands": [0.45, 0.75] }
+  },
+  "bones": {
+    "root": { "at": [8, 23] },
+    "hips": { "parent": "root", "at": [0, -5] },
+    "legL": { "parent": "hips", "at": [-2, 0] },
+    "legR": { "parent": "hips", "at": [2, 0] },
+    "body": { "parent": "hips", "at": [0, -5] },
+    "head": { "parent": "body", "at": [0, -5.5] },
+    "armL": { "parent": "body", "at": [-5, -1.5] },
+    "armR": { "parent": "body", "at": [5, -1.5] }
+  },
+  "parts": [
+    { "name": "legL",  "bone": "legL", "shape": "rect", "c": [-1.2, 0], "r": [2.4, 4], "mat": "pants", "z": 0, "profile": "cyl" },
+    { "name": "legR",  "bone": "legR", "shape": "rect", "c": [-1.2, 0], "r": [2.4, 4], "mat": "pants", "z": 0, "profile": "cyl" },
+    { "name": "bootL", "bone": "legL", "shape": "rect", "c": [-1.8, 3], "r": [3.4, 2], "round": 0.8, "mat": "boots", "z": 0.5 },
+    { "name": "bootR", "bone": "legR", "shape": "rect", "c": [-1.6, 3], "r": [3.4, 2], "round": 0.8, "mat": "boots", "z": 0.5 },
+    { "name": "smock", "bone": "body", "shape": "poly", "pts": [[-4.4, -3], [4.4, -3], [5, 6.4], [-5, 6.4]], "mat": "coat", "z": 2 },
+    { "name": "apron", "bone": "body", "shape": "poly", "pts": [[-3.4, 1.6], [3.4, 1.6], [3.4, 6.8], [-3.4, 6.8]], "mat": "apron", "z": 2.4, "profile": "cyl" },
+    { "name": "armL",  "bone": "armL", "shape": "rect", "c": [-0.6, -0.5], "r": [2.6, 4.4], "round": 1, "mat": "coat", "z": 2.6 },
+    { "name": "armR",  "bone": "armR", "shape": "rect", "c": [-2, -0.5], "r": [2.6, 4.4], "round": 1, "mat": "coat", "z": 2.6 },
+    { "name": "handL", "bone": "armL", "shape": "ellipse", "c": [0.6, 4.8], "r": [1.3, 1.3], "mat": "skin", "z": 2.7 },
+    { "name": "handle", "bone": "armR", "shape": "rect", "c": [-0.6, -4.5], "r": [1, 9.8], "mat": "handle", "z": 2.55, "profile": "cyl" },
+    { "name": "hammer", "bone": "armR", "shape": "rect", "c": [-2.1, -7], "r": [3.9, 3], "round": 0.6, "mat": "iron", "z": 3 },
+    { "name": "handR", "bone": "armR", "shape": "ellipse", "c": [-0.7, 4.8], "r": [1.3, 1.3], "mat": "skin", "z": 2.9 },
+    { "name": "head",  "bone": "head", "shape": "ellipse", "c": [0, 0], "r": [3.3, 3.4], "mat": "skin", "z": 4 },
+    { "name": "hair",  "bone": "head", "shape": "ellipse", "c": [0, -1.9], "r": [3.4, 1.9], "mat": "beard", "z": 4.2 },
+    { "name": "beard", "bone": "head", "shape": "poly", "pts": [[-3.2, 1.5], [3.2, 1.5], [2.6, 3.4], [0.8, 4.6], [-0.8, 4.6], [-2.6, 3.4]], "mat": "beard", "z": 4.3 }
+  ],
+  "decals": [
+    { "name": "goggles", "bone": "head", "at": [-3, -2], "rows": ["bGgbGgb"], "keys": { "b": "5e2f24", "G": "3fc4c0", "g": "8ff0de" }, "emissive": ["g"] },
+    { "name": "eyes",    "bone": "head", "at": [-2, 0], "rows": ["k..k"], "keys": { "k": "1a1422" } },
+    { "name": "blink",   "bone": "head", "at": [-2, 0], "rows": ["s..s"], "keys": { "s": "b8683f" } },
+    { "name": "buttons", "bone": "body", "at": [0, -2], "rows": ["b", ".", "b"], "keys": { "b": "a596ab" } }
+  ],
+  "anims": {
+    "idle": { "fps": 3, "frames": [
+      { "hideDecals": ["blink"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["blink"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["eyes"] }
+    ] },
+    "walk": { "fps": 8, "frames": [
+      { "bones": { "legL": [0, -1], "armL": [0, 1], "armR": [0, -1] }, "hideDecals": ["blink"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink"] },
+      { "bones": { "legR": [0, -1], "armR": [0, 1], "armL": [0, -1] }, "hideDecals": ["blink"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink"] }
+    ] }
+  }
+}
