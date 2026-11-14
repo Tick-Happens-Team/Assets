@@ -1,0 +1,26 @@
+# Experience crystal. 8x8, mirrored.
+sprite pickup_xpgem
+size 8 8
+origin 4 7
+mirror
+key o 1a1422
+key t 8ff0de
+key T 3fc4c0
+key u 1f8a96
+key d 17566a
+emissive t
+frame a
+...o
+..ot
+.otT
+otTT
+oTuu
+.odu
+..od
+...o
+end
+frame b from a
+row 1 ..oT
+row 2 .oTt
+end
+anim spin 6 a b

@@ -1,0 +1,27 @@
+# Treasure chest. 16x12, mirrored.
+sprite prop_chest
+size 16 12
+origin 8 11
+mirror
+key o 1a1422
+key L b8683f
+key W 8a4630
+key K 5e2f24
+key G ffc23d
+key Y ffe26b
+key k 3b1f1d
+frame closed
+........
+..oooooo
+.oLLLLLL
+.oGWWWWW
+.oGWWWWW
+.oGWWWWW
+oooooooo
+oYGGGGGY
+oGWWWWkY
+oGKKKKKk
+oGKKKKKK
+oooooooo
+end
+anim idle 1 closed

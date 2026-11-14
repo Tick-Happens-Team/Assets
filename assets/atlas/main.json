@@ -1,0 +1,477 @@
+{
+  "size": [
+    256,
+    128
+  ],
+  "sprites": {
+    "enemy_amberslime": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          17,
+          33
+        ],
+        [
+          34,
+          33
+        ]
+      ],
+      "frameNames": [
+        "rest",
+        "squash"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 4,
+          "frames": [
+            0,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_amberslime_r": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        14
+      ],
+      "frames": [
+        [
+          51,
+          33
+        ],
+        [
+          68,
+          33
+        ],
+        [
+          85,
+          33
+        ],
+        [
+          102,
+          33
+        ],
+        [
+          119,
+          33
+        ],
+        [
+          136,
+          33
+        ],
+        [
+          153,
+          33
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "hop_1",
+        "hop_2",
+        "hop_3",
+        "hop_4"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 6,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
+        "hop": {
+          "fps": 10,
+          "frames": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_gloombat": {
+      "w": 16,
+      "h": 12,
+      "origin": [
+        8,
+        11
+      ],
+      "frames": [
+        [
+          85,
+          58
+        ],
+        [
+          102,
+          58
+        ]
+      ],
+      "frameNames": [
+        "up",
+        "down"
+      ],
+      "anims": {
+        "fly": {
+          "fps": 10,
+          "frames": [
+            0,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_gloombat_r": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        14
+      ],
+      "frames": [
+        [
+          170,
+          33
+        ],
+        [
+          187,
+          33
+        ],
+        [
+          204,
+          33
+        ],
+        [
+          221,
+          33
+        ]
+      ],
+      "frameNames": [
+        "fly_0",
+        "fly_1",
+        "fly_2",
+        "fly_3"
+      ],
+      "anims": {
+        "fly": {
+          "fps": 12,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        }
+      }
+    },
+    "hero_clockwarden": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          34,
+          0
+        ],
+        [
+          51,
+          0
+        ],
+        [
+          68,
+          0
+        ],
+        [
+          85,
+          0
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "walk_0",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            2,
+            0,
+            3,
+            0
+          ],
+          "loop": true
+        }
+      }
+    },
+    "hero_clockwarden_r": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          102,
+          0
+        ],
+        [
+          119,
+          0
+        ],
+        [
+          136,
+          0
+        ],
+        [
+          153,
+          0
+        ],
+        [
+          170,
+          0
+        ],
+        [
+          187,
+          0
+        ],
+        [
+          204,
+          0
+        ],
+        [
+          221,
+          0
+        ],
+        [
+          238,
+          0
+        ],
+        [
+          0,
+          33
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "cast_0",
+        "cast_1",
+        "cast_2",
+        "cast_3"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        },
+        "cast": {
+          "fps": 10,
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "loop": false
+        }
+      }
+    },
+    "pickup_xpgem": {
+      "w": 8,
+      "h": 8,
+      "origin": [
+        4,
+        7
+      ],
+      "frames": [
+        [
+          136,
+          58
+        ],
+        [
+          145,
+          58
+        ]
+      ],
+      "frameNames": [
+        "a",
+        "b"
+      ],
+      "anims": {
+        "spin": {
+          "fps": 6,
+          "frames": [
+            0,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "prop_chest": {
+      "w": 16,
+      "h": 12,
+      "origin": [
+        8,
+        11
+      ],
+      "frames": [
+        [
+          119,
+          58
+        ]
+      ],
+      "frameNames": [
+        "closed"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 1,
+          "frames": [
+            0
+          ],
+          "loop": true
+        }
+      }
+    },
+    "prop_timestatue": {
+      "w": 16,
+      "h": 32,
+      "origin": [
+        8,
+        30
+      ],
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          17,
+          0
+        ]
+      ],
+      "frameNames": [
+        "idle",
+        "pulse"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 2,
+          "frames": [
+            0,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "tile_grass": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        0,
+        0
+      ],
+      "frames": [
+        [
+          238,
+          33
+        ],
+        [
+          0,
+          58
+        ],
+        [
+          17,
+          58
+        ],
+        [
+          34,
+          58
+        ]
+      ],
+      "frameNames": [
+        "grass_0",
+        "grass_1",
+        "grass_2",
+        "grass_3"
+      ],
+      "anims": {}
+    },
+    "tile_stone": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        0,
+        0
+      ],
+      "frames": [
+        [
+          51,
+          58
+        ],
+        [
+          68,
+          58
+        ]
+      ],
+      "frameNames": [
+        "stone_0",
+        "stone_1"
+      ],
+      "anims": {}
+    }
+  }
+}

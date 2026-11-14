@@ -1,0 +1,42 @@
+# Gloom bat - swarm fodder. 16x12, mirrored.
+sprite enemy_gloombat
+size 16 12
+origin 8 11
+mirror
+key o 1a1422
+key V 4a1f5c
+key n 7a2c84
+key N b0409a
+key m e070c0
+key r f2561d
+key w f4ecea
+emissive r
+frame up
+........
+o.......
+oo....o.
+oNo..oNo
+oNno.oNm
+oNnnoNNN
+.oVnnorN
+.oVVnonN
+..oVVoow
+...oo.o.
+........
+........
+end
+frame down
+........
+........
+......o.
+.....oNo
+.....oNm
+....oNNN
+.oooonrN
+oNnnnonN
+oNnVVoow
+oVoVoo..
+.o.o....
+........
+end
+anim fly 10 up down

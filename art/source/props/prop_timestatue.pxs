@@ -1,0 +1,58 @@
+# Time statue - activating it adds minutes to the run clock. 16x32, mirrored, glowing sand.
+sprite prop_timestatue
+size 16 32
+origin 8 30
+mirror
+key o 1a1422
+key D 2a2340
+key B 4a3f69
+key S 6b5f8e
+key R 968bb4
+key c 10303c
+key C 17566a
+key g ffe26b
+key G ffc23d
+key t 8ff0de
+emissive g G t
+frame idle
+........
+...ooooo
+..oRRRRR
+..oSSSSS
+..oBBBBB
+...ooooo
+....oCCC
+....oCgg
+.....oCg
+......oG
+......og
+.....oCC
+....oCCC
+....oCGg
+....oGgg
+...ooooo
+..oRRRRR
+..oSSSSS
+...oSSBB
+...oSBtB
+...oSBBt
+...oSBtB
+...oSSBB
+...oSBBB
+..oRRRRR
+.oSSSSSS
+.oBBBBBB
+.oDDDDDD
+..oooooo
+........
+........
+........
+end
+frame pulse from idle
+row 7 ....oCgG
+row 13 ....oCgG
+row 19 ...oSBBB
+row 20 ...oSBtt
+row 21 ...oSBBB
+end
+anim idle 2 idle pulse

@@ -1,0 +1,65 @@
+# Clockwarden - hooded time keeper, demo hero. 16x24, light from top-left.
+sprite hero_clockwarden
+size 16 24
+origin 8 23
+key o 1a1422
+key j 2c3070
+key H 4250b0
+key h 6a7fe0
+key l a8b8ff
+key t 8ff0de
+key y 8ff0de
+key T 3fc4c0
+key u 1f8a96
+key G ffc23d
+key g ffe26b
+key B b8683f
+key P 574b63
+key p 3d3447
+key L 8a4630
+key k 5e2f24
+key s f0c896
+key x d99a63
+emissive t g
+frame idle_0
+................
+......oooo......
+.....ohlhHo.....
+....ohlhhHHo....
+...ohhhHHHHjo...
+...ohhojjjjHjo..
+..ohhojjjjjjHjo.
+..ohhojtjjtjHjo.
+..ohhHojjjjoHjo.
+..ohhHHooooHHjo.
+.oyyyTTTTTTTuuo.
+..ohhoTTTTuohjo.
+..ohhhoTTuoHjjo.
+.ohhhHHoGGoHHjjo
+.ohhHHHoBgoHHjjo
+.ohhHHHjoojHHjjo
+.oshHHHHjjHHHjxo
+.ohhHHHHjjHHjjjo
+..ohHHHHjjHjjjo.
+..ojjHHHjjjjjjo.
+...ooojjjjjooo..
+....oPpo.opPo...
+....oLko.oLko...
+....oooo.oooo...
+end
+frame idle_1 from idle_0
+row 7 ..ohhojTjjTjHjo.
+row 10 .oyyTTTTTTTTuuo.
+end
+frame walk_0 from idle_0
+row 21 ....oLko.opPo...
+row 22 ....oooo.oLko...
+row 23 .........oooo...
+end
+frame walk_2 from idle_0
+row 21 ....oPpo.oLko...
+row 22 ....oLko.oooo...
+row 23 ....oooo........
+end
+anim idle 3 idle_0 idle_1
+anim walk 8 walk_0 idle_0 walk_2 idle_0

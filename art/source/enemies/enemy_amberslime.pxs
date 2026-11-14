@@ -1,0 +1,50 @@
+# Amber slime - slow tank. 16x16, mirrored. Warm hues so it reads against green ground.
+sprite enemy_amberslime
+size 16 16
+origin 8 15
+mirror
+key o 1a1422
+key D 3b1f1d
+key d 5e2f24
+key M 8a4630
+key L b8683f
+key Q d99a63
+key S f0c896
+key e 0e0b14
+frame rest
+........
+........
+........
+........
+.....ooo
+....oQQL
+...oQSQL
+..oLQQLL
+..oLLLLL
+.oMLLeLL
+.oMLLeLL
+.oMMLLLL
+.odMMMMM
+.oddddMM
+..oDDDDD
+...ooooo
+end
+frame squash
+........
+........
+........
+........
+........
+........
+.....ooo
+...ooQQL
+..oLQSQL
+.oMLQLeL
+.oMLLLeL
+oMMLLLLL
+odMMMMMM
+odddddMM
+.oDDDDDD
+..oooooo
+end
+anim idle 4 rest squash

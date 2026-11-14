@@ -1,0 +1,38 @@
+{
+  // Amber slime: slow tank. 16x16. Bone sits on the ground so squash keeps the base planted.
+  "sprite": "enemy_amberslime_r",
+  "size": [16, 16],
+  "origin": [8, 14],
+  "seed": 1,
+  "materials": {
+    "gel":  { "ramp": ["5e2f24", "8a4630", "b8683f", "d99a63", "f0c896"], "bands": [0.36, 0.6, 0.82], "spec": 0.95,
+              "variants": [["2a1433", "4a1f5c", "7a2c84", "b0409a", "e070c0"]] }
+  },
+  "bones": {
+    "root": { "at": [8, 14] },
+    "body": { "parent": "root", "at": [0, 0] }
+  },
+  "parts": [
+    { "name": "gel",  "bone": "body", "shape": "ellipse", "c": [0, -4.8], "r": [5.9, 4.8], "mat": "gel", "z": 1 },
+    { "name": "base", "bone": "body", "shape": "rect", "c": [-5.2, -2.4], "r": [10.4, 2.4], "round": 1.2, "mat": "gel", "z": 0.9, "profile": "cyl" }
+  ],
+  "decals": [
+    { "name": "eyes",  "bone": "body", "at": [-3, -6], "rows": ["e....e", "e....e"], "keys": { "e": "0e0b14" } },
+    { "name": "shine", "bone": "body", "at": [-4, -8], "rows": ["ww", "w."], "keys": { "w": "f4ecea" } }
+  ],
+  "anims": {
+    "idle": { "fps": 6, "frames": [
+      { },
+      { "bones": { "body": [0, 0, 1.08, 0.9] } },
+      { "bones": { "body": [0, 0, 1.1, 0.84] } },
+      { "bones": { "body": [0, 0, 1.08, 0.9] } }
+    ] },
+    "hop": { "fps": 10, "frames": [
+      { "bones": { "body": [0, 0, 1.1, 0.84] } },
+      { "bones": { "body": [0, -1, 0.9, 1.1] } },
+      { "bones": { "body": [0, -2, 0.94, 1.04] } },
+      { "bones": { "body": [0, -1, 1.0, 1.0] } },
+      { "bones": { "body": [0, 0, 1.1, 0.82] } }
+    ] }
+  }
+}

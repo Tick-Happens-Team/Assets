@@ -1,0 +1,37 @@
+{
+  // Gloom bat: fast swarm fodder. 16x16, wings flap through 4 poses.
+  "sprite": "enemy_gloombat_r",
+  "size": [16, 16],
+  "origin": [8, 14],
+  "seed": 1,
+  "materials": {
+    "fur":      { "ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a", "e070c0"], "base": 1, "bands": [0.3, 0.58], "spec": 0.9 },
+    "membrane": { "ramp": ["4a1f5c", "7a2c84", "b0409a"], "bands": [0.42, 0.75] },
+    "ear":      { "ramp": ["4a1f5c", "7a2c84", "e070c0"], "bands": [0.45, 0.75] }
+  },
+  "bones": {
+    "root": { "at": [8, 14] },
+    "body": { "parent": "root", "at": [0, -7] },
+    "wing": { "parent": "body", "at": [0, 0] }
+  },
+  "parts": [
+    { "name": "wing", "bone": "wing", "shape": "poly", "mirror": true, "mat": "membrane", "z": 1, "profile": "bevel",
+      "pts": [[1.5, -1], [6.0, -3.8], [6.5, 0], [5.6, 0.2], [4.4, 1.6], [2.6, 1.6]] },
+    { "name": "earL", "bone": "body", "shape": "poly", "mat": "ear", "z": 1.8, "pts": [[-3, -1.5], [-1, -2], [-2.4, -3.6]], "shadow": false },
+    { "name": "earR", "bone": "body", "shape": "poly", "mat": "ear", "z": 1.8, "pts": [[3, -1.5], [1, -2], [2.4, -3.6]], "shadow": false },
+    { "name": "body", "bone": "body", "shape": "ellipse", "c": [0, 0.3], "r": [2.8, 2.8], "mat": "fur", "z": 2 },
+    { "name": "feet", "bone": "body", "shape": "rect", "c": [-1.5, 3], "r": [3, 1.2], "mat": "membrane", "z": 1.9, "profile": "flat" }
+  ],
+  "decals": [
+    { "name": "eyes",  "bone": "body", "at": [-2, 0], "rows": ["r..r"], "keys": { "r": "f2561d" }, "emissive": ["r"] },
+    { "name": "fangs", "bone": "body", "at": [-1, 2], "rows": ["ww"], "keys": { "w": "f4ecea" } }
+  ],
+  "anims": {
+    "fly": { "fps": 12, "frames": [
+      { },
+      { "parts": { "wing": { "pts": [[1.5, -0.5], [6.5, -1.2], [6.3, 1.8], [5.4, 1.6], [4.4, 2.6], [2.6, 2.2]] } }, "bones": { "body": [0, 1] } },
+      { "parts": { "wing": { "pts": [[1.5, -0.8], [6.4, 1.6], [6.1, 4.6], [4.6, 4.0], [2.4, 3.4]] } }, "bones": { "body": [0, 1] } },
+      { "parts": { "wing": { "pts": [[1.5, -0.5], [6.5, -1.2], [6.3, 1.8], [5.4, 1.6], [4.4, 2.6], [2.6, 2.2]] } } }
+    ] }
+  }
+}

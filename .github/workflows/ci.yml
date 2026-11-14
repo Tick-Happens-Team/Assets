@@ -1,0 +1,127 @@
+name: Assets CI
+
+on:
+  push:
+    branches: [dev, stable]
+  pull_request:
+    branches: [dev, stable]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    outputs:
+      tag: ${{ steps.pack.outputs.tag }}
+    steps:
+      - name: Check out Assets
+        uses: actions/checkout@v5
+        with:
+          path: Assets
+          persist-credentials: false
+
+      - name: Check Game tooling pin
+        if: vars.GAME_TOOL_COMMIT != ''
+        env:
+          GAME_TOOL_COMMIT: ${{ vars.GAME_TOOL_COMMIT }}
+        run: |
+          if ($env:GAME_TOOL_COMMIT -cnotmatch '^[0-9a-f]{40}$') {
+            throw 'GAME_TOOL_COMMIT must be a full lowercase Git commit SHA.'
+          }
+
+      - name: Check out AssetTool
+        uses: actions/checkout@v5
+        with:
+          repository: Tick-Happens-Team/Game
+          ref: ${{ vars.GAME_TOOL_COMMIT || ((github.base_ref || github.ref_name) == 'stable' && 'stable' || 'dev') }}
+          path: Game
+          persist-credentials: false
+
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Generate and lint the atlas
+        working-directory: Game
+        run: dotnet run --project tools/TickHappens.AssetTool --configuration Release -- build
+
+      - name: Run regression tests against these assets
+        working-directory: Game
+        run: dotnet test TickHappens.sln --configuration Release
+
+      - name: Package the runtime atlas
+        if: github.ref == 'refs/heads/stable'
+        id: pack
+        working-directory: Assets
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $toolCommit = git -C ../Game rev-parse HEAD
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $tag = "atlas-$env:GITHUB_SHA-$toolCommit"
+          $source = '.tmp/atlas-pack'
+          $output = '.tmp/release'
+          New-Item -ItemType Directory "$source/assets", $output | Out-Null
+          Copy-Item -LiteralPath assets/atlas -Destination "$source/assets" -Recurse
+          Copy-Item -LiteralPath LICENSE.md -Destination $source
+          if (Test-Path -LiteralPath THIRD_PARTY_NOTICES.md) {
+            Copy-Item -LiteralPath THIRD_PARTY_NOTICES.md -Destination $source
+          }
+          @{
+            schema = 1
+            format = 1
+            assetsCommit = $env:GITHUB_SHA
+            gameToolCommit = $toolCommit
+          } | ConvertTo-Json | Set-Content "$source/atlas-pack.json" -Encoding utf8
+          $archive = 'tickhappens-atlas.zip'
+          Compress-Archive -Path "$source/*" -DestinationPath "$output/$archive"
+          $digest = (Get-FileHash -LiteralPath "$output/$archive" -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$digest  $archive" | Set-Content "$output/$archive.sha256" -Encoding ascii
+          "tag=$tag" >> $env:GITHUB_OUTPUT
+
+      - name: Upload atlas package
+        if: github.ref == 'refs/heads/stable'
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-release
+          path: Assets/.tmp/release/
+          if-no-files-found: error
+
+  publish:
+    if: github.ref == 'refs/heads/stable'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: atlas-release-${{ github.sha }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: atlas-release
+          path: .tmp/release
+
+      - name: Publish versioned atlas release
+        shell: bash
+        working-directory: .tmp/release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ATLAS_TAG: ${{ needs.build.outputs.tag }}
+        run: |
+          sha256sum --check tickhappens-atlas.zip.sha256
+          if gh release view "$ATLAS_TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            is_draft=$(gh release view "$ATLAS_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq .isDraft)
+            if [[ "$is_draft" == true ]]; then
+              gh release upload "$ATLAS_TAG" tickhappens-atlas.zip tickhappens-atlas.zip.sha256 \
+                --repo "$GITHUB_REPOSITORY" --clobber
+              gh release edit "$ATLAS_TAG" --repo "$GITHUB_REPOSITORY" --draft=false --latest=false
+            else
+              gh release view "$ATLAS_TAG" --repo "$GITHUB_REPOSITORY" --json assets \
+                --jq 'if ([.assets[].name] | sort) != ["tickhappens-atlas.zip", "tickhappens-atlas.zip.sha256"] then error("Existing atlas release is incomplete") else "Atlas already published" end'
+            fi
+          else
+            gh release create "$ATLAS_TAG" tickhappens-atlas.zip tickhappens-atlas.zip.sha256 \
+              --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest=false \
+              --title "Runtime atlas ${GITHUB_SHA:0:12}" --notes "Runtime atlas for the visual benchmark."
+          fi
