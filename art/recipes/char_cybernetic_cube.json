@@ -1,0 +1,294 @@
+{
+  "sprite": "char_cybernetic_cube",
+  "size": [24,24],
+  "origin": [12,23],
+  "seed": 1,
+  "materials": {
+    "steel": {
+      "ramp": [
+        "3d3447",
+        "7a6c85",
+        "d4c6cf"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "boot": {
+      "ramp": [
+        "0e0b14",
+        "2b2433",
+        "574b63"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "teal": {
+      "ramp": [
+        "10303c",
+        "1f8a96",
+        "8ff0de"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "gold": {
+      "ramp": [
+        "5e2f24",
+        "b8683f",
+        "ffe26b"
+      ],
+      "bands": [0.34,0.66]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [12,23]
+    },
+    "hips": {
+      "parent": "root",
+      "at": [0,-6]
+    },
+    "body": {
+      "parent": "hips",
+      "at": [0,-5]
+    },
+    "head": {
+      "parent": "body",
+      "at": [0,-5]
+    },
+    "left": {
+      "parent": "hips",
+      "at": [-2,0]
+    },
+    "right": {
+      "parent": "hips",
+      "at": [2,0]
+    },
+    "handL": {
+      "parent": "body",
+      "at": [-4,0]
+    },
+    "handR": {
+      "parent": "body",
+      "at": [4,0]
+    }
+  },
+  "parts": [
+    {
+      "name": "chassis",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-6,-4],
+        [-2,-8],
+        [6,-6],
+        [6,3],
+        [2,7],
+        [-6,4]
+      ],
+      "mat": "steel",
+      "z": 2
+    },
+    {
+      "name": "side",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [2,-1],
+        [6,-6],
+        [6,3],
+        [2,7]
+      ],
+      "mat": "boot",
+      "z": 3
+    },
+    {
+      "name": "lid",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-6,-4],
+        [-2,-8],
+        [6,-6],
+        [2,-2]
+      ],
+      "mat": "steel",
+      "z": 4
+    },
+    {
+      "name": "display",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-4,-2],
+        [1,0],
+        [1,5],
+        [-4,3]
+      ],
+      "mat": "teal",
+      "z": 4
+    },
+    {
+      "name": "thruster",
+      "bone": "body",
+      "shape": "rect",
+      "c": [-3,4],
+      "r": [4,3.5],
+      "round": 0.6,
+      "mat": "gold",
+      "z": 1
+    }
+  ],
+  "decals": [
+    {
+      "name": "scan",
+      "bone": "body",
+      "at": [-4,-1],
+      "rows": [
+        "tt...",
+        ".ttt.",
+        "...t.",
+        "...t."
+      ],
+      "keys": {
+        "t": "8ff0de"
+      },
+      "emissive": [
+        "t"
+      ]
+    },
+    {
+      "name": "scan2",
+      "bone": "body",
+      "at": [-4,-1],
+      "rows": [
+        "t....",
+        "tt.t.",
+        ".ttt.",
+        "..t.."
+      ],
+      "keys": {
+        "t": "8ff0de"
+      },
+      "emissive": [
+        "t"
+      ]
+    },
+    {
+      "name": "vents",
+      "bone": "body",
+      "at": [3,-1],
+      "rows": [
+        "..y",
+        ".y.",
+        "y.y",
+        ".y."
+      ],
+      "keys": {
+        "y": "ffc23d"
+      },
+      "emissive": [
+        "y"
+      ]
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 3,
+      "frames": [
+        {
+          "bones": {},
+          "hideDecals": [
+            "scan2"
+          ]
+        },
+        {
+          "bones": {
+            "body": [0,-1]
+          },
+          "hideDecals": [
+            "scan2"
+          ]
+        },
+        {
+          "bones": {
+            "body": [0,-1]
+          },
+          "hideDecals": [
+            "scan"
+          ]
+        }
+      ]
+    },
+    "walk": {
+      "fps": 8,
+      "frames": [
+        {
+          "bones": {
+            "body": [1,-1]
+          },
+          "hideDecals": [
+            "scan2"
+          ]
+        },
+        {
+          "bones": {
+            "body": [1,-2]
+          },
+          "hideDecals": [
+            "scan"
+          ]
+        },
+        {
+          "bones": {
+            "body": [0,-2]
+          },
+          "hideDecals": [
+            "scan"
+          ]
+        },
+        {
+          "bones": {
+            "body": [0,-1]
+          },
+          "hideDecals": [
+            "scan2"
+          ]
+        }
+      ]
+    },
+    "attack": {
+      "fps": 13,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "body": [-1,1]
+          },
+          "hideDecals": [
+            "scan2"
+          ]
+        },
+        {
+          "bones": {
+            "body": [1,-2]
+          },
+          "hideDecals": [
+            "scan"
+          ]
+        },
+        {
+          "bones": {
+            "body": [1,-1]
+          },
+          "hideDecals": [
+            "scan"
+          ]
+        },
+        {
+          "bones": {},
+          "hideDecals": [
+            "scan2"
+          ]
+        }
+      ]
+    }
+  }
+}
