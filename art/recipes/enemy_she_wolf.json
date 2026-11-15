@@ -1,199 +1,25 @@
 {
   "sprite": "enemy_she_wolf_r",
-  "size": [
-    32,
-    32
-  ],
-  "origin": [
-    16,
-    27
-  ],
+  "size": [48, 48],
+  "origin": [24, 41],
   "seed": 1,
-  "unify": 0.25,
-  "materials": {
-    "body": {
-      "ramp": [
-        "3d3447",
-        "8a4630",
-        "b8683f",
-        "f0c896"
-      ]
-    },
-    "shade": {
-      "ramp": [
-        "1a1422",
-        "3d3447",
-        "8a4630",
-        "b8683f"
-      ]
-    },
-    "trim": {
-      "ramp": [
-        "3d3447",
-        "b8683f",
-        "f0c896",
-        "f4ecea"
-      ],
-      "spec": 0.86
-    }
-  },
-  "bones": {
-    "root": {
-      "at": [
-        16,
-        27
-      ]
-    },
-    "body": {
-      "parent": "root",
-      "at": [
-        0,
-        -10
-      ]
-    }
-  },
+  "unify": 0.16,
+  "materials": {"fur": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "tip": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "cloth": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "claw": {"ramp": ["2a2340", "4a3f69", "968bb4", "d4c6cf"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {
-      "name": "feet",
-      "bone": "body",
-      "c": [
-        -2,
-        5
-      ],
-      "r": [
-        4,
-        3
-      ],
-      "mat": "shade",
-      "z": 1
-    },
-    {
-      "name": "trunk",
-      "bone": "body",
-      "c": [
-        0,
-        1
-      ],
-      "r": [
-        5.8,
-        5.2
-      ],
-      "mat": "body",
-      "z": 2
-    },
-    {
-      "name": "head",
-      "bone": "body",
-      "c": [
-        0,
-        -4
-      ],
-      "r": [
-        4.2,
-        3.8
-      ],
-      "mat": "body",
-      "z": 2.5
-    },
-    {
-      "name": "eartips",
-      "bone": "body",
-      "shape": "poly",
-      "pts": [
-        [
-          -6,
-          -2
-        ],
-        [
-          -6,
-          -9
-        ],
-        [
-          -2,
-          -6
-        ],
-        [
-          2,
-          -6
-        ],
-        [
-          5,
-          -9
-        ],
-        [
-          5,
-          -2
-        ]
-      ],
-      "mat": "trim",
-      "z": 3
-    }
+    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "fur", "z": 1, "c": [-6.55, 0.0], "r": [3.93, 2.84]},
+    {"name": "left shin", "bone": "left", "shape": "line", "mat": "fur", "z": 1.1, "pts": [[-6.55, -6.55], [-6.55, 0.0]], "r": [3.93], "shadow": true},
+    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "fur", "z": 1, "c": [6.55, 0.0], "r": [3.93, 2.84]},
+    {"name": "right shin", "bone": "right", "shape": "line", "mat": "fur", "z": 1.1, "pts": [[6.55, -6.55], [6.55, 0.0]], "r": [3.93], "shadow": true},
+    {"name": "sweeping tail", "bone": "body", "shape": "poly", "mat": "fur", "z": 1.2, "pts": [[-5.45, -10.91], [-13.09, -7.64], [-18.55, -12.0], [-18.55, -16.36], [-14.18, -14.18], [-7.64, -17.45]], "profile": "bevel", "shadow": true},
+    {"name": "angular body", "bone": "body", "shape": "poly", "mat": "cloth", "z": 2, "pts": [[-8.73, -22.91], [-2.18, -26.18], [6.55, -25.09], [10.91, -20.73], [7.64, -14.18], [5.45, -8.73], [-1.09, -5.45], [-7.64, -7.64], [-6.55, -15.27]], "profile": "bevel", "shadow": true},
+    {"name": "wolf muzzle and ears", "bone": "body", "shape": "poly", "mat": "fur", "z": 3, "pts": [[-7.64, -25.09], [-7.64, -36.0], [-3.27, -31.64], [1.09, -34.91], [4.36, -31.64], [5.45, -28.36], [10.91, -26.18], [10.91, -22.91], [6.55, -20.73], [-2.18, -20.73]], "profile": "bevel", "shadow": true},
+    {"name": "pale muzzle", "bone": "body", "shape": "poly", "mat": "tip", "z": 3.3, "pts": [[1.09, -26.18], [5.45, -26.18], [9.82, -25.09], [9.82, -22.91], [5.45, -21.82], [2.18, -22.91]], "profile": "bevel", "shadow": true},
+    {"name": "extended foreleg", "bone": "tool", "shape": "line", "mat": "fur", "z": 3.4, "pts": [[4.36, -19.64], [9.82, -16.36], [13.09, -12.0]], "r": [5.45], "shadow": true},
+    {"name": "exposed claws", "bone": "tool", "shape": "line", "mat": "claw", "z": 3.5, "pts": [[12.0, -13.09], [15.27, -12.0], [16.36, -9.82]], "r": [3.05], "shadow": true}
   ],
   "decals": [
-    {
-      "name": "eyes",
-      "bone": "body",
-      "at": [
-        -2,
-        -4
-      ],
-      "rows": [
-        "l..l"
-      ],
-      "keys": {
-        "l": "f0c896"
-      },
-      "emissive": [
-        "l"
-      ]
-    }
+    {"name": "wolf eye and nose", "bone": "body", "at": [4, -27], "rows": ["e..", "..k"], "keys": {"e": "ffc23d", "k": "0e0b14"}, "emissive": ["e"]}
   ],
-  "anims": {
-    "move": {
-      "fps": 7,
-      "frames": [
-        {},
-        {
-          "bones": {
-            "body": [
-              0,
-              -1
-            ]
-          }
-        },
-        {},
-        {
-          "bones": {
-            "body": [
-              1,
-              0
-            ]
-          }
-        }
-      ]
-    },
-    "attack": {
-      "fps": 12,
-      "loop": false,
-      "frames": [
-        {
-          "bones": {
-            "body": [
-              -1,
-              -1
-            ]
-          }
-        },
-        {
-          "bones": {
-            "body": [
-              1,
-              1
-            ]
-          }
-        },
-        {}
-      ]
-    }
-  }
+  "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "sprint": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

@@ -1,48 +1,25 @@
 {
   "sprite": "enemy_kamikaze_r",
-  "size": [24, 24],
-  "origin": [12, 21],
+  "size": [32, 32],
+  "origin": [16, 27],
   "seed": 1,
-  "unify": 0.24,
-  "materials": {
-    "shell":{"ramp":["2a2340","4a3f69","6b5f8e","968bb4"],"spec":0.88},
-    "iron":{"ramp":["1a1422","2b2433","574b63","7a6c85"],"spec":0.88},
-    "brass":{"ramp":["3b1f1d","8a4630","d99a63","f0c896"],"spec":0.88},
-    "heat":{"ramp":["4a1712","8a1f17","f2561d","ffc23d"],"spec":0.87}
-  },
-  "bones": {
-    "root":{"at":[12,21]},
-    "body":{"parent":"root","at":[0,-8]},
-    "face":{"parent":"body","at":[1,-3]},
-    "flame":{"parent":"body","at":[-2,-6]},
-    "left":{"parent":"root","at":[-4,-3]},
-    "right":{"parent":"root","at":[4,-3]}
-  },
+  "unify": 0.16,
+  "materials": {"boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "shell": {"ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "iron": {"ramp": ["2a2340", "4a3f69", "968bb4", "d4c6cf"], "bands": [0.22, 0.5, 0.74]}, "fuse": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [16, 27]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {"name":"left piston","bone":"left","shape":"poly","pts":[[-2,-3],[2,-3],[1,0],[3,2],[-2,2]],"mat":"iron","z":1},
-    {"name":"right piston","bone":"right","shape":"poly","pts":[[-2,-3],[2,-3],[2,2],[-3,2],[-1,0]],"mat":"iron","z":1},
-    {"name":"tank","bone":"body","c":[-1,-2],"r":[6.1,5.7],"mat":"shell","z":2},
-    {"name":"fuse flame","bone":"flame","shape":"poly","pts":[[-3,0],[-2,-3],[-2,-5],[1,-3],[2,0],[0,2]],"mat":"heat","z":2.2,"profile":"bevel"},
-    {"name":"brace","bone":"body","shape":"poly","pts":[[-6,0],[5,1],[6,3],[2,5],[-4,4]],"mat":"brass","z":3},
-    {"name":"visor","bone":"face","c":[1.5,0],"r":[5.1,3.5],"mat":"iron","z":4},
-    {"name":"left clamp","bone":"body","c":[-6,0],"r":[2.1,2.6],"mat":"shell","z":4}
+    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-5.09, 0.0], "r": [2.62, 1.89]},
+    {"name": "left shin", "bone": "left", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[-5.09, -4.36], [-5.09, 0.0]], "r": [2.62], "shadow": true},
+    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "boot", "z": 1, "c": [5.09, 0.0], "r": [2.62, 1.89]},
+    {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[5.09, -4.36], [5.09, 0.0]], "r": [2.62], "shadow": true},
+    {"name": "powder keg", "bone": "body", "shape": "ellipse", "mat": "shell", "z": 2, "c": [-0.73, -8.73], "r": [7.27, 7.27]},
+    {"name": "top band", "bone": "body", "shape": "line", "mat": "iron", "z": 2.3, "pts": [[-6.55, -11.64], [-2.18, -13.09], [2.91, -13.09], [5.82, -11.64]], "r": [2.18], "shadow": true},
+    {"name": "lower band", "bone": "body", "shape": "line", "mat": "iron", "z": 2.3, "pts": [[-6.55, -5.82], [-2.91, -4.36], [2.18, -4.36], [5.82, -5.82]], "r": [2.18], "shadow": true},
+    {"name": "masked runner", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3, "c": [3.64, -16.73], "r": [4.07, 3.64]},
+    {"name": "burning fuse", "bone": "body", "shape": "line", "mat": "fuse", "z": 4, "pts": [[-2.91, -14.55], [-4.36, -18.18], [-2.18, -21.09], [0.0, -20.36]], "r": [2.33], "shadow": true},
+    {"name": "sprinting arm", "bone": "body", "shape": "line", "mat": "skin", "z": 3, "pts": [[3.64, -12.36], [8.73, -11.64], [10.18, -8.73]], "r": [2.91], "shadow": true}
   ],
   "decals": [
-    {"name":"visor slit","bone":"face","at":[0,-1],"rows":["r..rr","f..ff"],"keys":{"r":"f2561d","f":"ffe26b"},"emissive":["r","f"]},
-    {"name":"brass rivets","bone":"body","at":[-4,2],"rows":["b..d...b",".d..d..."],"keys":{"b":"f0c896","d":"3b1f1d"}},
-    {"name":"wick","bone":"flame","at":[-1,-2],"rows":["f","ff"],"keys":{"f":"ffc23d"},"emissive":["f"]}
+    {"name": "visor", "bone": "body", "at": [2, -18], "rows": ["kkkk", ".rr."], "keys": {"k": "1a1422", "r": "ffc23d"}, "emissive": ["r"]}
   ],
-  "anims": {
-    "sprint":{"fps":12,"frames":[
-      {"bones":{"left":[-2,0],"right":[2,-1],"flame":[0,-1]}},
-      {"bones":{"body":[0,-1],"left":[0,-1],"right":[0,0],"flame":[1,1]}},
-      {"bones":{"left":[2,-1],"right":[-2,0],"flame":[-1,0]}},
-      {"bones":{"body":[0,1],"left":[0,0],"right":[0,-1]}}
-    ]},
-    "attack":{"fps":15,"loop":false,"frames":[
-      {"bones":{"body":[0,1],"flame":[0,-1]}},
-      {"bones":{"body":[0,-1],"flame":[1,-1]},"parts":{"tank":{"r":[6.6,6]}}},
-      {"bones":{"body":[0,0],"flame":[0,-1]},"parts":{"tank":{"r":[6.6,6],"mat":"heat"}}}
-    ]}
-  }
+  "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "sprint": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

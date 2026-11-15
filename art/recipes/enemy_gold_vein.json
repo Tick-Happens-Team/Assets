@@ -1,184 +1,19 @@
 {
   "sprite": "enemy_gold_vein_r",
-  "size": [
-    32,
-    32
-  ],
-  "origin": [
-    16,
-    27
-  ],
+  "size": [32, 32],
+  "origin": [16, 27],
   "seed": 1,
-  "unify": 0.25,
-  "materials": {
-    "body": {
-      "ramp": [
-        "3d3447",
-        "8a4630",
-        "d99a63",
-        "ffe26b"
-      ]
-    },
-    "shade": {
-      "ramp": [
-        "1a1422",
-        "3d3447",
-        "8a4630",
-        "d99a63"
-      ]
-    },
-    "trim": {
-      "ramp": [
-        "3d3447",
-        "d99a63",
-        "ffe26b",
-        "f4ecea"
-      ],
-      "spec": 0.86
-    }
-  },
-  "bones": {
-    "root": {
-      "at": [
-        16,
-        27
-      ]
-    },
-    "body": {
-      "parent": "root",
-      "at": [
-        0,
-        -10
-      ]
-    }
-  },
+  "unify": 0.16,
+  "materials": {"rock": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "vein": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "glint": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [16, 27]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {
-      "name": "low ore",
-      "bone": "body",
-      "shape": "poly",
-      "pts": [
-        [
-          0,
-          -3
-        ],
-        [
-          -8,
-          2
-        ],
-        [
-          -8,
-          6
-        ],
-        [
-          1,
-          7
-        ],
-        [
-          9,
-          5
-        ],
-        [
-          9,
-          0
-        ],
-        [
-          4,
-          -3
-        ]
-      ],
-      "mat": "shade",
-      "z": 1
-    },
-    {
-      "name": "large crystal",
-      "bone": "body",
-      "shape": "poly",
-      "pts": [
-        [
-          -5,
-          4
-        ],
-        [
-          -4,
-          -6
-        ],
-        [
-          -1,
-          -9
-        ],
-        [
-          2,
-          -5
-        ],
-        [
-          2,
-          5
-        ]
-      ],
-      "mat": "body",
-      "z": 3
-    },
-    {
-      "name": "small crystal",
-      "bone": "body",
-      "shape": "poly",
-      "pts": [
-        [
-          1,
-          5
-        ],
-        [
-          3,
-          -1
-        ],
-        [
-          6,
-          -4
-        ],
-        [
-          8,
-          0
-        ],
-        [
-          7,
-          5
-        ]
-      ],
-      "mat": "trim",
-      "z": 4
-    }
+    {"name": "broken ore ridge", "bone": "body", "shape": "poly", "mat": "rock", "z": 2, "pts": [[-10.91, -0.73], [-9.45, -6.55], [-5.82, -10.18], [-2.91, -8.73], [0.0, -16.0], [4.36, -18.18], [8.0, -13.09], [10.91, -9.45], [12.36, -5.82], [9.45, -1.45], [2.91, 0.73], [-5.09, 0.0]], "profile": "bevel", "shadow": true},
+    {"name": "large gold seam", "bone": "body", "shape": "poly", "mat": "vein", "z": 3, "pts": [[-3.64, -9.45], [0.0, -15.27], [5.09, -16.0], [7.27, -12.36], [3.64, -9.45], [5.82, -5.82], [0.73, -3.64], [-2.91, -5.09], [-1.45, -7.27]], "profile": "bevel", "shadow": true},
+    {"name": "gold nugget chips", "bone": "body", "shape": "poly", "mat": "vein", "z": 3.1, "pts": [[-8.73, -5.82], [-5.82, -7.27], [-3.64, -4.36], [-5.09, -2.18], [-8.0, -2.91]], "profile": "bevel", "shadow": true},
+    {"name": "auric highlight", "bone": "body", "shape": "line", "mat": "glint", "z": 3.3, "pts": [[0.0, -11.64], [2.18, -13.09], [4.36, -13.82]], "r": [1.6], "shadow": false}
   ],
-  "decals": [],
-  "anims": {
-    "move": {
-      "fps": 7,
-      "frames": [
-        {}
-      ]
-    },
-    "attack": {
-      "fps": 12,
-      "loop": false,
-      "frames": [
-        {
-          "bones": {
-            "body": [
-              -1,
-              -1
-            ]
-          }
-        },
-        {
-          "bones": {
-            "body": [
-              1,
-              1
-            ]
-          }
-        },
-        {}
-      ]
-    }
-  }
+  "decals": [
+
+  ],
+  "anims": {"move": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "idle": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}}
 }
