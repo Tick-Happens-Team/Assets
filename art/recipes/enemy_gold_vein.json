@@ -1,0 +1,184 @@
+{
+  "sprite": "enemy_gold_vein_r",
+  "size": [
+    32,
+    32
+  ],
+  "origin": [
+    16,
+    27
+  ],
+  "seed": 1,
+  "unify": 0.25,
+  "materials": {
+    "body": {
+      "ramp": [
+        "3d3447",
+        "8a4630",
+        "d99a63",
+        "ffe26b"
+      ]
+    },
+    "shade": {
+      "ramp": [
+        "1a1422",
+        "3d3447",
+        "8a4630",
+        "d99a63"
+      ]
+    },
+    "trim": {
+      "ramp": [
+        "3d3447",
+        "d99a63",
+        "ffe26b",
+        "f4ecea"
+      ],
+      "spec": 0.86
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [
+        16,
+        27
+      ]
+    },
+    "body": {
+      "parent": "root",
+      "at": [
+        0,
+        -10
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "low ore",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          0,
+          -3
+        ],
+        [
+          -8,
+          2
+        ],
+        [
+          -8,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          4,
+          -3
+        ]
+      ],
+      "mat": "shade",
+      "z": 1
+    },
+    {
+      "name": "large crystal",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          -5,
+          4
+        ],
+        [
+          -4,
+          -6
+        ],
+        [
+          -1,
+          -9
+        ],
+        [
+          2,
+          -5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "mat": "body",
+      "z": 3
+    },
+    {
+      "name": "small crystal",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          6,
+          -4
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "mat": "trim",
+      "z": 4
+    }
+  ],
+  "decals": [],
+  "anims": {
+    "move": {
+      "fps": 7,
+      "frames": [
+        {}
+      ]
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "body": [
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "bones": {
+            "body": [
+              1,
+              1
+            ]
+          }
+        },
+        {}
+      ]
+    }
+  }
+}

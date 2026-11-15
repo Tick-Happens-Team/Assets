@@ -1,141 +1,140 @@
-// A dark violet leech with a coil, rounded sucker and luminous teal eye.
 {
   "sprite": "companion_leech_r",
   "size": [
-    16,
-    12
+    24,
+    24
   ],
   "origin": [
-    8,
-    10
+    12,
+    17
   ],
   "seed": 1,
+  "unify": 0.25,
   "materials": {
-    "teal": {
+    "shell": {
+      "ramp": [
+        "2a2340",
+        "4a3f69",
+        "6b5f8e",
+        "d4c6cf"
+      ]
+    },
+    "sucker": {
       "ramp": [
         "10303c",
         "17566a",
-        "1f8a96",
         "3fc4c0",
         "8ff0de"
-      ],
-      "bands": [
-        0.25,
-        0.45,
-        0.64,
-        0.83
-      ]
-    },
-    "violet": {
-      "ramp": [
-        "2a1433",
-        "4a1f5c",
-        "7a2c84",
-        "b0409a",
-        "e070c0"
-      ],
-      "bands": [
-        0.25,
-        0.45,
-        0.64,
-        0.83
       ]
     }
   },
   "bones": {
     "root": {
       "at": [
-        8,
-        10
+        12,
+        17
       ]
     },
     "body": {
       "parent": "root",
       "at": [
         0,
-        0
+        -5
       ]
     },
-    "feet": {
-      "parent": "root",
+    "head": {
+      "parent": "body",
       "at": [
-        0,
-        0
+        4,
+        -2
       ]
     }
   },
   "parts": [
     {
-      "name": "coil",
+      "name": "rear segment",
       "bone": "body",
-      "mat": "violet",
-      "z": 1,
-      "shape": "poly",
-      "pts": [
-        [
-          -6,
-          -4
-        ],
-        [
-          -5,
-          -7
-        ],
-        [
-          -1,
-          -8
-        ],
-        [
-          2,
-          -6
-        ],
-        [
-          2,
-          -4
-        ],
-        [
-          5,
-          -5
-        ],
-        [
-          6,
-          -3
-        ],
-        [
-          4,
-          -2
-        ],
-        [
-          -3,
-          -2
-        ]
-      ]
-    },
-    {
-      "name": "head",
-      "bone": "body",
-      "mat": "teal",
-      "z": 2,
-      "shape": "ellipse",
       "c": [
-        3,
-        -5
+        -5,
+        3
       ],
       "r": [
-        2.7,
+        3.8,
         2.2
-      ]
+      ],
+      "mat": "shell",
+      "z": 1
+    },
+    {
+      "name": "arched abdomen",
+      "bone": "body",
+      "c": [
+        -2,
+        0
+      ],
+      "r": [
+        4.8,
+        4.1
+      ],
+      "mat": "shell",
+      "z": 2
+    },
+    {
+      "name": "neck",
+      "bone": "body",
+      "c": [
+        2,
+        0
+      ],
+      "r": [
+        3.4,
+        3
+      ],
+      "mat": "shell",
+      "z": 3
+    },
+    {
+      "name": "sucker rim",
+      "bone": "head",
+      "c": [
+        0,
+        0
+      ],
+      "r": [
+        3.8,
+        3.1
+      ],
+      "mat": "sucker",
+      "z": 4
+    },
+    {
+      "name": "sucker opening",
+      "bone": "head",
+      "c": [
+        1,
+        0
+      ],
+      "r": [
+        1.8,
+        1.7
+      ],
+      "mat": "shell",
+      "z": 5
     }
   ],
   "decals": [
     {
-      "name": "eyes",
-      "bone": "body",
+      "name": "luminous rim",
+      "bone": "head",
       "at": [
-        3,
-        -6
+        0,
+        -2
       ],
       "rows": [
-        "l"
+        ".ll",
+        "l..",
+        "l..",
+        ".ll"
       ],
       "keys": {
         "l": "8ff0de"
@@ -147,20 +146,35 @@
   ],
   "anims": {
     "move": {
-      "fps": 7,
+      "fps": 8,
       "frames": [
         {},
         {
           "bones": {
-            "body": [
+            "head": [
               1,
+              -1
+            ],
+            "body": [
+              0,
+              -1
+            ]
+          }
+        },
+        {
+          "bones": {
+            "head": [
+              2,
               0
             ]
           }
         },
-        {},
         {
           "bones": {
+            "head": [
+              1,
+              1
+            ],
             "body": [
               -1,
               0
