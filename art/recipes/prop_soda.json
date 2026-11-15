@@ -1,0 +1,159 @@
+{
+  "sprite": "prop_soda_r",
+  "size": [
+    16,
+    24
+  ],
+  "origin": [
+    8,
+    19
+  ],
+  "seed": 1,
+  "unify": 0.25,
+  "materials": {
+    "glass": {
+      "ramp": [
+        "2b2433",
+        "2d5a35",
+        "6aa84a",
+        "d4ec8c"
+      ],
+      "spec": 0.97
+    },
+    "cap": {
+      "ramp": [
+        "3d3447",
+        "8a4630",
+        "d99a63",
+        "f0c896"
+      ]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [
+        8,
+        19
+      ]
+    },
+    "body": {
+      "parent": "root",
+      "at": [
+        0,
+        0
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "glass bottle",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          -3,
+          -1
+        ],
+        [
+          -4,
+          -3
+        ],
+        [
+          -4,
+          -8
+        ],
+        [
+          -2,
+          -11
+        ],
+        [
+          -2,
+          -14
+        ],
+        [
+          2,
+          -14
+        ],
+        [
+          2,
+          -11
+        ],
+        [
+          4,
+          -8
+        ],
+        [
+          4,
+          -3
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "mat": "glass",
+      "z": 1
+    },
+    {
+      "name": "crown cap",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          -2,
+          -15
+        ],
+        [
+          2,
+          -15
+        ],
+        [
+          3,
+          -14
+        ],
+        [
+          2,
+          -13
+        ],
+        [
+          -2,
+          -13
+        ],
+        [
+          -3,
+          -14
+        ]
+      ],
+      "mat": "cap",
+      "z": 3
+    }
+  ],
+  "decals": [
+    {
+      "name": "paper label",
+      "bone": "body",
+      "at": [
+        -3,
+        -8
+      ],
+      "rows": [
+        "hhhhhh",
+        "hcchhh",
+        "hhcchh",
+        "hhhhhh"
+      ],
+      "keys": {
+        "h": "fff3a6",
+        "c": "b8683f"
+      }
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 1,
+      "frames": [
+        {}
+      ]
+    }
+  }
+}

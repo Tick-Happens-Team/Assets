@@ -1,0 +1,221 @@
+{
+  "sprite": "enemy_screamer_r",
+  "size": [
+    32,
+    32
+  ],
+  "origin": [
+    16,
+    27
+  ],
+  "seed": 1,
+  "unify": 0.25,
+  "materials": {
+    "body": {
+      "ramp": [
+        "2b2433",
+        "8a4630",
+        "b8683f",
+        "f0c896"
+      ]
+    },
+    "shade": {
+      "ramp": [
+        "1a1422",
+        "2b2433",
+        "8a4630",
+        "b8683f"
+      ]
+    },
+    "trim": {
+      "ramp": [
+        "2b2433",
+        "b8683f",
+        "f0c896",
+        "f4ecea"
+      ],
+      "spec": 0.86
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [
+        16,
+        27
+      ]
+    },
+    "body": {
+      "parent": "root",
+      "at": [
+        0,
+        -10
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "feet",
+      "bone": "body",
+      "c": [
+        -2,
+        5
+      ],
+      "r": [
+        4,
+        3
+      ],
+      "mat": "shade",
+      "z": 1
+    },
+    {
+      "name": "trunk",
+      "bone": "body",
+      "c": [
+        0,
+        1
+      ],
+      "r": [
+        5.8,
+        5.2
+      ],
+      "mat": "body",
+      "z": 2
+    },
+    {
+      "name": "head",
+      "bone": "body",
+      "c": [
+        0,
+        -4
+      ],
+      "r": [
+        4.2,
+        3.8
+      ],
+      "mat": "body",
+      "z": 2.5
+    },
+    {
+      "name": "open maw",
+      "bone": "body",
+      "c": [
+        0,
+        -1
+      ],
+      "r": [
+        4,
+        5
+      ],
+      "mat": "shade",
+      "z": 4
+    },
+    {
+      "name": "ears",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          -6,
+          -6
+        ],
+        [
+          -9,
+          -10
+        ],
+        [
+          -9,
+          -4
+        ],
+        [
+          -5,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          8,
+          -5
+        ],
+        [
+          8,
+          -9
+        ],
+        [
+          4,
+          -6
+        ]
+      ],
+      "mat": "trim",
+      "z": 3
+    }
+  ],
+  "decals": [
+    {
+      "name": "eyes",
+      "bone": "body",
+      "at": [
+        -2,
+        -4
+      ],
+      "rows": [
+        "l..l"
+      ],
+      "keys": {
+        "l": "f0c896"
+      },
+      "emissive": [
+        "l"
+      ]
+    }
+  ],
+  "anims": {
+    "move": {
+      "fps": 7,
+      "frames": [
+        {},
+        {
+          "bones": {
+            "body": [
+              0,
+              -1
+            ]
+          }
+        },
+        {},
+        {
+          "bones": {
+            "body": [
+              1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    "attack": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "body": [
+              -1,
+              -1
+            ]
+          }
+        },
+        {
+          "bones": {
+            "body": [
+              1,
+              1
+            ]
+          }
+        },
+        {}
+      ]
+    }
+  }
+}
