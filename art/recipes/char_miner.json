@@ -1,0 +1,400 @@
+{
+  "sprite": "char_miner",
+  "size": [24,24],
+  "origin": [12,23],
+  "seed": 1,
+  "materials": {
+    "blue": {
+      "ramp": [
+        "1b1d3f",
+        "4250b0",
+        "a8b8ff"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "boot": {
+      "ramp": [
+        "0e0b14",
+        "2b2433",
+        "574b63"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "skin": {
+      "ramp": [
+        "8a4630",
+        "d99a63",
+        "f0c896"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "rust": {
+      "ramp": [
+        "3b1f1d",
+        "8a4630",
+        "d99a63"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "gold": {
+      "ramp": [
+        "5e2f24",
+        "b8683f",
+        "ffe26b"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "steel": {
+      "ramp": [
+        "3d3447",
+        "7a6c85",
+        "d4c6cf"
+      ],
+      "bands": [0.34,0.66]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [12,23]
+    },
+    "hips": {
+      "parent": "root",
+      "at": [0,-6]
+    },
+    "body": {
+      "parent": "hips",
+      "at": [0,-5]
+    },
+    "head": {
+      "parent": "body",
+      "at": [0,-4]
+    },
+    "left": {
+      "parent": "hips",
+      "at": [-2,0]
+    },
+    "right": {
+      "parent": "hips",
+      "at": [2,0]
+    },
+    "handL": {
+      "parent": "body",
+      "at": [-4.7,2.5]
+    },
+    "handR": {
+      "parent": "body",
+      "at": [4,0]
+    }
+  },
+  "parts": [
+    {
+      "name": "leg0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "blue",
+      "z": 0
+    },
+    {
+      "name": "boot0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 1
+    },
+    {
+      "name": "leg1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "blue",
+      "z": 0
+    },
+    {
+      "name": "boot1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 1
+    },
+    {
+      "name": "sleeve0",
+      "bone": "handL",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "blue",
+      "z": 2
+    },
+    {
+      "name": "hand0",
+      "bone": "handL",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "boot",
+      "z": 3
+    },
+    {
+      "name": "sleeve1",
+      "bone": "handR",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "blue",
+      "z": 2
+    },
+    {
+      "name": "hand1",
+      "bone": "handR",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "boot",
+      "z": 3
+    },
+    {
+      "name": "torso",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-3.9,-2],
+        [3.9,-2],
+        [3,5.5],
+        [-3,5.5]
+      ],
+      "mat": "blue",
+      "z": 3
+    },
+    {
+      "name": "face",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [0.2,0],
+      "r": [3.3,3.5],
+      "mat": "skin",
+      "z": 5
+    },
+    {
+      "name": "chin",
+      "bone": "head",
+      "shape": "rect",
+      "c": [-2,1],
+      "r": [4.8,2],
+      "round": 0.6,
+      "mat": "rust",
+      "z": 5.1
+    },
+    {
+      "name": "helmet",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [0,-2.7],
+      "r": [4.6,2.5],
+      "mat": "gold",
+      "z": 6
+    },
+    {
+      "name": "brim",
+      "bone": "head",
+      "shape": "rect",
+      "c": [-4.7,-1.9],
+      "r": [9.4,1.7],
+      "round": 0.6,
+      "mat": "gold",
+      "z": 6.1
+    },
+    {
+      "name": "lamp",
+      "bone": "head",
+      "shape": "rect",
+      "c": [-0.8,-3.8],
+      "r": [3.3,2.5],
+      "round": 0.6,
+      "mat": "steel",
+      "z": 7
+    },
+    {
+      "name": "pickHandle",
+      "bone": "handL",
+      "shape": "rect",
+      "c": [-0.5,-6],
+      "r": [1.4,9],
+      "round": 0.6,
+      "mat": "rust",
+      "z": 1
+    },
+    {
+      "name": "pick",
+      "bone": "handL",
+      "shape": "poly",
+      "pts": [
+        [-3,-4],
+        [-2.5,-6],
+        [0.5,-6.5],
+        [3.6,-5],
+        [3,-4],
+        [0.5,-5],
+        [-0.8,-4.6],
+        [-2.5,-3]
+      ],
+      "mat": "steel",
+      "z": 4
+    },
+    {
+      "name": "belt",
+      "bone": "body",
+      "shape": "rect",
+      "c": [-3,3],
+      "r": [6,1.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 4
+    }
+  ],
+  "decals": [
+    {
+      "name": "eyes",
+      "bone": "head",
+      "at": [-1,0],
+      "rows": [
+        "x..x"
+      ],
+      "keys": {
+        "x": "1a1422"
+      },
+      "emissive": []
+    },
+    {
+      "name": "lamp",
+      "bone": "head",
+      "at": [0,-3],
+      "rows": [
+        "yg"
+      ],
+      "keys": {
+        "y": "fff3a6",
+        "g": "ffc23d"
+      },
+      "emissive": [
+        "y"
+      ]
+    },
+    {
+      "name": "straps",
+      "bone": "body",
+      "at": [-2,-1],
+      "rows": [
+        "y..y",
+        "y..y",
+        "yyyy",
+        ".gg."
+      ],
+      "keys": {
+        "y": "b8683f",
+        "g": "d99a63"
+      },
+      "emissive": []
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 3,
+      "frames": [
+        {
+          "bones": {},
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "head": [1,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "walk": {
+      "fps": 8,
+      "frames": [
+        {
+          "bones": {
+            "left": [-1,-1],
+            "right": [0,0],
+            "handL": [0,1],
+            "handR": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,0],
+            "hips": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "right": [1,-1],
+            "left": [0,0],
+            "handL": [0,-1],
+            "handR": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,-1],
+            "hips": [0,-1],
+            "head": [0,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "attack": {
+      "fps": 13,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "handL": [-1,1],
+            "head": [0,1]
+          }
+        },
+        {
+          "bones": {
+            "handL": [-1,-3],
+            "body": [0,-1]
+          }
+        },
+        {
+          "bones": {
+            "handL": [-1,-1],
+            "head": [-1,0]
+          }
+        },
+        {
+          "bones": {}
+        }
+      ]
+    }
+  }
+}
