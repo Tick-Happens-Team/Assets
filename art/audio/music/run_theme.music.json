@@ -1,0 +1,258 @@
+{
+ "name": "run_theme",
+ "_comment": "In-run battle loop: D natural minor, 152 BPM, SNES-style pulse lead over a wavetable bass. Form A B A C, 32 bars.",
+ "seed": 4,
+ "bpm": 152,
+ "root": 62,
+ "scale": [
+  0,
+  2,
+  3,
+  5,
+  7,
+  8,
+  10
+ ],
+ "swing": 0.08,
+ "sections": {
+  "A": {
+   "bars": 8,
+   "chords": [
+    0,
+    5,
+    2,
+    6,
+    0,
+    5,
+    3,
+    4
+   ]
+  },
+  "B": {
+   "bars": 8,
+   "chords": [
+    3,
+    4,
+    0,
+    5,
+    3,
+    4,
+    6,
+    6
+   ]
+  },
+  "C": {
+   "bars": 8,
+   "chords": [
+    5,
+    6,
+    0,
+    0,
+    5,
+    6,
+    4,
+    4
+   ]
+  }
+ },
+ "form": [
+  "A",
+  "B",
+  "A",
+  "C"
+ ],
+ "tracks": [
+  {
+   "name": "lead",
+   "role": "lead",
+   "wave": "pulse",
+   "duty": 0.25,
+   "octave": 5,
+   "range": [
+    0,
+    11
+   ],
+   "density": 0.62,
+   "gain": 0.15,
+   "pan": 0.1,
+   "attack": 4,
+   "decay": 160,
+   "sustain": 0.55,
+   "release": 50,
+   "vibrato": [
+    5.5,
+    0.25
+   ],
+   "echo": 0.35,
+   "reverb": 0.25,
+   "sections": [
+    "A",
+    "B"
+   ]
+  },
+  {
+   "name": "flute",
+   "role": "lead",
+   "wave": "triangle",
+   "octave": 5,
+   "range": [
+    2,
+    10
+   ],
+   "density": 0.42,
+   "gain": 0.2,
+   "pan": -0.1,
+   "attack": 25,
+   "decay": 300,
+   "sustain": 0.7,
+   "release": 120,
+   "vibrato": [
+    5,
+    0.3
+   ],
+   "echo": 0.45,
+   "reverb": 0.45,
+   "sections": [
+    "C"
+   ]
+  },
+  {
+   "name": "bass",
+   "role": "bass",
+   "wave": "triangle",
+   "octave": 2,
+   "gain": 0.42,
+   "attack": 2,
+   "decay": 120,
+   "sustain": 0.7,
+   "release": 30,
+   "pattern": "x-x-o-x-x-x-o-5-",
+   "patterns": {
+    "C": "x-------x---5---"
+   }
+  },
+  {
+   "name": "arp",
+   "role": "arp",
+   "wave": "pulse",
+   "duty": 0.125,
+   "octave": 4,
+   "gain": 0.075,
+   "pan": -0.35,
+   "attack": 1,
+   "decay": 70,
+   "sustain": 0.2,
+   "release": 20,
+   "lowpass": 5000,
+   "echo": 0.4,
+   "pattern": "0123012301230123",
+   "sections": [
+    "A",
+    "C"
+   ]
+  },
+  {
+   "name": "pad",
+   "role": "pad",
+   "wave": "saw",
+   "detune": 14,
+   "octave": 3,
+   "gain": 0.05,
+   "attack": 250,
+   "decay": 800,
+   "sustain": 0.8,
+   "release": 400,
+   "lowpass": 1600,
+   "reverb": 0.6,
+   "pattern": "x---------------"
+  },
+  {
+   "name": "kick",
+   "role": "drum",
+   "gain": 0.55,
+   "pattern": "x.......x.......",
+   "patterns": {
+    "B": "x.....x.x.......",
+    "C": "x..............."
+   },
+   "layers": [
+    {
+     "type": "tone",
+     "freq": [
+      150,
+      45
+     ],
+     "decay": 70,
+     "gain": 1.0
+    },
+    {
+     "type": "noise",
+     "lowpass": 2000,
+     "decay": 4,
+     "gain": 0.3
+    }
+   ]
+  },
+  {
+   "name": "snare",
+   "role": "drum",
+   "gain": 0.32,
+   "pan": 0.05,
+   "reverb": 0.25,
+   "pattern": "....x.......x...",
+   "patterns": {
+    "C": "........x......."
+   },
+   "fill": "....x...x.x.xXXX",
+   "layers": [
+    {
+     "type": "noise",
+     "highpass": 800,
+     "lowpass": 7000,
+     "decay": 70,
+     "gain": 0.7
+    },
+    {
+     "type": "tone",
+     "wave": "triangle",
+     "freq": [
+      220,
+      180
+     ],
+     "decay": 40,
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "name": "hat",
+   "role": "drum",
+   "gain": 0.16,
+   "pan": 0.3,
+   "pattern": "..x...x...x...x.",
+   "patterns": {
+    "B": "x.x.x.x.x.x.x.xg"
+   },
+   "layers": [
+    {
+     "type": "noise",
+     "highpass": 7000,
+     "decay": 18,
+     "gain": 0.4
+    }
+   ]
+  }
+ ],
+ "echo": {
+  "beats": 0.75,
+  "feedback": 0.35,
+  "mix": 0.6,
+  "damp": 3500
+ },
+ "reverb": {
+  "mix": 0.35,
+  "size": 0.75,
+  "damp": 0.35
+ },
+ "peak": 0.85
+}

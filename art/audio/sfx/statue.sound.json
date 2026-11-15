@@ -1,0 +1,63 @@
+{
+ "name": "statue",
+ "_comment": "Time statue advances the clock: a rising warp into a ringing bell chord.",
+ "variants": 1,
+ "seed": 18,
+ "vary": 0,
+ "peak": 0.75,
+ "echo": {
+  "delay": 150,
+  "feedback": 0.5,
+  "mix": 0.4,
+  "damp": 4000
+ },
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    200,
+    1600
+   ],
+   "decay": 300,
+   "gain": 0.4,
+   "attack": 500
+  },
+  {
+   "type": "noise",
+   "decay": 200,
+   "gain": 0.15,
+   "highpass": 3000,
+   "attack": 500
+  },
+  {
+   "type": "tone",
+   "freq": [
+    880,
+    880
+   ],
+   "decay": 900,
+   "gain": 0.3,
+   "start": 600
+  },
+  {
+   "type": "tone",
+   "freq": [
+    1320,
+    1320
+   ],
+   "decay": 800,
+   "gain": 0.2,
+   "start": 600
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2217,
+    2217
+   ],
+   "decay": 600,
+   "gain": 0.1,
+   "start": 600
+  }
+ ]
+}

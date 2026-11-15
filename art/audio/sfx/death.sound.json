@@ -1,0 +1,43 @@
+{
+ "name": "death",
+ "_comment": "The hero falls: a long descending tone sinking into a rumble.",
+ "variants": 1,
+ "seed": 25,
+ "vary": 0,
+ "peak": 0.8,
+ "echo": {
+  "delay": 200,
+  "feedback": 0.5,
+  "mix": 0.4,
+  "damp": 2500
+ },
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    600,
+    80
+   ],
+   "decay": 400,
+   "gain": 0.4,
+   "wave": "square",
+   "lowpass": 2000,
+   "attack": 5
+  },
+  {
+   "type": "noise",
+   "decay": 500,
+   "gain": 0.4,
+   "lowpass": 600
+  },
+  {
+   "type": "tone",
+   "freq": [
+    80,
+    30
+   ],
+   "decay": 400,
+   "gain": 0.6
+  }
+ ]
+}

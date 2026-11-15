@@ -1,0 +1,44 @@
+{
+ "name": "elite",
+ "_comment": "An elite appears: a low dissonant horn swell.",
+ "variants": 1,
+ "seed": 24,
+ "vary": 0,
+ "peak": 0.75,
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    110,
+    110
+   ],
+   "decay": 200,
+   "gain": 0.5,
+   "wave": "saw",
+   "hold": 300,
+   "lowpass": 900,
+   "drive": 2,
+   "attack": 60
+  },
+  {
+   "type": "tone",
+   "freq": [
+    116.5,
+    116.5
+   ],
+   "decay": 200,
+   "gain": 0.3,
+   "wave": "saw",
+   "hold": 300,
+   "lowpass": 900,
+   "attack": 60
+  },
+  {
+   "type": "noise",
+   "decay": 300,
+   "gain": 0.3,
+   "lowpass": 300,
+   "attack": 100
+  }
+ ]
+}

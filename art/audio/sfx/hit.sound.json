@@ -1,0 +1,33 @@
+{
+ "name": "hit",
+ "_comment": "Auto-attack lands on an enemy: a short soft thwack. Plays often, so it is dull and brief.",
+ "variants": 6,
+ "seed": 11,
+ "vary": 0.14,
+ "peak": 0.7,
+ "layers": [
+  {
+   "type": "noise",
+   "decay": 18,
+   "gain": 0.6,
+   "highpass": 300,
+   "lowpass": 2500
+  },
+  {
+   "type": "tone",
+   "freq": [
+    240,
+    110
+   ],
+   "decay": 25,
+   "gain": 0.5
+  },
+  {
+   "type": "noise",
+   "decay": 3,
+   "gain": 0.3,
+   "highpass": 3000,
+   "attack": 0
+  }
+ ]
+}

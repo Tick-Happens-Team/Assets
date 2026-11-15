@@ -1,0 +1,29 @@
+{
+ "name": "xp",
+ "_comment": "XP crystal pickup: a tiny glassy blip.",
+ "variants": 4,
+ "seed": 23,
+ "vary": 0.12,
+ "peak": 0.5,
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    2200,
+    2900
+   ],
+   "decay": 50,
+   "gain": 0.4
+  },
+  {
+   "type": "tone",
+   "freq": [
+    4400,
+    4400
+   ],
+   "decay": 30,
+   "gain": 0.1,
+   "wave": "triangle"
+  }
+ ]
+}

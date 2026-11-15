@@ -1,0 +1,39 @@
+{
+ "name": "ui_confirm",
+ "_comment": "Menu choice confirmed.",
+ "variants": 1,
+ "seed": 27,
+ "vary": 0,
+ "peak": 0.6,
+ "echo": {
+  "delay": 90,
+  "feedback": 0.3,
+  "mix": 0.25,
+  "damp": 5000
+ },
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    880,
+    880
+   ],
+   "decay": 40,
+   "gain": 0.3,
+   "wave": "square",
+   "lowpass": 5000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    1320,
+    1320
+   ],
+   "decay": 120,
+   "gain": 0.3,
+   "wave": "square",
+   "lowpass": 5000,
+   "start": 50
+  }
+ ]
+}
