@@ -1,194 +1,29 @@
 {
   "sprite": "enemy_ogre_r",
-  "size": [
-    32,
-    32
-  ],
-  "origin": [
-    16,
-    27
-  ],
+  "size": [48, 48],
+  "origin": [24, 41],
   "seed": 1,
-  "unify": 0.25,
-  "materials": {
-    "body": {
-      "ramp": [
-        "3d3447",
-        "8a4630",
-        "d99a63",
-        "f0c896"
-      ]
-    },
-    "shade": {
-      "ramp": [
-        "1a1422",
-        "3d3447",
-        "8a4630",
-        "d99a63"
-      ]
-    },
-    "trim": {
-      "ramp": [
-        "3d3447",
-        "d99a63",
-        "f0c896",
-        "f4ecea"
-      ],
-      "spec": 0.86
-    }
-  },
-  "bones": {
-    "root": {
-      "at": [
-        16,
-        27
-      ]
-    },
-    "body": {
-      "parent": "root",
-      "at": [
-        0,
-        -10
-      ]
-    }
-  },
+  "unify": 0.16,
+  "materials": {"skin": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "cloth": {"ramp": ["142a24", "1e3d2c", "44803e", "9fcf62"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "hair": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "club": {"ramp": ["5e2f24", "b8683f", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "fang": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {
-      "name": "feet",
-      "bone": "body",
-      "c": [
-        -2,
-        5
-      ],
-      "r": [
-        4,
-        3
-      ],
-      "mat": "shade",
-      "z": 1
-    },
-    {
-      "name": "trunk",
-      "bone": "body",
-      "c": [
-        0,
-        1
-      ],
-      "r": [
-        8,
-        7
-      ],
-      "mat": "body",
-      "z": 2
-    },
-    {
-      "name": "head",
-      "bone": "body",
-      "c": [
-        0,
-        -4
-      ],
-      "r": [
-        6,
-        5
-      ],
-      "mat": "body",
-      "z": 2.5
-    },
-    {
-      "name": "club handle",
-      "bone": "body",
-      "c": [
-        7,
-        0
-      ],
-      "r": [
-        1.4,
-        7
-      ],
-      "mat": "shade",
-      "z": 4
-    },
-    {
-      "name": "knotted clubhead",
-      "bone": "body",
-      "c": [
-        8,
-        -5
-      ],
-      "r": [
-        3.3,
-        4
-      ],
-      "mat": "trim",
-      "z": 5
-    }
+    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-8.73, 0.0], "r": [5.45, 2.84]},
+    {"name": "left shin", "bone": "left", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[-8.73, -6.55], [-8.73, 0.0]], "r": [5.45], "shadow": true},
+    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "boot", "z": 1, "c": [8.73, 0.0], "r": [5.45, 2.84]},
+    {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[8.73, -6.55], [8.73, 0.0]], "r": [5.45], "shadow": true},
+    {"name": "broad shoulders", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 2, "c": [0.0, -17.45], "r": [16.36, 11.45]},
+    {"name": "rough hide loincloth", "bone": "body", "shape": "poly", "mat": "cloth", "z": 2.5, "pts": [[-13.09, -14.18], [9.82, -14.18], [10.91, -8.73], [5.45, -3.27], [1.09, -7.64], [-4.36, -4.36], [-10.91, -7.64]], "profile": "bevel", "shadow": true},
+    {"name": "heavy jawed head", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3, "c": [-2.18, -26.18], "r": [7.53, 6.87]},
+    {"name": "long ear", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3.1, "c": [-8.73, -26.18], "r": [5.02, 2.95]},
+    {"name": "strands of hair", "bone": "body", "shape": "line", "mat": "hair", "z": 3.2, "pts": [[-7.64, -30.55], [-4.36, -33.82], [1.09, -32.73]], "r": [2.95], "shadow": true},
+    {"name": "lower tusk", "bone": "body", "shape": "poly", "mat": "fang", "z": 3.3, "pts": [[0.0, -21.82], [4.36, -25.09], [4.36, -20.73], [1.09, -19.64]], "profile": "bevel", "shadow": true},
+    {"name": "club arm", "bone": "body", "shape": "line", "mat": "skin", "z": 3.4, "pts": [[8.73, -20.73], [13.09, -15.27], [14.18, -12.0]], "r": [6.55], "shadow": true},
+    {"name": "club shaft", "bone": "tool", "shape": "line", "mat": "club", "z": 4, "pts": [[12.0, -13.09], [16.36, -25.09]], "r": [3.71], "shadow": true},
+    {"name": "knotty wooden club", "bone": "tool", "shape": "poly", "mat": "club", "z": 4.2, "pts": [[13.09, -24.0], [12.0, -30.55], [15.27, -34.91], [18.55, -34.91], [19.64, -31.64], [18.55, -24.0], [16.36, -21.82]], "profile": "bevel", "shadow": true},
+    {"name": "wood ridge", "bone": "tool", "shape": "line", "mat": "hair", "z": 4.4, "pts": [[15.27, -31.64], [16.36, -27.27], [15.27, -24.0]], "r": [1.85], "shadow": false}
   ],
   "decals": [
-    {
-      "name": "eyes",
-      "bone": "body",
-      "at": [
-        -2,
-        -4
-      ],
-      "rows": [
-        "l..l"
-      ],
-      "keys": {
-        "l": "f0c896"
-      },
-      "emissive": [
-        "l"
-      ]
-    }
+    {"name": "ogre eyebrows", "bone": "body", "at": [-4, -27], "rows": ["kk.kk"], "keys": {"k": "1a1422"}, "emissive": []}
   ],
-  "anims": {
-    "move": {
-      "fps": 5,
-      "frames": [
-        {},
-        {
-          "bones": {
-            "body": [
-              0,
-              -1
-            ]
-          }
-        },
-        {},
-        {
-          "bones": {
-            "body": [
-              1,
-              0
-            ]
-          }
-        }
-      ]
-    },
-    "attack": {
-      "fps": 12,
-      "loop": false,
-      "frames": [
-        {
-          "bones": {
-            "body": [
-              -1,
-              -1
-            ]
-          }
-        },
-        {
-          "bones": {
-            "body": [
-              1,
-              1
-            ]
-          }
-        },
-        {}
-      ]
-    }
-  }
+  "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "lurch": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

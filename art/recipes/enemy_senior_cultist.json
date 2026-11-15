@@ -1,194 +1,30 @@
 {
   "sprite": "enemy_senior_cultist_r",
-  "size": [
-    32,
-    32
-  ],
-  "origin": [
-    16,
-    27
-  ],
+  "size": [48, 48],
+  "origin": [24, 41],
   "seed": 1,
-  "unify": 0.25,
-  "materials": {
-    "body": {
-      "ramp": [
-        "3b1f1d",
-        "8a4630",
-        "b0409a",
-        "f0c896"
-      ]
-    },
-    "shade": {
-      "ramp": [
-        "1a1422",
-        "3b1f1d",
-        "8a4630",
-        "b0409a"
-      ]
-    },
-    "trim": {
-      "ramp": [
-        "3b1f1d",
-        "b0409a",
-        "f0c896",
-        "f4ecea"
-      ],
-      "spec": 0.86
-    }
-  },
-  "bones": {
-    "root": {
-      "at": [
-        16,
-        27
-      ]
-    },
-    "body": {
-      "parent": "root",
-      "at": [
-        0,
-        -10
-      ]
-    }
-  },
+  "unify": 0.16,
+  "materials": {"cloth": {"ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.22, 0.5, 0.74]}, "hood": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "shaft": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "magic": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "trim": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {
-      "name": "feet",
-      "bone": "body",
-      "c": [
-        -2,
-        5
-      ],
-      "r": [
-        4,
-        3
-      ],
-      "mat": "shade",
-      "z": 1
-    },
-    {
-      "name": "trunk",
-      "bone": "body",
-      "c": [
-        0,
-        1
-      ],
-      "r": [
-        5.8,
-        5.2
-      ],
-      "mat": "body",
-      "z": 2
-    },
-    {
-      "name": "head",
-      "bone": "body",
-      "c": [
-        0,
-        -4
-      ],
-      "r": [
-        4.2,
-        3.8
-      ],
-      "mat": "body",
-      "z": 2.5
-    },
-    {
-      "name": "staff shaft",
-      "bone": "body",
-      "c": [
-        6,
-        1
-      ],
-      "r": [
-        1,
-        7
-      ],
-      "mat": "shade",
-      "z": 4
-    },
-    {
-      "name": "focus",
-      "bone": "body",
-      "c": [
-        6,
-        -5
-      ],
-      "r": [
-        3,
-        3
-      ],
-      "mat": "trim",
-      "z": 5
-    }
+    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-4.36, 0.0], "r": [3.93, 2.84]},
+    {"name": "left shin", "bone": "left", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[-4.36, -6.55], [-4.36, 0.0]], "r": [3.93], "shadow": true},
+    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "boot", "z": 1, "c": [4.36, 0.0], "r": [3.93, 2.84]},
+    {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[4.36, -6.55], [4.36, 0.0]], "r": [3.93], "shadow": true},
+    {"name": "flowing cloak", "bone": "body", "shape": "poly", "mat": "cloth", "z": 2, "pts": [[-6.55, -25.09], [5.45, -25.09], [9.82, -19.64], [8.73, -13.09], [14.18, -3.27], [6.55, -4.36], [2.18, -1.09], [-5.45, -3.27], [-13.09, -1.09], [-8.73, -13.09], [-9.82, -19.64]], "profile": "bevel", "shadow": true},
+    {"name": "hood silhouette", "bone": "body", "shape": "poly", "mat": "hood", "z": 3, "pts": [[-8.73, -22.91], [-6.55, -29.45], [-3.27, -33.82], [3.27, -34.91], [7.64, -30.55], [8.73, -24.0], [5.45, -20.73], [-5.45, -20.73]], "profile": "bevel", "shadow": true},
+    {"name": "hood opening", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3.2, "c": [0.76, -26.18], "r": [5.13, 4.47]},
+    {"name": "shoulder fold", "bone": "body", "shape": "line", "mat": "hood", "z": 3.3, "pts": [[-6.55, -20.73], [-4.36, -13.09], [-5.45, -5.45]], "r": [3.05], "shadow": false},
+    {"name": "sleeve reaching out", "bone": "body", "shape": "line", "mat": "cloth", "z": 3.5, "pts": [[5.45, -19.64], [9.82, -16.36], [13.09, -14.18]], "r": [4.36], "shadow": true},
+    {"name": "staff hand", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3.8, "c": [12.0, -14.18], "r": [2.51, 2.4]},
+    {"name": "ceremonial shoulder mantle", "bone": "body", "shape": "poly", "mat": "trim", "z": 3.2, "pts": [[-12.0, -19.64], [-8.73, -24.0], [-4.36, -21.82], [0.0, -18.55], [4.36, -21.82], [7.64, -24.0], [10.91, -18.55], [5.45, -14.18], [0.0, -16.36], [-5.45, -14.18]], "profile": "bevel", "shadow": true},
+    {"name": "tall episcopal hood", "bone": "body", "shape": "poly", "mat": "hood", "z": 3.5, "pts": [[-6.55, -25.09], [-5.45, -32.73], [0.0, -38.18], [5.45, -32.73], [6.55, -25.09], [0.0, -28.36]], "profile": "bevel", "shadow": true},
+    {"name": "sewn hood band", "bone": "body", "shape": "line", "mat": "magic", "z": 3.6, "pts": [[0.0, -34.91], [0.0, -28.36]], "r": [2.29], "shadow": false},
+    {"name": "pole", "bone": "tool", "shape": "line", "mat": "shaft", "z": 4, "pts": [[10.91, -1.09], [14.18, -27.27]], "r": [2.84], "shadow": true},
+    {"name": "crescent blade", "bone": "tool", "shape": "poly", "mat": "magic", "z": 4.2, "pts": [[10.91, -24.0], [12.0, -34.91], [17.45, -36.0], [20.73, -32.73], [17.45, -32.73], [16.36, -26.18]], "profile": "bevel", "shadow": true}
   ],
   "decals": [
-    {
-      "name": "eyes",
-      "bone": "body",
-      "at": [
-        -2,
-        -4
-      ],
-      "rows": [
-        "l..l"
-      ],
-      "keys": {
-        "l": "f0c896"
-      },
-      "emissive": [
-        "l"
-      ]
-    }
+    {"name": "mask slits", "bone": "body", "at": [-2, -27], "rows": ["k...k"], "keys": {"k": "1a1422"}, "emissive": []}
   ],
-  "anims": {
-    "move": {
-      "fps": 7,
-      "frames": [
-        {},
-        {
-          "bones": {
-            "body": [
-              0,
-              -1
-            ]
-          }
-        },
-        {},
-        {
-          "bones": {
-            "body": [
-              1,
-              0
-            ]
-          }
-        }
-      ]
-    },
-    "attack": {
-      "fps": 12,
-      "loop": false,
-      "frames": [
-        {
-          "bones": {
-            "body": [
-              -1,
-              -1
-            ]
-          }
-        },
-        {
-          "bones": {
-            "body": [
-              1,
-              1
-            ]
-          }
-        },
-        {}
-      ]
-    }
-  }
+  "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "flicker": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

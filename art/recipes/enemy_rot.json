@@ -1,48 +1,25 @@
 {
   "sprite": "enemy_rot_r",
-  "size": [24, 24],
-  "origin": [12, 21],
+  "size": [32, 32],
+  "origin": [16, 27],
   "seed": 1,
-  "unify": 0.28,
-  "materials": {
-    "hide": {"ramp":["142a24","1e3d2c","44803e","6aa84a"],"spec":0.9},
-    "cap": {"ramp":["2a1433","4a1f5c","7a2c84","b0409a"],"spec":0.9},
-    "bone": {"ramp":["5e2f24","8a4630","d99a63","f0c896"],"spec":0.9}
-  },
-  "bones": {
-    "root":{"at":[12,21]},
-    "body":{"parent":"root","at":[0,-8]},
-    "head":{"parent":"body","at":[1,-5]},
-    "arm":{"parent":"body","at":[-4,-2]},
-    "left":{"parent":"root","at":[-3,-3]},
-    "right":{"parent":"root","at":[3,-3]}
-  },
+  "unify": 0.16,
+  "materials": {"hide": {"ramp": ["142a24", "2d5a35", "6aa84a", "d4ec8c"], "bands": [0.22, 0.5, 0.74]}, "fungus": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "spore": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [16, 27]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {"name":"left foot","bone":"left","c":[0,0],"r":[2.8,2.7],"mat":"hide","z":1},
-    {"name":"right foot","bone":"right","c":[0,0],"r":[3,2.8],"mat":"hide","z":1.1},
-    {"name":"far claw","bone":"body","c":[5,1],"r":[2.8,3.9],"mat":"bone","z":1.2},
-    {"name":"hunched trunk","bone":"body","c":[-0.5,0],"r":[5.6,4.8],"mat":"hide","z":2},
-    {"name":"face","bone":"head","c":[0.6,0.5],"r":[4.2,3.8],"mat":"bone","z":3},
-    {"name":"fungal shelf","bone":"head","shape":"poly","pts":[[-7,-2],[-6,-4],[-2,-6],[2,-6],[6,-4],[6,-2],[3,-1],[-4,-1]],"mat":"cap","z":4,"profile":"bevel"},
-    {"name":"small fungus","bone":"arm","c":[-1,-1],"r":[3,2.8],"mat":"cap","z":3.5},
-    {"name":"near claw","bone":"arm","c":[-2,2],"r":[2.5,3.3],"mat":"hide","z":5}
+    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-4.36, 0.0], "r": [2.62, 1.89]},
+    {"name": "left shin", "bone": "left", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[-4.36, -4.36], [-4.36, 0.0]], "r": [2.62], "shadow": true},
+    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "boot", "z": 1, "c": [4.36, 0.0], "r": [2.62, 1.89]},
+    {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[4.36, -4.36], [4.36, 0.0]], "r": [2.62], "shadow": true},
+    {"name": "hunched body", "bone": "body", "shape": "poly", "mat": "hide", "z": 2, "pts": [[-8.0, -5.09], [-8.73, -11.64], [-5.82, -16.0], [2.18, -16.0], [6.55, -12.36], [7.27, -5.82], [3.64, -3.64], [-5.09, -3.64]], "profile": "bevel", "shadow": true},
+    {"name": "rotted jaw", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 2.7, "c": [4.36, -16.0], "r": [3.64, 3.35]},
+    {"name": "fungal cap", "bone": "body", "shape": "poly", "mat": "fungus", "z": 3, "pts": [[-8.0, -15.27], [-5.09, -20.36], [-1.45, -22.55], [4.36, -21.82], [8.73, -18.91], [9.45, -16.0], [5.82, -14.55], [-4.36, -14.55]], "profile": "bevel", "shadow": true},
+    {"name": "second cap", "bone": "body", "shape": "ellipse", "mat": "fungus", "z": 3.2, "c": [-5.82, -12.36], "r": [3.64, 2.18]},
+    {"name": "ragged arm", "bone": "body", "shape": "line", "mat": "hide", "z": 3.4, "pts": [[0.73, -12.36], [5.82, -10.18], [6.55, -5.82]], "r": [3.64], "shadow": true},
+    {"name": "cap gills", "bone": "body", "shape": "line", "mat": "spore", "z": 3.3, "pts": [[-4.36, -16.0], [0.73, -15.27], [5.82, -16.0]], "r": [1.53], "shadow": false}
   ],
   "decals": [
-    {"name":"spore spots","bone":"head","at":[-4,-5],"rows":[".pp..p","p....p"],"keys":{"p":"e070c0"}},
-    {"name":"sunken face","bone":"head","at":[-1,-1],"rows":["dr.dr","dd.dd",".ddd.",".dwd."],"keys":{"d":"1a1422","r":"d4ec8c","w":"f0c896"},"emissive":["r"]},
-    {"name":"exposed ribs","bone":"body","at":[0,2],"rows":["bb.b",".bb."],"keys":{"b":"d99a63"}}
+    {"name": "spores and face", "bone": "body", "at": [1, -20], "rows": ["s..ss", ".....", ".....", "..k.k"], "keys": {"s": "e070c0", "k": "1a1422"}, "emissive": []}
   ],
-  "anims": {
-    "lurch":{"fps":6,"frames":[
-      {"bones":{"left":[0,-1],"right":[1,0],"arm":[0,1]}},
-      {"bones":{"body":[0,-1],"head":[1,0],"right":[0,-1]}},
-      {"bones":{"left":[-1,0],"right":[0,-1],"arm":[-1,-1]}},
-      {"bones":{"body":[0,1],"head":[-1,-1],"arm":[0,1]}}
-    ]},
-    "attack":{"fps":12,"loop":false,"frames":[
-      {"bones":{"head":[-1,0],"arm":[0,-2]}},
-      {"bones":{"body":[1,0],"head":[1,1],"arm":[2,2,1.3,1]}},
-      {"bones":{"body":[0,1],"arm":[1,1]}}
-    ]}
-  }
+  "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "lurch": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }
