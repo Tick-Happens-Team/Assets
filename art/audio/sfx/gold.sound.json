@@ -1,0 +1,33 @@
+{
+ "name": "gold",
+ "_comment": "Gold pickup: the classic two-step coin chime.",
+ "variants": 3,
+ "seed": 22,
+ "vary": 0.05,
+ "peak": 0.55,
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    1975,
+    1975
+   ],
+   "decay": 30,
+   "gain": 0.3,
+   "wave": "square",
+   "lowpass": 6000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2637,
+    2637
+   ],
+   "decay": 160,
+   "gain": 0.3,
+   "wave": "square",
+   "lowpass": 6000,
+   "start": 45
+  }
+ ]
+}

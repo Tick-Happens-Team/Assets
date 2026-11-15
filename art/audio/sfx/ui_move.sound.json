@@ -1,0 +1,21 @@
+{
+ "name": "ui_move",
+ "_comment": "Menu cursor moves.",
+ "variants": 1,
+ "seed": 26,
+ "vary": 0,
+ "peak": 0.5,
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    1200,
+    1200
+   ],
+   "decay": 15,
+   "gain": 0.3,
+   "wave": "square",
+   "lowpass": 5000
+  }
+ ]
+}

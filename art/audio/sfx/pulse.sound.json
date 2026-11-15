@@ -1,0 +1,42 @@
+{
+ "name": "pulse",
+ "_comment": "Area pulse around the hero: a deep whoomp with a soft airy body.",
+ "variants": 3,
+ "seed": 14,
+ "vary": 0.08,
+ "peak": 0.75,
+ "echo": {
+  "delay": 70,
+  "feedback": 0.3,
+  "mix": 0.25,
+  "damp": 3000
+ },
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    120,
+    50
+   ],
+   "decay": 120,
+   "gain": 0.8
+  },
+  {
+   "type": "noise",
+   "decay": 150,
+   "gain": 0.5,
+   "lowpass": 900,
+   "attack": 10
+  },
+  {
+   "type": "tone",
+   "freq": [
+    600,
+    300
+   ],
+   "decay": 60,
+   "gain": 0.2,
+   "wave": "triangle"
+  }
+ ]
+}

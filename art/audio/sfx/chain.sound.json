@@ -1,0 +1,43 @@
+{
+ "name": "chain",
+ "_comment": "Chain lightning: crackling hiss over a driven buzz.",
+ "variants": 4,
+ "seed": 15,
+ "vary": 0.12,
+ "peak": 0.65,
+ "layers": [
+  {
+   "type": "noise",
+   "decay": 60,
+   "gain": 0.6,
+   "highpass": 1500,
+   "lowpass": 9000,
+   "hold": 40,
+   "drive": 3
+  },
+  {
+   "type": "tone",
+   "freq": [
+    90,
+    60
+   ],
+   "decay": 60,
+   "gain": 0.4,
+   "wave": "saw",
+   "hold": 80,
+   "drive": 4,
+   "lowpass": 3000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    3000,
+    1200
+   ],
+   "decay": 40,
+   "gain": 0.1,
+   "wave": "square",
+   "start": 10
+  }
+ ]
+}
