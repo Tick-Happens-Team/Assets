@@ -1,0 +1,48 @@
+{
+  "sprite": "enemy_rot_r",
+  "size": [24, 24],
+  "origin": [12, 21],
+  "seed": 1,
+  "unify": 0.28,
+  "materials": {
+    "hide": {"ramp":["142a24","1e3d2c","44803e","6aa84a"],"spec":0.9},
+    "cap": {"ramp":["2a1433","4a1f5c","7a2c84","b0409a"],"spec":0.9},
+    "bone": {"ramp":["5e2f24","8a4630","d99a63","f0c896"],"spec":0.9}
+  },
+  "bones": {
+    "root":{"at":[12,21]},
+    "body":{"parent":"root","at":[0,-8]},
+    "head":{"parent":"body","at":[1,-5]},
+    "arm":{"parent":"body","at":[-4,-2]},
+    "left":{"parent":"root","at":[-3,-3]},
+    "right":{"parent":"root","at":[3,-3]}
+  },
+  "parts": [
+    {"name":"left foot","bone":"left","c":[0,0],"r":[2.8,2.7],"mat":"hide","z":1},
+    {"name":"right foot","bone":"right","c":[0,0],"r":[3,2.8],"mat":"hide","z":1.1},
+    {"name":"far claw","bone":"body","c":[5,1],"r":[2.8,3.9],"mat":"bone","z":1.2},
+    {"name":"hunched trunk","bone":"body","c":[-0.5,0],"r":[5.6,4.8],"mat":"hide","z":2},
+    {"name":"face","bone":"head","c":[0.6,0.5],"r":[4.2,3.8],"mat":"bone","z":3},
+    {"name":"fungal shelf","bone":"head","shape":"poly","pts":[[-7,-2],[-6,-4],[-2,-6],[2,-6],[6,-4],[6,-2],[3,-1],[-4,-1]],"mat":"cap","z":4,"profile":"bevel"},
+    {"name":"small fungus","bone":"arm","c":[-1,-1],"r":[3,2.8],"mat":"cap","z":3.5},
+    {"name":"near claw","bone":"arm","c":[-2,2],"r":[2.5,3.3],"mat":"hide","z":5}
+  ],
+  "decals": [
+    {"name":"spore spots","bone":"head","at":[-4,-5],"rows":[".pp..p","p....p"],"keys":{"p":"e070c0"}},
+    {"name":"sunken face","bone":"head","at":[-1,-1],"rows":["dr.dr","dd.dd",".ddd.",".dwd."],"keys":{"d":"1a1422","r":"d4ec8c","w":"f0c896"},"emissive":["r"]},
+    {"name":"exposed ribs","bone":"body","at":[0,2],"rows":["bb.b",".bb."],"keys":{"b":"d99a63"}}
+  ],
+  "anims": {
+    "lurch":{"fps":6,"frames":[
+      {"bones":{"left":[0,-1],"right":[1,0],"arm":[0,1]}},
+      {"bones":{"body":[0,-1],"head":[1,0],"right":[0,-1]}},
+      {"bones":{"left":[-1,0],"right":[0,-1],"arm":[-1,-1]}},
+      {"bones":{"body":[0,1],"head":[-1,-1],"arm":[0,1]}}
+    ]},
+    "attack":{"fps":12,"loop":false,"frames":[
+      {"bones":{"head":[-1,0],"arm":[0,-2]}},
+      {"bones":{"body":[1,0],"head":[1,1],"arm":[2,2,1.3,1]}},
+      {"bones":{"body":[0,1],"arm":[1,1]}}
+    ]}
+  }
+}
