@@ -1,0 +1,41 @@
+{
+  "sprite": "enemy_spark_r",
+  "size": [24, 24],
+  "origin": [12, 21],
+  "seed": 1,
+  "unify": 0.24,
+  "materials": {
+    "plasma":{"ramp":["2a1433","7a2c84","b0409a","e070c0"],"spec":0.9},
+    "filament":{"ramp":["10303c","17566a","1f8a96","3fc4c0"],"spec":0.88},
+    "core":{"ramp":["8a1f17","f2561d","ffc23d","ffe26b"],"spec":0.86}
+  },
+  "bones": {
+    "root":{"at":[12,21]},
+    "body":{"parent":"root","at":[0,-9]},
+    "crest":{"parent":"body","at":[0,-3]},
+    "tail":{"parent":"body","at":[0,3]}
+  },
+  "parts": [
+    {"name":"rising arc","bone":"crest","shape":"poly","pts":[[-4,3],[-5,-2],[-1,-7],[-1,-3],[5,-5],[3,0],[5,3]],"mat":"plasma","z":1,"profile":"bevel"},
+    {"name":"falling arc","bone":"tail","shape":"poly","pts":[[-5,-2],[4,-3],[5,1],[1,6],[0,3],[-5,5],[-3,1]],"mat":"plasma","z":1,"profile":"bevel"},
+    {"name":"side arc","bone":"body","shape":"poly","pts":[[1,-4],[8,-5],[6,-1],[9,0],[5,4],[1,5]],"mat":"filament","z":2,"profile":"bevel"},
+    {"name":"charge","bone":"body","shape":"poly","pts":[[-1,-8],[0,-4],[5,-5],[3,-1],[6,0],[1,3],[-3,7],[-3,3],[-7,3],[-5,-1],[-7,-3],[-3,-4]],"mat":"core","z":3,"profile":"bevel"}
+  ],
+  "decals": [
+    {"name":"white-hot filament","bone":"body","at":[-4,-5],"rows":["...y","..yw",".yw.","ywww",".ww.","yw..","y..."],"keys":{"w":"fff3a6","y":"ffc23d"},"emissive":["w","y"]},
+    {"name":"induction arcs","bone":"body","at":[4,-2],"rows":[".c","c.","cc",".c"],"keys":{"c":"8ff0de"},"emissive":["c"]}
+  ],
+  "anims": {
+    "flicker":{"fps":10,"frames":[
+      {},
+      {"bones":{"body":[0,-1],"crest":[1,0],"tail":[-1,0]}},
+      {"bones":{"body":[0,0],"crest":[-1,1],"tail":[1,-1]},"hideDecals":["induction arcs"]},
+      {"bones":{"body":[0,1],"crest":[0,-1],"tail":[0,0]}}
+    ]},
+    "attack":{"fps":12,"loop":false,"frames":[
+      {"bones":{"crest":[0,1],"tail":[0,-1]},"hideDecals":["induction arcs"]},
+      {"bones":{"crest":[1,0],"tail":[-1,0]},"parts":{"charge":{"pts":[[-1,-8],[0,-4],[6,-5],[4,-1],[7,0],[1,3],[-3,7],[-3,3],[-8,3],[-5,-1],[-7,-3],[-3,-4]]},"side arc":{"pts":[[1,-4],[9,-5],[7,-1],[10,0],[6,3],[1,5]]}}},
+      {"bones":{"body":[0,-1],"crest":[-1,1],"tail":[1,0]}}
+    ]}
+  }
+}
