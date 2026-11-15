@@ -1,0 +1,223 @@
+{
+  "sprite": "char_pig_ghost",
+  "size": [24,24],
+  "origin": [12,23],
+  "seed": 1,
+  "materials": {
+    "teal": {
+      "ramp": [
+        "10303c",
+        "1f8a96",
+        "8ff0de"
+      ],
+      "bands": [0.34,0.66]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [12,23]
+    },
+    "hips": {
+      "parent": "root",
+      "at": [0,-6]
+    },
+    "body": {
+      "parent": "hips",
+      "at": [0,-4]
+    },
+    "head": {
+      "parent": "body",
+      "at": [0,-1]
+    },
+    "left": {
+      "parent": "hips",
+      "at": [-4,0]
+    },
+    "right": {
+      "parent": "hips",
+      "at": [3,0]
+    },
+    "handL": {
+      "parent": "body",
+      "at": [-4,0]
+    },
+    "handR": {
+      "parent": "body",
+      "at": [4,0]
+    }
+  },
+  "parts": [
+    {
+      "name": "body",
+      "bone": "body",
+      "shape": "ellipse",
+      "c": [-2,1],
+      "r": [6.2,4.9],
+      "mat": "teal",
+      "z": 2
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [3,0.3],
+      "r": [4.4,4],
+      "mat": "teal",
+      "z": 3
+    },
+    {
+      "name": "ear",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [-1,-1],
+        [-1,-6],
+        [2,-4],
+        [2,-2]
+      ],
+      "mat": "teal",
+      "z": 4
+    },
+    {
+      "name": "snout",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [6,1.4],
+      "r": [3,2.4],
+      "mat": "teal",
+      "z": 5
+    },
+    {
+      "name": "tail",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-6,0],
+        [-9,-2],
+        [-9,-4],
+        [-7,-4],
+        [-7,-2],
+        [-5,-1]
+      ],
+      "mat": "teal",
+      "z": 2
+    },
+    {
+      "name": "spectralTail",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-7,1],
+        [2,2],
+        [1,5],
+        [-3,5],
+        [-6,7],
+        [-9,7],
+        [-6,4]
+      ],
+      "mat": "teal",
+      "z": 2
+    }
+  ],
+  "decals": [
+    {
+      "name": "face",
+      "bone": "head",
+      "at": [3,0],
+      "rows": [
+        "k....",
+        "..k.k"
+      ],
+      "keys": {
+        "k": "8ff0de"
+      },
+      "emissive": [
+        "k"
+      ]
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 3,
+      "frames": [
+        {
+          "bones": {},
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [0,-2],
+            "head": [0,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "walk": {
+      "fps": 8,
+      "frames": [
+        {
+          "bones": {
+            "hips": [-1,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [0,-2]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [1,-2],
+            "head": [-1,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [0,-1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "attack": {
+      "fps": 13,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "head": [-1,1],
+            "body": [-1,0]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "head": [1,0],
+            "body": [1,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "head": [1,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {},
+          "hideDecals": []
+        }
+      ]
+    }
+  }
+}
