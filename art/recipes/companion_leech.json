@@ -1,0 +1,173 @@
+// A dark violet leech with a coil, rounded sucker and luminous teal eye.
+{
+  "sprite": "companion_leech_r",
+  "size": [
+    16,
+    12
+  ],
+  "origin": [
+    8,
+    10
+  ],
+  "seed": 1,
+  "materials": {
+    "teal": {
+      "ramp": [
+        "10303c",
+        "17566a",
+        "1f8a96",
+        "3fc4c0",
+        "8ff0de"
+      ],
+      "bands": [
+        0.25,
+        0.45,
+        0.64,
+        0.83
+      ]
+    },
+    "violet": {
+      "ramp": [
+        "2a1433",
+        "4a1f5c",
+        "7a2c84",
+        "b0409a",
+        "e070c0"
+      ],
+      "bands": [
+        0.25,
+        0.45,
+        0.64,
+        0.83
+      ]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [
+        8,
+        10
+      ]
+    },
+    "body": {
+      "parent": "root",
+      "at": [
+        0,
+        0
+      ]
+    },
+    "feet": {
+      "parent": "root",
+      "at": [
+        0,
+        0
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "coil",
+      "bone": "body",
+      "mat": "violet",
+      "z": 1,
+      "shape": "poly",
+      "pts": [
+        [
+          -6,
+          -4
+        ],
+        [
+          -5,
+          -7
+        ],
+        [
+          -1,
+          -8
+        ],
+        [
+          2,
+          -6
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          5,
+          -5
+        ],
+        [
+          6,
+          -3
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          -3,
+          -2
+        ]
+      ]
+    },
+    {
+      "name": "head",
+      "bone": "body",
+      "mat": "teal",
+      "z": 2,
+      "shape": "ellipse",
+      "c": [
+        3,
+        -5
+      ],
+      "r": [
+        2.7,
+        2.2
+      ]
+    }
+  ],
+  "decals": [
+    {
+      "name": "eyes",
+      "bone": "body",
+      "at": [
+        3,
+        -6
+      ],
+      "rows": [
+        "l"
+      ],
+      "keys": {
+        "l": "8ff0de"
+      },
+      "emissive": [
+        "l"
+      ]
+    }
+  ],
+  "anims": {
+    "move": {
+      "fps": 7,
+      "frames": [
+        {},
+        {
+          "bones": {
+            "body": [
+              1,
+              0
+            ]
+          }
+        },
+        {},
+        {
+          "bones": {
+            "body": [
+              -1,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
