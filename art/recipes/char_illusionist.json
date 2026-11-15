@@ -1,0 +1,364 @@
+{
+  "sprite": "char_illusionist",
+  "size": [16,24],
+  "origin": [8,23],
+  "seed": 1,
+  "materials": {
+    "violet": {
+      "ramp": [
+        "2a1433",
+        "7a2c84",
+        "e070c0"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "boot": {
+      "ramp": [
+        "0e0b14",
+        "2b2433",
+        "574b63"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "bone": {
+      "ramp": [
+        "574b63",
+        "a596ab",
+        "f4ecea"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "cloth": {
+      "ramp": [
+        "2a2340",
+        "4a3f69",
+        "968bb4"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "teal": {
+      "ramp": [
+        "10303c",
+        "1f8a96",
+        "8ff0de"
+      ],
+      "bands": [0.34,0.66]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [8,23]
+    },
+    "hips": {
+      "parent": "root",
+      "at": [0,-6]
+    },
+    "body": {
+      "parent": "hips",
+      "at": [0,-5]
+    },
+    "head": {
+      "parent": "body",
+      "at": [0,-4]
+    },
+    "left": {
+      "parent": "hips",
+      "at": [-2,0]
+    },
+    "right": {
+      "parent": "hips",
+      "at": [2,0]
+    },
+    "handL": {
+      "parent": "body",
+      "at": [-4,0]
+    },
+    "handR": {
+      "parent": "body",
+      "at": [4,0]
+    }
+  },
+  "parts": [
+    {
+      "name": "mantle",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-3,-3],
+        [3,-3],
+        [5,6],
+        [2,7],
+        [0,5],
+        [-4,7]
+      ],
+      "mat": "violet",
+      "z": 1
+    },
+    {
+      "name": "leg0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "violet",
+      "z": 0
+    },
+    {
+      "name": "boot0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 1
+    },
+    {
+      "name": "leg1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "violet",
+      "z": 0
+    },
+    {
+      "name": "boot1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 1
+    },
+    {
+      "name": "sleeve0",
+      "bone": "handL",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "violet",
+      "z": 2
+    },
+    {
+      "name": "hand0",
+      "bone": "handL",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "bone",
+      "z": 3
+    },
+    {
+      "name": "sleeve1",
+      "bone": "handR",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "violet",
+      "z": 2
+    },
+    {
+      "name": "hand1",
+      "bone": "handR",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "bone",
+      "z": 3
+    },
+    {
+      "name": "torso",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-3.9,-2],
+        [3.9,-2],
+        [3,5.5],
+        [-3,5.5]
+      ],
+      "mat": "cloth",
+      "z": 3
+    },
+    {
+      "name": "mask",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [0,0],
+      "r": [3.8,3.5],
+      "mat": "bone",
+      "z": 6
+    },
+    {
+      "name": "jester",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [-4.4,0],
+        [-5.4,-4],
+        [-3,-5],
+        [0,-3],
+        [2,-5],
+        [5,-4],
+        [4,-1],
+        [0,-2]
+      ],
+      "mat": "violet",
+      "z": 6
+    },
+    {
+      "name": "lapel",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-3,-2],
+        [0,0],
+        [3,-2],
+        [2,1],
+        [0,3],
+        [-3,1]
+      ],
+      "mat": "teal",
+      "z": 5
+    },
+    {
+      "name": "card",
+      "bone": "handR",
+      "shape": "poly",
+      "pts": [
+        [-1,-1],
+        [1,-2],
+        [3,1],
+        [1,2]
+      ],
+      "mat": "bone",
+      "z": 6
+    }
+  ],
+  "decals": [
+    {
+      "name": "maskface",
+      "bone": "head",
+      "at": [-2,0],
+      "rows": [
+        "v...v",
+        ".vvv.",
+        "..v.."
+      ],
+      "keys": {
+        "v": "4a1f5c"
+      },
+      "emissive": []
+    },
+    {
+      "name": "card",
+      "bone": "handR",
+      "at": [0,0],
+      "rows": [
+        "t"
+      ],
+      "keys": {
+        "t": "3fc4c0"
+      },
+      "emissive": [
+        "t"
+      ]
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 3,
+      "frames": [
+        {
+          "bones": {},
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "head": [1,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "walk": {
+      "fps": 8,
+      "frames": [
+        {
+          "bones": {
+            "left": [-1,-1],
+            "right": [0,0],
+            "handL": [0,1],
+            "handR": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,-1],
+            "hips": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "right": [1,-1],
+            "left": [0,0],
+            "handL": [0,-1],
+            "handR": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,-1],
+            "hips": [0,-1],
+            "head": [0,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "attack": {
+      "fps": 13,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "handR": [-2,1],
+            "head": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "handR": [0,-3],
+            "body": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "handR": [0,-2]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {},
+          "hideDecals": []
+        }
+      ]
+    }
+  }
+}
