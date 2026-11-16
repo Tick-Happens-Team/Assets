@@ -3,8 +3,8 @@
   "size": [48, 48],
   "origin": [24, 41],
   "seed": 1,
-  "unify": 0.16,
-  "materials": {"cloth": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "hood": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["142a24", "2d5a35", "6aa84a", "d4ec8c"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "wand": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "focus": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74]}, "hair": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "pin": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}},
+  "unify": 0.24,
+  "materials": {"cloth": {"ramp": ["2a1433", "2a1433", "4a1f5c", "b0409a"], "bands": [0.285, 0.565, 0.805], "dither": 0.025}, "hood": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "968bb4"], "bands": [0.285, 0.565, 0.805]}, "skin": {"ramp": ["142a24", "1e3d2c", "44803e", "d4ec8c"], "bands": [0.32, 0.6, 0.84], "dither": 0.025}, "boot": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "968bb4"], "bands": [0.285, 0.565, 0.805]}, "wand": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "fff3a6"], "bands": [0.285, 0.565, 0.805]}, "focus": {"ramp": ["2c3070", "4250b0", "6a7fe0", "a8b8ff"], "bands": [0.22, 0.5, 0.74]}, "hair": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "968bb4"], "bands": [0.285, 0.565, 0.805]}, "pin": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "fff3a6"], "bands": [0.285, 0.565, 0.805]}, "lightning": {"ramp": ["2c3070", "4250b0", "6a7fe0", "a8b8ff"], "bands": [0.22, 0.5, 0.74], "emissive": true}},
   "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-4.36, 0.0], "r": [3.93, 2.84]},
@@ -22,7 +22,8 @@
     {"name": "wand hand", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 4, "c": [12.0, -16.36], "r": [2.51, 2.73]},
     {"name": "pole", "bone": "tool", "shape": "line", "mat": "wand", "z": 4, "pts": [[10.91, -6.55], [14.18, -21.82]], "r": [2.84], "shadow": true},
     {"name": "orb cage", "bone": "tool", "shape": "ellipse", "mat": "wand", "z": 4.15, "c": [14.18, -24.0], "r": [4.69, 5.35]},
-    {"name": "staff focus", "bone": "tool", "shape": "ellipse", "mat": "focus", "z": 4.2, "c": [14.18, -24.0], "r": [3.05, 3.6]}
+    {"name": "staff focus", "bone": "tool", "shape": "ellipse", "mat": "focus", "z": 4.2, "c": [14.18, -24.0], "r": [3.05, 3.6]},
+    {"name": "forked lightning in staff", "bone": "tool", "shape": "poly", "mat": "lightning", "z": 4.9, "pts": [[12, -30], [17, -29], [15, -25], [19, -25], [13, -19], [14, -24], [11, -24]], "profile": "bevel"}
   ],
   "decals": [
     {"name": "hawk eye", "bone": "body", "at": [2, -25], "rows": ["kk", ".."], "keys": {"k": "1a1422"}, "emissive": []}

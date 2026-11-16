@@ -3,8 +3,8 @@
   "size": [32, 32],
   "origin": [16, 27],
   "seed": 1,
-  "unify": 0.16,
-  "materials": {"hide": {"ramp": ["142a24", "2d5a35", "6aa84a", "d4ec8c"], "bands": [0.22, 0.5, 0.74]}, "fungus": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "spore": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74]}},
+  "unify": 0.24,
+  "materials": {"hide": {"ramp": ["142a24", "1e3d2c", "44803e", "d4ec8c"], "bands": [0.32, 0.6, 0.84]}, "fungus": {"ramp": ["2a1433", "2a1433", "4a1f5c", "b0409a"], "bands": [0.285, 0.565, 0.805]}, "skin": {"ramp": ["3b1f1d", "5e2f24", "b8683f", "f0c896"], "bands": [0.32, 0.6, 0.84]}, "boot": {"ramp": ["0e0b14", "0e0b14", "1a1422", "574b63"], "bands": [0.285, 0.565, 0.805]}, "spore": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74]}, "wound": {"ramp": ["3b1f1d", "4a1712", "8a1f17", "f2561d"], "bands": [0.285, 0.565, 0.805]}, "bone": {"ramp": ["3d3447", "7a6c85", "968bb4", "f4ecea"], "bands": [0.32, 0.6, 0.84]}},
   "bones": {"root": {"at": [16, 27]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-4.36, 0.0], "r": [2.62, 1.89]},
@@ -13,13 +13,14 @@
     {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[4.36, -4.36], [4.36, 0.0]], "r": [2.62], "shadow": true},
     {"name": "hunched body", "bone": "body", "shape": "poly", "mat": "hide", "z": 2, "pts": [[-8.0, -5.09], [-8.73, -11.64], [-5.82, -16.0], [2.18, -16.0], [6.55, -12.36], [7.27, -5.82], [3.64, -3.64], [-5.09, -3.64]], "profile": "bevel", "shadow": true},
     {"name": "rotted jaw", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 2.7, "c": [4.36, -16.0], "r": [3.64, 3.35]},
-    {"name": "fungal cap", "bone": "body", "shape": "poly", "mat": "fungus", "z": 3, "pts": [[-8.0, -15.27], [-5.09, -20.36], [-1.45, -22.55], [4.36, -21.82], [8.73, -18.91], [9.45, -16.0], [5.82, -14.55], [-4.36, -14.55]], "profile": "bevel", "shadow": true},
-    {"name": "second cap", "bone": "body", "shape": "ellipse", "mat": "fungus", "z": 3.2, "c": [-5.82, -12.36], "r": [3.64, 2.18]},
     {"name": "ragged arm", "bone": "body", "shape": "line", "mat": "hide", "z": 3.4, "pts": [[0.73, -12.36], [5.82, -10.18], [6.55, -5.82]], "r": [3.64], "shadow": true},
-    {"name": "cap gills", "bone": "body", "shape": "line", "mat": "spore", "z": 3.3, "pts": [[-4.36, -16.0], [0.73, -15.27], [5.82, -16.0]], "r": [1.53], "shadow": false}
+    {"name": "sunken corpse skull", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3, "c": [1, -19], "r": [5.7, 5.1]},
+    {"name": "sloughed skull patch", "bone": "body", "shape": "poly", "mat": "bone", "z": 3.4, "pts": [[-4, -19], [-3, -23], [1, -24], [3, -22], [0, -20]], "profile": "bevel"},
+    {"name": "outstretched dead arm", "bone": "body", "shape": "line", "mat": "skin", "z": 3.4, "pts": [[1, -14], [7, -12], [10, -12]], "r": [2], "shadow": false},
+    {"name": "exposed rib", "bone": "body", "shape": "line", "mat": "bone", "z": 3.6, "pts": [[-5, -10], [-2, -11], [0, -10]], "r": [1], "shadow": false}
   ],
   "decals": [
-    {"name": "spores and face", "bone": "body", "at": [1, -20], "rows": ["s..ss", ".....", ".....", "..k.k"], "keys": {"s": "e070c0", "k": "1a1422"}, "emissive": []}
+    {"name": "rotting eye and split jaw", "bone": "body", "at": [2, -21], "rows": ["kk..", ".k..", "....", ".wbb", "..bb"], "keys": {"k": "142a24", "w": "8a1f17", "b": "d4c6cf"}, "emissive": []}
   ],
   "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "lurch": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

@@ -3,8 +3,8 @@
   "size": [24, 24],
   "origin": [12, 20],
   "seed": 1,
-  "unify": 0.16,
-  "materials": {"hide": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "wing": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "edge": {"ramp": ["1b1d3f", "2c3070", "6a7fe0", "a8b8ff"], "bands": [0.22, 0.5, 0.74]}, "fang": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}},
+  "unify": 0.24,
+  "materials": {"hide": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "968bb4"], "bands": [0.32, 0.6, 0.84]}, "wing": {"ramp": ["2a1433", "2a1433", "4a1f5c", "b0409a"], "bands": [0.285, 0.565, 0.805]}, "edge": {"ramp": ["1b1d3f", "1b1d3f", "4250b0", "a8b8ff"], "bands": [0.285, 0.565, 0.805]}, "fang": {"ramp": ["2b2433", "574b63", "968bb4", "f4ecea"], "bands": [0.32, 0.6, 0.84]}},
   "bones": {"root": {"at": [12, 20]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "left scalloped wing", "bone": "left", "shape": "poly", "mat": "wing", "z": 1, "pts": [[-2.18, -7.64], [-4.36, -9.82], [-7.64, -12.55], [-9.82, -11.45], [-9.27, -5.45], [-7.09, -7.09], [-5.45, -4.36], [-3.27, -5.45], [-1.64, -4.36]], "profile": "bevel", "shadow": true},
@@ -13,7 +13,8 @@
     {"name": "right wing ribs", "bone": "right", "shape": "line", "mat": "edge", "z": 1.2, "pts": [[2.73, -7.09], [6.55, -9.27], [8.73, -10.91]], "r": [1.09], "shadow": false},
     {"name": "furry body", "bone": "body", "shape": "ellipse", "mat": "hide", "z": 2, "c": [0.0, -6.0], "r": [3.16, 3.49]},
     {"name": "pointed ears", "bone": "body", "shape": "poly", "mat": "hide", "z": 2.2, "pts": [[-3.27, -7.64], [-3.27, -12.0], [-1.09, -9.27], [1.09, -9.27], [3.27, -12.0], [3.82, -7.64]], "profile": "bevel", "shadow": true},
-    {"name": "muzzle", "bone": "body", "shape": "ellipse", "mat": "fang", "z": 2.4, "c": [0.55, -6.0], "r": [1.64, 1.47]}
+    {"name": "muzzle", "bone": "body", "shape": "ellipse", "mat": "fang", "z": 2.4, "c": [0.55, -6.0], "r": [1.64, 1.47]},
+    {"name": "furred chest", "bone": "body", "shape": "ellipse", "mat": "edge", "z": 3, "c": [0, -5], "r": [2.1, 2.5]}
   ],
   "decals": [
     {"name": "ember eyes", "bone": "body", "at": [-2, -8], "rows": ["e..e"], "keys": {"e": "ffc23d"}, "emissive": ["e"]}

@@ -12,6 +12,7 @@
       ],
       "bands": [0.34,0.66]
     },
+    "horn": {"ramp":["4a1712","8a1f17","f2561d","ff8a2a"],"bands":[0.21,0.5,0.76],"emissive":true},
     "pink": {
       "ramp": [
         "4a1f5c",
@@ -55,6 +56,8 @@
     }
   },
   "parts": [
+    {"name":"rear horn","bone":"head","shape":"poly","pts":[[0,-2],[-1,-5],[-2,-8],[1,-7],[3,-3]],"mat":"horn","z":3.5,"profile":"bevel"},
+    {"name":"front horn","bone":"head","shape":"poly","pts":[[3,-3],[4,-6],[6,-9],[7,-6],[6,-3]],"mat":"horn","z":4.3,"profile":"bevel"},
     {
       "name": "rearFoot",
       "bone": "left",
