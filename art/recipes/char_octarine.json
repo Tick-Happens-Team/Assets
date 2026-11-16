@@ -1,75 +1,72 @@
 {
-  // Octarine: a calm being woven from colour. Diagonal rainbow bands run across the whole figure.
-  // Parts are generated as band slices of each body shape (flat profile, sprite-wide lighting via unify).
-  // Front 3/4 view, 16x24, light from top-left.
+  // Florist (formerly Octarine): a strange fellow made of flowers. Stem limbs, a leafy body covered in
+  // blossoms, a daisy-like head with the face in its golden heart, and a red rose sprouting from the top.
+  // Front 3/4 view, 16x24, light from top-left. The sprite id stays char_octarine for content compatibility.
   "sprite": "char_octarine",
   "size": [16, 24],
   "origin": [8, 23],
   "seed": 1,
-  "unify": 0.85,
-  "outline": { "selout": false },
   "materials": {
-    "red":    { "ramp": ["8a1f17", "c9281f", "f2561d"], "bands": [0.4, 0.72] },
-    "yellow": { "ramp": ["ff8a2a", "ffc23d", "ffe26b"], "bands": [0.4, 0.72] },
-    "green":  { "ramp": ["44803e", "6aa84a", "9fcf62"], "bands": [0.4, 0.72] },
-    "teal":   { "ramp": ["1f8a96", "3fc4c0", "8ff0de"], "bands": [0.4, 0.72] },
-    "blue":   { "ramp": ["4250b0", "6a7fe0", "a8b8ff"], "bands": [0.4, 0.72] },
-    "violet": { "ramp": ["7a2c84", "b0409a", "e070c0"], "bands": [0.4, 0.72] }
+    "stem":   { "ramp": ["1e3d2c", "2d5a35", "44803e"], "bands": [0.36, 0.7] },
+    "leaf":   { "ramp": ["2d5a35", "44803e", "6aa84a", "9fcf62"], "bands": [0.3, 0.55, 0.82] },
+    "petal":  { "ramp": ["7a2c84", "b0409a", "e070c0", "f4ecea"], "bands": [0.3, 0.6, 0.86] },
+    "petalB": { "ramp": ["2c3070", "4250b0", "6a7fe0", "a8b8ff"], "bands": [0.3, 0.6, 0.86] },
+    "heart":  { "ramp": ["b8683f", "ff8a2a", "ffc23d", "ffe26b"], "bands": [0.3, 0.6, 0.86] },
+    "rose":   { "ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.3, 0.58, 0.84] }
   },
   "bones": {
     "root": { "at": [8, 23] },
     "hips": { "parent": "root", "at": [0, -5] },
-    "legL": { "parent": "hips", "at": [-2, 0] },
-    "legR": { "parent": "hips", "at": [2, 0] },
-    "body": { "parent": "hips", "at": [0, -5] },
+    "legL": { "parent": "hips", "at": [-1.6, 0] },
+    "legR": { "parent": "hips", "at": [1.6, 0] },
+    "body": { "parent": "hips", "at": [0, -4] },
     "head": { "parent": "body", "at": [0, -5.5] },
-    "armL": { "parent": "body", "at": [-4.5, -1.5] },
-    "armR": { "parent": "body", "at": [4.5, -1.5] }
+    "rose": { "parent": "head", "at": [1, -2.9] },
+    "armL": { "parent": "body", "at": [-3.6, -1.8] },
+    "armR": { "parent": "body", "at": [3.6, -1.8] }
   },
   "parts": [
-    {"name": "head0", "bone": "head", "shape": "poly", "pts": [[-3.36, -0.82], [-3.28, -1.38], [-2.94, -2.2], [-2.4, -2.9], [-1.7, -3.44], [-0.88, -3.78], [-0.0, -3.9], [0.88, -3.78], [1.7, -3.44], [1.77, -3.39]], "mat": "red", "z": 4, "profile": "flat", "shadow": true},
-    {"name": "head1", "bone": "head", "shape": "poly", "pts": [[-2.52, 1.76], [-2.94, 1.2], [-3.28, 0.38], [-3.4, -0.5], [-3.36, -0.82], [1.77, -3.39], [2.4, -2.9], [2.94, -2.2], [3.28, -1.38], [3.31, -1.16]], "mat": "yellow", "z": 4, "profile": "flat", "shadow": true},
-    {"name": "head2", "bone": "head", "shape": "poly", "pts": [[3.4, -0.5], [3.28, 0.38], [2.94, 1.2], [2.4, 1.9], [1.7, 2.44], [0.88, 2.78], [0.0, 2.9], [-0.88, 2.78], [-1.7, 2.44], [-2.4, 1.9], [-2.52, 1.76], [3.31, -1.16]], "mat": "green", "z": 4, "profile": "flat", "shadow": true},
-    {"name": "neck2", "bone": "body", "shape": "poly", "pts": [[-1, -3.5], [1, -3.5], [1.0, -2.5], [0.0, -2.0], [-1, -2]], "mat": "green", "z": 3, "profile": "flat", "shadow": false},
-    {"name": "neck3", "bone": "body", "shape": "poly", "pts": [[1.0, -2.5], [1, -2], [0.0, -2.0]], "mat": "teal", "z": 3, "profile": "flat", "shadow": false},
-    {"name": "torso2", "bone": "body", "shape": "poly", "pts": [[-2, -2.4], [0.8, -2.4], [-2.87, -0.57], [-3, -1.6]], "mat": "green", "z": 2, "profile": "flat", "shadow": false},
-    {"name": "torso3", "bone": "body", "shape": "poly", "pts": [[0.8, -2.4], [2, -2.4], [3, -1.6], [2.85, -0.42], [-2.69, 2.34], [-2.6, 1.5], [-2.87, -0.57]], "mat": "teal", "z": 2, "profile": "flat", "shadow": false},
-    {"name": "torso4", "bone": "body", "shape": "poly", "pts": [[2.85, -0.42], [2.6, 1.5], [2.72, 2.64], [-2.8, 5.4], [-3, 5.4], [-2.69, 2.34]], "mat": "blue", "z": 2, "profile": "flat", "shadow": false},
-    {"name": "torso5", "bone": "body", "shape": "poly", "pts": [[2.72, 2.64], [3, 5.4], [-2.8, 5.4]], "mat": "violet", "z": 2, "profile": "flat", "shadow": false},
-    {"name": "armL2", "bone": "armL", "shape": "poly", "pts": [[-1.4, 0.5], [-0.6, -0.3], [2.1, -0.3], [2.1, 0.7], [1.7, 0.9], [0.5, 0.9], [0.5, 1.5], [-1.4, 2.45]], "mat": "green", "z": 2.6, "profile": "flat", "shadow": true},
-    {"name": "armL3", "bone": "armL", "shape": "poly", "pts": [[2.1, 0.7], [2.1, 0.9], [1.7, 0.9], [0.5, 1.5], [0.5, 4.5], [-1.4, 4.5], [-1.4, 2.45]], "mat": "teal", "z": 2.6, "profile": "flat", "shadow": true},
-    {"name": "armR3", "bone": "armR", "shape": "poly", "pts": [[0.77, -0.13], [0.6, -0.3], [-2.1, -0.3], [-2.1, 0.9], [-1.3, 0.9]], "mat": "teal", "z": 2.6, "profile": "flat", "shadow": true},
-    {"name": "armR4", "bone": "armR", "shape": "poly", "pts": [[1.4, 0.5], [0.77, -0.13], [-1.3, 0.9], [-0.5, 0.9], [-0.5, 3.5], [1.4, 2.55]], "mat": "blue", "z": 2.6, "profile": "flat", "shadow": true},
-    {"name": "armR5", "bone": "armR", "shape": "poly", "pts": [[-0.5, 3.5], [-0.5, 4.5], [1.4, 4.5], [1.4, 2.55]], "mat": "violet", "z": 2.6, "profile": "flat", "shadow": true},
-    {"name": "handL3", "bone": "armL", "shape": "poly", "pts": [[-1.44, 5.47], [-1.45, 5.45], [-1.6, 4.9], [-1.45, 4.35], [-1.05, 3.95], [-0.5, 3.8], [0.05, 3.95], [0.45, 4.35], [0.49, 4.5]], "mat": "teal", "z": 2.7, "profile": "flat", "shadow": true},
-    {"name": "handL4", "bone": "armL", "shape": "poly", "pts": [[0.6, 4.9], [0.45, 5.45], [0.05, 5.85], [-0.5, 6.0], [-1.05, 5.85], [-1.44, 5.47], [0.49, 4.5]], "mat": "blue", "z": 2.7, "profile": "flat", "shadow": true},
-    {"name": "handR5", "bone": "armR", "shape": "poly", "pts": [[1.6, 4.9], [1.45, 5.45], [1.31, 5.6], [0.5, 6.0], [0.5, 6.0], [-0.05, 5.85], [-0.45, 5.45], [-0.6, 4.9], [-0.45, 4.35], [-0.05, 3.95], [0.5, 3.8], [1.05, 3.95], [1.45, 4.35]], "mat": "violet", "z": 2.7, "profile": "flat", "shadow": true},
-    {"name": "handR6", "bone": "armR", "shape": "poly", "pts": [[1.31, 5.6], [1.05, 5.85], [0.5, 6.0], [0.5, 6.0]], "mat": "red", "z": 2.7, "profile": "flat", "shadow": true},
-    {"name": "legL4", "bone": "legL", "shape": "poly", "pts": [[-1, -0.5], [1, -0.5], [1.0, -0.5], [-1.0, 0.5]], "mat": "blue", "z": 0, "profile": "flat", "shadow": false},
-    {"name": "legL5", "bone": "legL", "shape": "poly", "pts": [[1.0, -0.5], [1, -0.5], [1.0, 2.5], [-1.0, 3.5], [-1, 3.5], [-1.0, 0.5]], "mat": "violet", "z": 0, "profile": "flat", "shadow": false},
-    {"name": "legL6", "bone": "legL", "shape": "poly", "pts": [[1.0, 2.5], [1, 3.5], [-1, 3.5], [-1.0, 3.5]], "mat": "red", "z": 0, "profile": "flat", "shadow": false},
-    {"name": "legR5", "bone": "legR", "shape": "poly", "pts": [[-1, -0.5], [1, -0.5], [1.0, 0.5], [-1.0, 1.5]], "mat": "violet", "z": 0, "profile": "flat", "shadow": false},
-    {"name": "legR6", "bone": "legR", "shape": "poly", "pts": [[1.0, 0.5], [1, 3.5], [-1, 3.5], [-1.0, 1.5]], "mat": "red", "z": 0, "profile": "flat", "shadow": false},
-    {"name": "footL5", "bone": "legL", "shape": "poly", "pts": [[-1.5, 3], [0.0, 3.0], [-1.5, 3.75]], "mat": "violet", "z": 0.5, "profile": "flat", "shadow": false},
-    {"name": "footL6", "bone": "legL", "shape": "poly", "pts": [[0.0, 3.0], [1.5, 3], [1.5, 5], [-1.5, 5], [-1.5, 3.75]], "mat": "red", "z": 0.5, "profile": "flat", "shadow": false},
-    {"name": "footR6", "bone": "legR", "shape": "poly", "pts": [[-1.5, 3], [1.5, 3], [1.5, 3.25], [-1.5, 4.75]], "mat": "red", "z": 0.5, "profile": "flat", "shadow": false},
-    {"name": "footR7", "bone": "legR", "shape": "poly", "pts": [[1.5, 3.25], [1.5, 5], [-1.5, 5], [-1.5, 4.75]], "mat": "yellow", "z": 0.5, "profile": "flat", "shadow": false}
+    {"name": "legL", "bone": "legL", "shape": "rect", "c": [-0.6, -0.5], "r": [1.3, 4.6], "mat": "stem", "z": 0.2, "profile": "cyl"},
+    {"name": "legR", "bone": "legR", "shape": "rect", "c": [-0.6, -0.5], "r": [1.3, 4.6], "mat": "stem", "z": 0.2, "profile": "cyl"},
+    {"name": "footL", "bone": "legL", "shape": "poly", "pts": [[-2.4, 4.9], [-1.2, 3.6], [0.7, 3.7], [0.9, 5], [-2.2, 5.1]], "mat": "leaf", "z": 0.5},
+    {"name": "footR", "bone": "legR", "shape": "poly", "pts": [[-0.7, 3.7], [1.2, 3.6], [2.4, 4.9], [2.2, 5.1], [-0.9, 5]], "mat": "leaf", "z": 0.5},
+    {"name": "torso", "bone": "body", "shape": "poly", "pts": [[-3, -2.6], [3, -2.6], [3.4, 0.5], [2.6, 4.4], [0, 5.2], [-2.6, 4.4], [-3.4, 0.5]], "mat": "leaf", "z": 2},
+    {"name": "leafSkirtL", "bone": "body", "shape": "poly", "pts": [[-3.2, 2.6], [-0.6, 3.6], [-1.2, 5.6], [-3.9, 5.2]], "mat": "leaf", "z": 2.1},
+    {"name": "leafSkirtR", "bone": "body", "shape": "poly", "pts": [[0.6, 3.6], [3.2, 2.6], [3.9, 5.2], [1.2, 5.6]], "mat": "leaf", "z": 2.1},
+    {"name": "bloomChest", "bone": "body", "shape": "ellipse", "c": [-1, -0.6], "r": [1.8, 1.6], "mat": "petal", "z": 2.3},
+    {"name": "bloomHip", "bone": "body", "shape": "ellipse", "c": [1.5, 2.4], "r": [1.6, 1.4], "mat": "petalB", "z": 2.3},
+    {"name": "armL", "bone": "armL", "shape": "rect", "c": [-0.6, -0.4], "r": [1.3, 4.6], "mat": "stem", "z": 2.5, "profile": "cyl"},
+    {"name": "armR", "bone": "armR", "shape": "rect", "c": [-0.7, -0.4], "r": [1.3, 4.6], "mat": "stem", "z": 2.5, "profile": "cyl"},
+    {"name": "shoulderL", "bone": "armL", "shape": "poly", "pts": [[-1.6, 0.4], [-0.6, -1.4], [1.4, -1.2], [0.8, 0.8]], "mat": "leaf", "z": 2.6},
+    {"name": "shoulderR", "bone": "armR", "shape": "poly", "pts": [[-1.4, -1.2], [0.6, -1.4], [1.6, 0.4], [-0.8, 0.8]], "mat": "leaf", "z": 2.6},
+    {"name": "handL", "bone": "armL", "shape": "ellipse", "c": [0, 4.6], "r": [1.2, 1.1], "mat": "petalB", "z": 2.7},
+    {"name": "handR", "bone": "armR", "shape": "ellipse", "c": [0, 4.6], "r": [1.2, 1.1], "mat": "petal", "z": 2.7},
+    {"name": "petals", "bone": "head", "shape": "poly", "pts": [[-4.3, -1.6], [-3, -3.4], [-1.2, -4], [0.8, -4.1], [2.8, -3.5], [4.3, -1.8], [4.6, 0.6], [3.8, 2.8], [2, 4], [0, 4.4], [-2, 4], [-3.8, 2.8], [-4.6, 0.6]], "mat": "petal", "z": 4},
+    {"name": "face", "bone": "head", "shape": "ellipse", "c": [0, 0.3], "r": [2.9, 2.7], "mat": "heart", "z": 4.5},
+    {"name": "roseStem", "bone": "rose", "shape": "line", "pts": [[-0.6, 1.4], [0.4, -0.6]], "r": [1, 1], "mat": "stem", "z": 5, "shadow": false},
+    {"name": "roseLeaf", "bone": "rose", "shape": "poly", "pts": [[-0.4, 0.6], [-2.6, -0.4], [-1.4, 1.2]], "mat": "leaf", "z": 5.1, "shadow": false},
+    {"name": "roseBloom", "bone": "rose", "shape": "poly", "pts": [[-1.4, -2.2], [-0.6, -3.6], [0.8, -3.9], [2.2, -3.1], [2.6, -1.6], [1.6, -0.4], [-0.4, -0.4]], "mat": "rose", "z": 5.2, "shadow": false}
   ],
   "decals": [
-    { "name": "eyes",  "bone": "head", "at": [-2, -1], "rows": ["k..k"], "keys": { "k": "1a1422" } },
-        { "name": "core",  "bone": "body", "at": [-1, -2], "rows": [".w", "wW"], "keys": { "w": "f4ecea", "W": "ffffff" }, "emissive": ["w", "W"] }
+    {"name": "eyes", "bone": "head", "at": [-2, 0], "rows": ["k..k"], "keys": {"k": "1a1422"}},
+    {"name": "blink", "bone": "head", "at": [-2, 0], "rows": ["b..b"], "keys": {"b": "b8683f"}},
+    {"name": "mouth", "bone": "head", "at": [-1, 2], "rows": [".kk"], "keys": {"k": "5e2f24"}},
+    {"name": "roseSwirl", "bone": "rose", "at": [0, -3], "rows": ["s.", ".s"], "keys": {"s": "4a1712"}},
+    {"name": "chestHeart", "bone": "body", "at": [-1, -1], "rows": ["y"], "keys": {"y": "ffe26b"}, "emissive": ["y"]},
+    {"name": "hipHeart", "bone": "body", "at": [1, 2], "rows": ["y"], "keys": {"y": "ffc23d"}, "emissive": ["y"]},
+    {"name": "daisy", "bone": "body", "at": [-3, 2], "rows": [".w", "wy"], "keys": {"w": "f4ecea", "y": "ffc23d"}}
   ],
   "anims": {
     "idle": { "fps": 3, "frames": [
-      { },
-      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] } },
+      { "hideDecals": ["blink"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1], "rose": [1, 0] }, "hideDecals": ["blink"] },
       { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["eyes"] }
     ] },
     "walk": { "fps": 8, "frames": [
-      { "bones": { "legL": [0, -1], "armL": [0, 1], "armR": [0, -1] } },
-      { "bones": { "body": [0, -1] } },
-      { "bones": { "legR": [0, -1], "armR": [0, 1], "armL": [0, -1] } },
-      { "bones": { "body": [0, -1] } }
+      { "bones": { "legL": [0, -1], "armL": [0, 1], "armR": [0, -1], "rose": [-1, 0] }, "hideDecals": ["blink"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink"] },
+      { "bones": { "legR": [0, -1], "armR": [0, 1], "armL": [0, -1], "rose": [1, 0] }, "hideDecals": ["blink"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink"] }
     ] }
   }
 }

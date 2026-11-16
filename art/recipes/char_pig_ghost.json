@@ -1,145 +1,606 @@
 {
+  // Boar ghost form: the upright boar silhouette in spectral teal with glowing horns, shown for a few seconds after a lethal hit.
   "sprite": "char_pig_ghost",
-  "size": [24,24],
-  "origin": [12,23],
+  "size": [
+    24,
+    32
+  ],
+  "origin": [
+    12,
+    31
+  ],
   "seed": 1,
   "materials": {
-    "bristle": {"ramp":["0e0b14","10303c","17566a"],"bands":[0.34,0.66]},
-    "ivory": {"ramp":["3fc4c0","8ff0de","f4ecea"],"bands":[0.26,0.64]},
-    "teal": {
+    "fur": {
       "ramp": [
         "10303c",
+        "17566a",
         "1f8a96",
+        "3fc4c0"
+      ],
+      "bands": [
+        0.3,
+        0.56,
+        0.84
+      ]
+    },
+    "belly": {
+      "ramp": [
+        "1f8a96",
+        "3fc4c0",
         "8ff0de"
       ],
-      "bands": [0.34,0.66]
+      "bands": [
+        0.36,
+        0.7
+      ]
+    },
+    "bristle": {
+      "ramp": [
+        "0e0b14",
+        "10303c",
+        "17566a"
+      ],
+      "bands": [
+        0.36,
+        0.7
+      ]
+    },
+    "snout": {
+      "ramp": [
+        "3fc4c0",
+        "8ff0de",
+        "f4ecea"
+      ],
+      "bands": [
+        0.36,
+        0.72
+      ]
+    },
+    "hoof": {
+      "ramp": [
+        "0e0b14",
+        "10303c",
+        "17566a"
+      ],
+      "bands": [
+        0.4,
+        0.75
+      ]
+    },
+    "ivory": {
+      "ramp": [
+        "3fc4c0",
+        "8ff0de",
+        "f4ecea"
+      ],
+      "bands": [
+        0.3,
+        0.66
+      ]
+    },
+    "horn": {
+      "ramp": [
+        "17566a",
+        "3fc4c0",
+        "8ff0de",
+        "f4ecea"
+      ],
+      "bands": [
+        0.3,
+        0.58,
+        0.84
+      ],
+      "emissive": true
     }
   },
   "bones": {
     "root": {
-      "at": [12,23]
+      "at": [
+        12,
+        31
+      ]
     },
     "hips": {
       "parent": "root",
-      "at": [0,-6]
+      "at": [
+        0,
+        -6
+      ]
+    },
+    "legL": {
+      "parent": "hips",
+      "at": [
+        -2.6,
+        0
+      ]
+    },
+    "legR": {
+      "parent": "hips",
+      "at": [
+        2.6,
+        0
+      ]
     },
     "body": {
       "parent": "hips",
-      "at": [0,-4]
+      "at": [
+        0,
+        -5
+      ]
     },
     "head": {
       "parent": "body",
-      "at": [0,-1]
+      "at": [
+        0.5,
+        -6.5
+      ]
     },
-    "left": {
-      "parent": "hips",
-      "at": [-4,0]
-    },
-    "right": {
-      "parent": "hips",
-      "at": [3,0]
-    },
-    "handL": {
+    "armL": {
       "parent": "body",
-      "at": [-4,0]
+      "at": [
+        -5.2,
+        -2.2
+      ]
     },
-    "handR": {
+    "armR": {
       "parent": "body",
-      "at": [4,0]
+      "at": [
+        5.2,
+        -2.2
+      ]
     }
   },
   "parts": [
-    {"name":"bristled mane","bone":"body","shape":"poly","pts":[[-8,-2],[-7,-6],[-5,-5],[-4,-8],[-2,-6],[0,-8],[2,-6],[4,-5],[3,-1],[-6,1]],"mat":"bristle","z":2.5},
-    {"name":"near tusk","bone":"head","shape":"poly","pts":[[4,1],[6,3],[8.5,1],[8,4],[6,5.2],[4,4]],"mat":"ivory","z":6,"profile":"bevel"},
     {
-      "name": "body",
+      "name": "mane",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [
+          -6,
+          -1
+        ],
+        [
+          -7.4,
+          -4
+        ],
+        [
+          -5.8,
+          -4.6
+        ],
+        [
+          -6.6,
+          -7.4
+        ],
+        [
+          -4.6,
+          -6.6
+        ],
+        [
+          -4.4,
+          -9.4
+        ],
+        [
+          -2.6,
+          -7.6
+        ],
+        [
+          -1.6,
+          -9.6
+        ],
+        [
+          -0.4,
+          -7
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "mat": "bristle",
+      "z": 1
+    },
+    {
+      "name": "thighL",
+      "bone": "legL",
+      "shape": "rect",
+      "c": [
+        -1.7,
+        -1.6
+      ],
+      "r": [
+        3.4,
+        5
+      ],
+      "round": 1.2,
+      "mat": "fur",
+      "z": 0.3,
+      "profile": "cyl"
+    },
+    {
+      "name": "thighR",
+      "bone": "legR",
+      "shape": "rect",
+      "c": [
+        -1.7,
+        -1.6
+      ],
+      "r": [
+        3.4,
+        5
+      ],
+      "round": 1.2,
+      "mat": "fur",
+      "z": 0.3,
+      "profile": "cyl"
+    },
+    {
+      "name": "hoofL",
+      "bone": "legL",
+      "shape": "rect",
+      "c": [
+        -1.8,
+        3.6
+      ],
+      "r": [
+        3.6,
+        2.4
+      ],
+      "round": 0.6,
+      "mat": "hoof",
+      "z": 0.5
+    },
+    {
+      "name": "hoofR",
+      "bone": "legR",
+      "shape": "rect",
+      "c": [
+        -1.8,
+        3.6
+      ],
+      "r": [
+        3.6,
+        2.4
+      ],
+      "round": 0.6,
+      "mat": "hoof",
+      "z": 0.5
+    },
+    {
+      "name": "torso",
       "bone": "body",
       "shape": "ellipse",
-      "c": [-2,0],
-      "r": [6.8,5.4],
-      "mat": "teal",
+      "c": [
+        0,
+        0.6
+      ],
+      "r": [
+        5.6,
+        5.6
+      ],
+      "mat": "fur",
       "z": 2
+    },
+    {
+      "name": "belly",
+      "bone": "body",
+      "shape": "ellipse",
+      "c": [
+        0.9,
+        1.9
+      ],
+      "r": [
+        3.2,
+        3.6
+      ],
+      "mat": "belly",
+      "z": 2.1
+    },
+    {
+      "name": "armL",
+      "bone": "armL",
+      "shape": "rect",
+      "c": [
+        -1.3,
+        -0.8
+      ],
+      "r": [
+        2.6,
+        5.6
+      ],
+      "round": 1,
+      "mat": "fur",
+      "z": 1.8,
+      "profile": "cyl"
+    },
+    {
+      "name": "armR",
+      "bone": "armR",
+      "shape": "rect",
+      "c": [
+        -1.3,
+        -0.8
+      ],
+      "r": [
+        2.6,
+        5.6
+      ],
+      "round": 1,
+      "mat": "fur",
+      "z": 2.6,
+      "profile": "cyl"
+    },
+    {
+      "name": "handL",
+      "bone": "armL",
+      "shape": "rect",
+      "c": [
+        -1.4,
+        4.3
+      ],
+      "r": [
+        2.8,
+        2
+      ],
+      "round": 0.6,
+      "mat": "hoof",
+      "z": 1.9
+    },
+    {
+      "name": "handR",
+      "bone": "armR",
+      "shape": "rect",
+      "c": [
+        -1.4,
+        4.3
+      ],
+      "r": [
+        2.8,
+        2
+      ],
+      "round": 0.6,
+      "mat": "hoof",
+      "z": 2.7
+    },
+    {
+      "name": "earL",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [
+          -4.4,
+          -1
+        ],
+        [
+          -5.8,
+          -2.6
+        ],
+        [
+          -3.6,
+          -2.8
+        ]
+      ],
+      "mat": "bristle",
+      "z": 3.9
+    },
+    {
+      "name": "earR",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [
+          3,
+          -2.6
+        ],
+        [
+          4.8,
+          -3
+        ],
+        [
+          4.4,
+          -1
+        ]
+      ],
+      "mat": "bristle",
+      "z": 3.9
     },
     {
       "name": "head",
       "bone": "head",
       "shape": "ellipse",
-      "c": [2,0.4],
-      "r": [4.7,4.3],
-      "mat": "teal",
-      "z": 3
-    },
-    {
-      "name": "ear",
-      "bone": "head",
-      "shape": "poly",
-      "pts": [
-        [-1,-1],
-        [-1,-6],
-        [2,-4],
-        [2,-2]
+      "c": [
+        0,
+        0
       ],
-      "mat": "teal",
+      "r": [
+        4.4,
+        3.9
+      ],
+      "mat": "fur",
       "z": 4
     },
     {
       "name": "snout",
       "bone": "head",
       "shape": "ellipse",
-      "c": [5.6,1.1],
-      "r": [3.2,2.4],
-      "mat": "teal",
+      "c": [
+        2.4,
+        2.1
+      ],
+      "r": [
+        2.6,
+        1.8
+      ],
+      "mat": "snout",
+      "z": 4.5
+    },
+    {
+      "name": "tuskL",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [
+          -1.4,
+          2.6
+        ],
+        [
+          -2.6,
+          0.6
+        ],
+        [
+          -1.8,
+          3.6
+        ]
+      ],
+      "mat": "ivory",
+      "z": 4.6,
+      "shadow": false
+    },
+    {
+      "name": "tuskR",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [
+          4.2,
+          2.6
+        ],
+        [
+          5.6,
+          0.6
+        ],
+        [
+          5,
+          3.6
+        ]
+      ],
+      "mat": "ivory",
+      "z": 4.6,
+      "shadow": false
+    },
+    {
+      "name": "hornL",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [
+          -3.6,
+          -1.6
+        ],
+        [
+          -5.8,
+          -4
+        ],
+        [
+          -6.6,
+          -8.4
+        ],
+        [
+          -4.6,
+          -7.2
+        ],
+        [
+          -3.8,
+          -5.2
+        ],
+        [
+          -1.8,
+          -3.6
+        ]
+      ],
+      "mat": "horn",
       "z": 5
     },
     {
-      "name": "tail",
-      "bone": "body",
+      "name": "hornR",
+      "bone": "head",
       "shape": "poly",
       "pts": [
-        [-6,0],
-        [-9,-2],
-        [-9,-4],
-        [-7,-4],
-        [-7,-2],
-        [-5,-1]
+        [
+          1.4,
+          -3.4
+        ],
+        [
+          3.2,
+          -5.4
+        ],
+        [
+          4.4,
+          -8.4
+        ],
+        [
+          4.8,
+          -5
+        ],
+        [
+          3.6,
+          -2.4
+        ]
       ],
-      "mat": "teal",
-      "z": 2
-    },
-    {
-      "name": "spectralTail",
-      "bone": "body",
-      "shape": "poly",
-      "pts": [
-        [-7,1],
-        [2,2],
-        [1,5],
-        [-3,5],
-        [-6,7],
-        [-9,7],
-        [-6,4]
-      ],
-      "mat": "teal",
-      "z": 2
+      "mat": "horn",
+      "z": 5
     }
   ],
   "decals": [
     {
-      "name": "face",
+      "name": "eyes",
       "bone": "head",
-      "at": [2,-1],
+      "at": [
+        -2,
+        -1
+      ],
       "rows": [
-        "k.....",
-        "......",
-        ".....n"
+        "g..g"
       ],
       "keys": {
-        "k": "8ff0de",
-        "n": "10303c"
+        "g": "f4ecea"
       },
       "emissive": [
-        "k"
+        "g"
       ]
+    },
+    {
+      "name": "blink",
+      "bone": "head",
+      "at": [
+        -2,
+        -1
+      ],
+      "rows": [
+        "k..k"
+      ],
+      "keys": {
+        "k": "10303c"
+      }
+    },
+    {
+      "name": "brow",
+      "bone": "head",
+      "at": [
+        -2,
+        -2
+      ],
+      "rows": [
+        "kk.kk"
+      ],
+      "keys": {
+        "k": "1a1422"
+      }
+    },
+    {
+      "name": "nostrils",
+      "bone": "head",
+      "at": [
+        2,
+        2
+      ],
+      "rows": [
+        "k.k"
+      ],
+      "keys": {
+        "k": "1f8a96"
+      }
     }
   ],
   "anims": {
@@ -147,21 +608,43 @@
       "fps": 3,
       "frames": [
         {
-          "bones": {},
-          "hideDecals": []
+          "hideDecals": [
+            "blink"
+          ]
         },
         {
           "bones": {
-            "hips": [0,-1]
+            "body": [
+              0,
+              1
+            ],
+            "armL": [
+              0,
+              -1
+            ],
+            "armR": [
+              0,
+              -1
+            ]
           },
-          "hideDecals": []
+          "hideDecals": [
+            "blink"
+          ]
         },
         {
           "bones": {
-            "hips": [0,-2],
-            "head": [0,1]
+            "body": [
+              0,
+              1
+            ],
+            "head": [
+              0,
+              1
+            ]
           },
-          "hideDecals": []
+          "hideDecals": [
+            "eyes"
+          ]
         }
       ]
     },
@@ -170,58 +653,63 @@
       "frames": [
         {
           "bones": {
-            "hips": [-1,-1]
+            "legL": [
+              0,
+              -1
+            ],
+            "armL": [
+              0,
+              1
+            ],
+            "armR": [
+              0,
+              -1
+            ]
           },
-          "hideDecals": []
+          "hideDecals": [
+            "blink"
+          ]
         },
         {
           "bones": {
-            "hips": [0,-2]
+            "body": [
+              0,
+              -1
+            ]
           },
-          "hideDecals": []
+          "hideDecals": [
+            "blink"
+          ]
         },
         {
           "bones": {
-            "hips": [1,-2],
-            "head": [-1,1]
+            "legR": [
+              0,
+              -1
+            ],
+            "armR": [
+              0,
+              1
+            ],
+            "armL": [
+              0,
+              -1
+            ]
           },
-          "hideDecals": []
+          "hideDecals": [
+            "blink"
+          ]
         },
         {
           "bones": {
-            "hips": [0,-1]
+            "body": [
+              0,
+              -1
+            ]
           },
-          "hideDecals": []
-        }
-      ]
-    },
-    "attack": {
-      "fps": 13,
-      "loop": false,
-      "frames": [
-        {
-          "bones": {
-            "head": [-1,1],
-            "body": [-1,0]
-          },
-          "hideDecals": []
-        },
-        {
-          "bones": {
-            "head": [1,0],
-            "body": [1,-1]
-          },
-          "hideDecals": []
-        },
-        {
-          "bones": {
-            "head": [1,1]
-          },
-          "hideDecals": []
-        },
-        {
-          "bones": {},
-          "hideDecals": []
+          "hideDecals": [
+            "blink"
+          ]
         }
       ]
     }
