@@ -3,8 +3,8 @@
   "size": [96, 96],
   "origin": [48, 86],
   "seed": 1,
-  "unify": 0.16,
-  "materials": {"case": {"ramp": ["3b1f1d", "5e2f24", "8a4630", "b8683f"], "bands": [0.22, 0.5, 0.74]}, "brass": {"ramp": ["5e2f24", "b8683f", "ffc23d", "ffe26b"], "bands": [0.22, 0.5, 0.74]}, "face": {"ramp": ["574b63", "a596ab", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["5e2f24", "b8683f", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "cavity": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "tentacle": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "6b5f8e"], "bands": [0.22, 0.5, 0.74]}, "glow": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74], "emissive": true}},
+  "unify": 0.24,
+  "materials": {"case": {"ramp": ["3b1f1d", "3b1f1d", "5e2f24", "b8683f"], "bands": [0.285, 0.565, 0.805], "dither": 0.025}, "brass": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "ffe26b"], "bands": [0.285, 0.565, 0.805]}, "face": {"ramp": ["3d3447", "7a6c85", "968bb4", "f4ecea"], "bands": [0.32, 0.6, 0.84]}, "skin": {"ramp": ["3b1f1d", "8a4630", "b8683f", "f0c896"], "bands": [0.32, 0.6, 0.84], "dither": 0.025}, "cavity": {"ramp": ["0e0b14", "0e0b14", "1a1422", "574b63"], "bands": [0.285, 0.565, 0.805]}, "tentacle": {"ramp": ["1b1d3f", "1b1d3f", "2a2340", "6b5f8e"], "bands": [0.285, 0.565, 0.805]}, "glow": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74], "emissive": true}},
   "bones": {"root": {"at": [48, 86]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "tentacle 1 segment 1", "bone": "left", "shape": "line", "mat": "tentacle", "z": 1.0, "pts": [[-13, -24], [-23, -15]], "r": [5.0], "shadow": false},

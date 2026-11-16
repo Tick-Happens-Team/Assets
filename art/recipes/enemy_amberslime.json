@@ -3,8 +3,8 @@
   "size": [24, 24],
   "origin": [12, 20],
   "seed": 1,
-  "unify": 0.16,
-  "materials": {"gel": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74], "variants": [["2a1433", "4a1f5c", "7a2c84", "e070c0"]]}, "core": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "edge": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "shine": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}},
+  "unify": 0.24,
+  "materials": {"gel": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "fff3a6"], "bands": [0.285, 0.565, 0.805], "variants": [["2a1433", "4a1f5c", "7a2c84", "e070c0"]]}, "core": {"ramp": ["3b1f1d", "8a1f17", "f2561d", "fff3a6"], "bands": [0.285, 0.565, 0.805]}, "edge": {"ramp": ["3b1f1d", "5e2f24", "b8683f", "f0c896"], "bands": [0.285, 0.565, 0.805]}, "shine": {"ramp": ["2b2433", "574b63", "968bb4", "f4ecea"], "bands": [0.285, 0.565, 0.805]}},
   "bones": {"root": {"at": [12, 20]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "weighted jelly body", "bone": "body", "shape": "poly", "mat": "gel", "z": 2, "pts": [[-8.73, -1.09], [-7.09, -3.82], [-6.55, -7.64], [-3.82, -10.91], [-0.55, -12.55], [2.73, -11.45], [5.45, -8.73], [7.09, -4.91], [9.27, -1.09], [7.09, 0.0], [3.27, -0.55], [-1.64, 0.55], [-6.55, 0.0]], "profile": "bevel", "shadow": true},

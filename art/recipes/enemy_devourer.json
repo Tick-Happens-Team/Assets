@@ -3,8 +3,8 @@
   "size": [96, 96],
   "origin": [48, 82],
   "seed": 1,
-  "unify": 0.16,
-  "materials": {"hide": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "flesh": {"ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.22, 0.5, 0.74]}, "fang": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "void": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "eye": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "innerfang": {"ramp": ["5e2f24", "8a4630", "b8683f", "d99a63"], "bands": [0.22, 0.5, 0.74]}},
+  "unify": 0.24,
+  "materials": {"hide": {"ramp": ["2a1433", "2a1433", "4a1f5c", "b0409a"], "bands": [0.32, 0.6, 0.84], "dither": 0.025}, "flesh": {"ramp": ["3b1f1d", "4a1712", "8a1f17", "f2561d"], "bands": [0.32, 0.6, 0.84]}, "fang": {"ramp": ["2b2433", "574b63", "968bb4", "f4ecea"], "bands": [0.32, 0.6, 0.84]}, "void": {"ramp": ["0e0b14", "0e0b14", "1a1422", "574b63"], "bands": [0.285, 0.565, 0.805]}, "eye": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "innerfang": {"ramp": ["3b1f1d", "5e2f24", "8a4630", "d99a63"], "bands": [0.285, 0.565, 0.805]}},
   "bones": {"root": {"at": [48, 82]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}, "jaw": {"parent": "body", "at": [0, -32]}},
   "parts": [
     {"name": "left supporting foot", "bone": "left", "shape": "ellipse", "mat": "hide", "z": 1, "c": [-21.82, -4.36], "r": [13.09, 6.55]},
