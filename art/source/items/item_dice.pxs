@@ -1,0 +1,27 @@
+# Ivory die seen at an angle, black pips. 16x16 item icon.
+sprite item_dice
+size 16 16
+origin 8 15
+key o 1a1422
+key e a596ab
+key f d4c6cf
+key g f4ecea
+key w ffffff
+frame idle
+....oooooooooo..
+...owwwwwwwwweo.
+..owwwwwowwweeo.
+.owwwwwwwwweeeo.
+.owggggggggeeeo.
+.ogffffffffeeeo.
+.ogfofffoffeoeo.
+.ogffffffffeeeo.
+.ogfffoffffeeeo.
+.ogffffffffeeo..
+.ogfofffoffeeo..
+.ogffffffffeo...
+.ogffffffffeo...
+.ogeeeeeeeeeo...
+..oooooooooo....
+................
+end

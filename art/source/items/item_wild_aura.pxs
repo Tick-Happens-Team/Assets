@@ -1,0 +1,28 @@
+# Swirling green aura ring with sparks. 16x16 item icon.
+sprite item_wild_aura
+size 16 16
+origin 8 15
+key o 1a1422
+key j 2d5a35
+key l 44803e
+key m 6aa84a
+key n 9fcf62
+key p d4ec8c
+frame idle
+................
+......oooo...o..
+....oonmmmooopo.
+...onmnnllmmoo..
+..onnnjjjjllmo..
+..omnjoooomljo..
+.onnjoooooomlmo.
+.omnjooppoomljo.
+.omljooppoomnjo.
+.omljoooooomnjo.
+..omlmoooonnjo..
+..omllmmmmnnjo..
+..oomjllnnjjo...
+.opooomjjjoo....
+..o...oooo......
+................
+end

@@ -1,0 +1,29 @@
+# Wedge of cheese with blue mould. 16x16 item icon.
+sprite item_blue_cheese
+size 16 16
+origin 8 15
+key o 1a1422
+key E b8683f
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+key I 2c3070
+key J 4250b0
+frame idle
+................
+................
+................
+................
+............oo..
+..........oozyo.
+........oozyYJo.
+......oozyYYYEo.
+....oozyYYJYYEo.
+..oozyYYYYIYYEo.
+.ozyYYJYYYYYYEo.
+ozYYYYYYYJYYJEo.
+oyEEEEEEEEEEEEEo
+.oEEEEEEEEEEEEEo
+..ooooooooooooo.
+................
+end

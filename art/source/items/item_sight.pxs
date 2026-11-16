@@ -1,0 +1,31 @@
+# Scope lens with a red crosshair. 16x16 item icon.
+sprite item_sight
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key b 3d3447
+key c 574b63
+key d 7a6c85
+key R c9281f
+key O ff8a2a
+key I 2c3070
+key K 6a7fe0
+frame idle
+................
+.....oooooo.....
+...oodcccccoo...
+..odcbIRRIbcco..
+..ocIKIRRIIIao..
+.odbKIIRRIIIbco.
+.ocIIIIRRIIIIao.
+.ocRRRROORRRRao.
+.ocRRRROORRRRao.
+.ocIIIIRRIIIIao.
+.ocbIIIRRIIIbao.
+..ocIIIRRIIIao..
+..ocabIRRIbaao..
+...oocaaaaaoo...
+.....oooooo.....
+................
+end

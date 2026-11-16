@@ -1,0 +1,29 @@
+# Red folding hand fan with dark ribs and a gold rivet. 16x16 item icon.
+sprite item_fan
+size 16 16
+origin 8 15
+key o 1a1422
+key E b8683f
+key s 8a1f17
+key R c9281f
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+frame idle
+................
+................
+................
+................
+.....oooooo.....
+....oYYYYYYo....
+...oYYRsRRYYo...
+..oYRsRsRRsRYo..
+.oYRRsRsRRsRRYo.
+.oYsRRssssRRsYo.
+oYRRssssssssRRYo
+oYRRRssssssRRRYo
+oYssssszysssssYo
+.ooooooyEoooooo.
+......oyEo......
+.......oo.......
+end
