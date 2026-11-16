@@ -1,0 +1,32 @@
+# Flamethrower nozzle spitting fire. 16x16 item icon.
+sprite item_flamethrower
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key b 3d3447
+key c 574b63
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key S f2561d
+key O ff8a2a
+key y ffe26b
+frame idle
+................
+................
+................
+................
+.............o..
+............oSo.
+...........oSSo.
+.ooooooo..oSOSSo
+ofeeeeeeooSOOSSo
+oeddddddcOOyOSSo
+oedddddcaoyOOSSo
+oecccccco.oSOSSo
+.odccooo...oSSo.
+.ocbao......oSo.
+.ocaao.......o..
+..ooo...........
+end

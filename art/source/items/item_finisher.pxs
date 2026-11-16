@@ -1,0 +1,28 @@
+# Bone-white skull. 16x16 item icon.
+sprite item_finisher
+size 16 16
+origin 8 15
+key k 0e0b14
+key o 1a1422
+key e a596ab
+key f d4c6cf
+key g f4ecea
+key w ffffff
+frame idle
+................
+.....oooooo.....
+...oowgggggoo...
+..owgffffffggo..
+..ogffffffffeo..
+.owffffffffffgo.
+.ogffffffffffeo.
+.ogfkkkffkkkfeo.
+.ogfkkkffkkkfeo.
+..ogkkkffkkkeo..
+..ogeffooffeeo..
+...oowgggggoo...
+....ogffffeo....
+....ogefefeo....
+....ogeeeeeo....
+.....oooooo.....
+end

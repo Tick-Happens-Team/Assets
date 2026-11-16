@@ -1,0 +1,27 @@
+# Pink whoopee cushion with a little nozzle. 16x16 item icon.
+sprite item_whoopee_cushion
+size 16 16
+origin 8 15
+key o 1a1422
+key N 4a1f5c
+key P 7a2c84
+key Q b0409a
+key T e070c0
+frame idle
+................
+................
+................
+.....ooooo......
+...ooTQQQQooooo.
+..oTQPPPPPQQPPTo
+.oTPTTTTPPPPPPPo
+.oQPTTTTPPPPPPPo
+.oQPTTTTPPPPNoo.
+.oQPPPPPPPPPNo..
+.oQPPPPPPPPPNo..
+.oQPPPPPPPPPNo..
+..oQNPPPPPNNo...
+...ooQNNNNoo....
+.....ooooo......
+................
+end

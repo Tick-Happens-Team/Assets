@@ -1,0 +1,31 @@
+# Yellow glove crackling with lightning. 16x16 item icon.
+sprite item_electric_gloves
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key c 574b63
+key d 7a6c85
+key E b8683f
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+key L a8b8ff
+frame idle
+............oo..
+....oooooo.oLLo.
+...ozyzyzyooLo..
+...oyEyEyEzyLo..
+...oyEyEyEyLLo..
+...oyEyEyEyELLo.
+.oooyEyEyEyEoLo.
+ozyoyYYYYYEooLo.
+oyYyyYYYYYEooLo.
+.oyYyYYYYYEoLo..
+..oyEYYYYYEoo...
+...oyYYYYYEo....
+...oyEEEEEEo....
+...odcccccco....
+...ocaaaaaao....
+....ooooooo.....
+end
