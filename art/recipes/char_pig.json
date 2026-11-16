@@ -12,12 +12,13 @@
       ],
       "bands": [0.34,0.66]
     },
-    "horn": {"ramp":["4a1712","8a1f17","f2561d","ff8a2a"],"bands":[0.21,0.5,0.76],"emissive":true},
-    "pink": {
+    "bristle": {"ramp":["1a1422","3b1f1d","5e2f24"],"bands":[0.34,0.66]},
+    "ivory": {"ramp":["a596ab","d4c6cf","f4ecea"],"bands":[0.26,0.64]},
+    "fur": {
       "ramp": [
-        "4a1f5c",
-        "b0409a",
-        "e070c0"
+        "3b1f1d",
+        "5e2f24",
+        "b8683f"
       ],
       "bands": [0.34,0.66]
     }
@@ -56,8 +57,8 @@
     }
   },
   "parts": [
-    {"name":"rear horn","bone":"head","shape":"poly","pts":[[0,-2],[-1,-5],[-2,-8],[1,-7],[3,-3]],"mat":"horn","z":3.5,"profile":"bevel"},
-    {"name":"front horn","bone":"head","shape":"poly","pts":[[3,-3],[4,-6],[6,-9],[7,-6],[6,-3]],"mat":"horn","z":4.3,"profile":"bevel"},
+    {"name":"bristled mane","bone":"body","shape":"poly","pts":[[-8,-2],[-7,-6],[-5,-5],[-4,-8],[-2,-6],[0,-8],[2,-6],[4,-5],[3,-1],[-6,1]],"mat":"bristle","z":2.5},
+    {"name":"near tusk","bone":"head","shape":"poly","pts":[[4,1],[6,3],[8.5,1],[8,4],[6,5.2],[4,4]],"mat":"ivory","z":6,"profile":"bevel"},
     {
       "name": "rearFoot",
       "bone": "left",
@@ -82,18 +83,18 @@
       "name": "body",
       "bone": "body",
       "shape": "ellipse",
-      "c": [-2,1],
-      "r": [6.2,4.9],
-      "mat": "pink",
+      "c": [-2,0],
+      "r": [6.8,5.4],
+      "mat": "fur",
       "z": 2
     },
     {
       "name": "head",
       "bone": "head",
       "shape": "ellipse",
-      "c": [3,0.3],
-      "r": [4.4,4],
-      "mat": "pink",
+      "c": [2,0.4],
+      "r": [4.7,4.3],
+      "mat": "fur",
       "z": 3
     },
     {
@@ -106,16 +107,16 @@
         [2,-4],
         [2,-2]
       ],
-      "mat": "pink",
+      "mat": "bristle",
       "z": 4
     },
     {
       "name": "snout",
       "bone": "head",
       "shape": "ellipse",
-      "c": [6,1.4],
-      "r": [3,2.4],
-      "mat": "pink",
+      "c": [5.6,1.1],
+      "r": [3.2,2.4],
+      "mat": "rust",
       "z": 5
     },
     {
@@ -130,7 +131,7 @@
         [-7,-2],
         [-5,-1]
       ],
-      "mat": "pink",
+      "mat": "bristle",
       "z": 2
     }
   ],
@@ -138,13 +139,15 @@
     {
       "name": "face",
       "bone": "head",
-      "at": [3,0],
+      "at": [2,-1],
       "rows": [
-        "k....",
-        "..k.k"
+        "gk....",
+        "......",
+        ".....k"
       ],
       "keys": {
-        "k": "4a1f5c"
+        "g": "ffc23d",
+        "k": "1a1422"
       },
       "emissive": []
     }
