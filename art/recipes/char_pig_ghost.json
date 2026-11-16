@@ -4,6 +4,8 @@
   "origin": [12,23],
   "seed": 1,
   "materials": {
+    "bristle": {"ramp":["0e0b14","10303c","17566a"],"bands":[0.34,0.66]},
+    "ivory": {"ramp":["3fc4c0","8ff0de","f4ecea"],"bands":[0.26,0.64]},
     "teal": {
       "ramp": [
         "10303c",
@@ -47,12 +49,14 @@
     }
   },
   "parts": [
+    {"name":"bristled mane","bone":"body","shape":"poly","pts":[[-8,-2],[-7,-6],[-5,-5],[-4,-8],[-2,-6],[0,-8],[2,-6],[4,-5],[3,-1],[-6,1]],"mat":"bristle","z":2.5},
+    {"name":"near tusk","bone":"head","shape":"poly","pts":[[4,1],[6,3],[8.5,1],[8,4],[6,5.2],[4,4]],"mat":"ivory","z":6,"profile":"bevel"},
     {
       "name": "body",
       "bone": "body",
       "shape": "ellipse",
-      "c": [-2,1],
-      "r": [6.2,4.9],
+      "c": [-2,0],
+      "r": [6.8,5.4],
       "mat": "teal",
       "z": 2
     },
@@ -60,8 +64,8 @@
       "name": "head",
       "bone": "head",
       "shape": "ellipse",
-      "c": [3,0.3],
-      "r": [4.4,4],
+      "c": [2,0.4],
+      "r": [4.7,4.3],
       "mat": "teal",
       "z": 3
     },
@@ -82,8 +86,8 @@
       "name": "snout",
       "bone": "head",
       "shape": "ellipse",
-      "c": [6,1.4],
-      "r": [3,2.4],
+      "c": [5.6,1.1],
+      "r": [3.2,2.4],
       "mat": "teal",
       "z": 5
     },
@@ -123,13 +127,15 @@
     {
       "name": "face",
       "bone": "head",
-      "at": [3,0],
+      "at": [2,-1],
       "rows": [
-        "k....",
-        "..k.k"
+        "k.....",
+        "......",
+        ".....n"
       ],
       "keys": {
-        "k": "8ff0de"
+        "k": "8ff0de",
+        "n": "10303c"
       },
       "emissive": [
         "k"
