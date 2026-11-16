@@ -1,0 +1,27 @@
+# Golden six-pointed star. 16x16 item icon.
+sprite item_star_of_david
+size 16 16
+origin 8 15
+key o 1a1422
+key E b8683f
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+frame idle
+.......oo.......
+......ozyo......
+......oyEo......
+.ooooozYYyooooo.
+ozyyyyYEEYyyyyyo
+.oyEoyEooyEoyEo.
+.oyYyEo..oyyYEo.
+..oyYEo..oyYEo..
+..oyYEo..oyYEo..
+.ozYEEo..oyEYyo.
+.oyEoyyoozEoyEo.
+ozEEyEYyyYEyEEyo
+.oooooyYYEooooo.
+......oyEo......
+......oyEo......
+.......oo.......
+end

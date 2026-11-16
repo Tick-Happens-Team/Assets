@@ -1,0 +1,31 @@
+# Crimson tome with a golden inverted star. 16x16 item icon.
+sprite item_satanic_bible
+size 16 16
+origin 8 15
+key o 1a1422
+key e a596ab
+key F d99a63
+key G f0c896
+key s 8a1f17
+key R c9281f
+key S f2561d
+key Y ffc23d
+key y ffe26b
+frame idle
+..oooooooooo....
+.ossSSSSSSSSoo..
+.ossRRRRRRRsGGo.
+.ossRRRRRRRsFeo.
+.ossRRRRRRRsFeo.
+.ossRYRRRYRsFeo.
+.ossRRRYRRRsFeo.
+.ossRRYyYRRsFeo.
+.ossRYRYRYRsFeo.
+.ossRRRRRRRsFeo.
+.ossRRRYRRRsFeo.
+.ossRRRRRRRsFeo.
+.ossRRRRRRRsFeo.
+.ossssssssssFeo.
+..ooGeeeeeeeeeo.
+....oooooooooo..
+end

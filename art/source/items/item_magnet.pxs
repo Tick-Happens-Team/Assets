@@ -1,0 +1,31 @@
+# Red horseshoe magnet with steel tips. 16x16 item icon.
+sprite item_magnet
+size 16 16
+origin 8 15
+key o 1a1422
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key g f4ecea
+key s 8a1f17
+key R c9281f
+key S f2561d
+key O ff8a2a
+frame idle
+......oooo......
+....ooOSSSoo....
+...oOSRRRRSSo...
+..oORRRRRRRRSo..
+.oORRRssssRRRSo.
+.oSRRsooooSRRso.
+.oSRRso..oSRRso.
+oOOSSSo...oOSSSo
+.oSRRso...oSRRso
+.oSRRso...oSRRso
+.oSRRso...oSRRso
+.oSssso...oSssso
+.ogfffo...ogfffo
+.ofeedo...ofeedo
+.ofdddo...ofdddo
+..oooo.....oooo.
+end

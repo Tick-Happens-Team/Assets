@@ -2467,11 +2467,11 @@
       ],
       "frames": [
         [
-          280,
+          688,
           725
         ],
         [
-          297,
+          705,
           725
         ]
       ],
@@ -4003,6 +4003,438 @@
         }
       }
     },
+    "item_archmage_cloak": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          178,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_bait": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          195,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_broken_clock": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          212,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fb_ring": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          229,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fork": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          246,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fpv_drone": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          263,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_galactic_rifle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          280,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_garden_gnome": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          297,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_garlic": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          314,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_grandmas_compote": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          331,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_hookah": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          348,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_hyena_tooth": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          365,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_laser": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          382,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_magnet": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          399,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_motivation_mask": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          416,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_needle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          433,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_nettle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          450,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_phantom_mask": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          467,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_poor_mans_shield": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          484,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_satanic_bible": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          501,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_star_of_david": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          518,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_vampire_hood": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          535,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_welding_mask": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          552,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_wooden_stick": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          569,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
     "pickup_xpgem": {
       "w": 8,
       "h": 8,
@@ -4012,11 +4444,11 @@
       ],
       "frames": [
         [
-          314,
+          722,
           725
         ],
         [
-          323,
+          731,
           725
         ]
       ],
@@ -4148,19 +4580,19 @@
       ],
       "frames": [
         [
-          178,
+          586,
           725
         ],
         [
-          195,
+          603,
           725
         ],
         [
-          212,
+          620,
           725
         ],
         [
-          229,
+          637,
           725
         ]
       ],
@@ -4181,11 +4613,11 @@
       ],
       "frames": [
         [
-          246,
+          654,
           725
         ],
         [
-          263,
+          671,
           725
         ]
       ],

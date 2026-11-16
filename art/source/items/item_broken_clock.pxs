@@ -1,0 +1,31 @@
+# Cracked gold pocket watch. 16x16 item icon.
+sprite item_broken_clock
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key e a596ab
+key E b8683f
+key F d99a63
+key G f0c896
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+frame idle
+.......oo.......
+......ozyo......
+.....ooyEoo.....
+...oozyyyyyoo...
+..ozyYzGGGYyyo..
+..oyzoFaaFGGEo..
+.ozYGooaaFFeYyo.
+.oyzFFoaaFFFGEo.
+.oyGFFooaaaFeEo.
+.oyGFFoFoaaFeEo.
+.oyGFFoFFoFFeEo.
+.oyYGFoFFooeYEo.
+..oyGeFFFFooEo..
+..oyEYGeeeYEEo..
+...ooyEEEEEoo...
+.....oooooo.....
+end

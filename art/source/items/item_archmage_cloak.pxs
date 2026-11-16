@@ -1,0 +1,30 @@
+# Deep blue cloak with gold trim, clasp and stars. 16x16 item icon.
+sprite item_archmage_cloak
+size 16 16
+origin 8 15
+key o 1a1422
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+key I 2c3070
+key J 4250b0
+key K 6a7fe0
+key L a8b8ff
+frame idle
+.....oooooo.....
+....oLKKKKKo....
+....ozyyyyyyo...
+...oLJJYYJJKo...
+...oKJJIIJJIo...
+...oKJJIIJJIo...
+...oKJJIIJyIo...
+..oLJJJIIJJJKo..
+..oKJyJIIJJJIo..
+..oKJJJIIJJJIo..
+.oLJJJJIIJJyJKo.
+.oKJJJJIIJJJJIo.
+.oKJyJJIIJJJJIo.
+oLJJJJJIIJJJJJKo
+oKzyyyyyyyyyyyyo
+.oooooooooooooo.
+end

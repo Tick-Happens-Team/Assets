@@ -1,0 +1,28 @@
+# Fierce red war mask with gold brows. 16x16 item icon.
+sprite item_motivation_mask
+size 16 16
+origin 8 15
+key o 1a1422
+key s 8a1f17
+key R c9281f
+key S f2561d
+key O ff8a2a
+key Y ffc23d
+frame idle
+......oooo......
+....ooOSSSoo....
+...oOSRRRRSSo...
+..oORRRRRRRRSo..
+.oOYYRRRRRRYYSo.
+.oSRRYYYYYYRRso.
+.oSRoooRRoooRso.
+.oSRoooRRoooRso.
+.oSRRRRRRRRRRso.
+.oSRRRRssRRRRso.
+.oSRRRRRRRRRRso.
+.oSRRRooooRRRso.
+..oSRRRRRRRRso..
+...oSsRRRRsso...
+....ooSsssoo....
+......oooo......
+end

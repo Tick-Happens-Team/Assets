@@ -1,0 +1,29 @@
+# Garlic bulb with cloves and roots. 16x16 item icon.
+sprite item_garlic
+size 16 16
+origin 8 15
+key o 1a1422
+key e a596ab
+key D 8a4630
+key E b8683f
+key F d99a63
+key G f0c896
+key z fff3a6
+frame idle
+................
+.......oo.......
+......ozGo......
+......oGeo......
+....oooGeooo....
+...ozGGGeGGGo...
+..ozFeeFFeeFGo..
+..oGFeeFFeeFeo..
+.ozFFeeFFeeFFGo.
+.oGFFeeFFeeFFeo.
+.oGFFeeFFeeFFeo.
+..oGFeeFFeeFeo..
+..oGFeeFFeeFeo..
+...oGeeeeeeeo...
+....oEEEEEEo....
+.....oDooDo.....
+end
