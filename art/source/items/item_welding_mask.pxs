@@ -1,0 +1,31 @@
+# Welding helmet with a dark green visor. 16x16 item icon.
+sprite item_welding_mask
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key b 3d3447
+key c 574b63
+key d 7a6c85
+key i 1e3d2c
+key j 2d5a35
+key m 6aa84a
+key n 9fcf62
+frame idle
+....oooooooo....
+...odccccccco...
+..odbbbbbbbbco..
+..ocbbbbbbbbao..
+.odbbbbbbbbbbco.
+.ocbnmmmmmmmbao.
+.ocbmniiiiijbao.
+.ocbmiiiiiijbao.
+.ocbmjjjjjjjbao.
+..ocbbbbbbbbao..
+..ocbbbbbbbbao..
+..ocbbccccbbao..
+..ocbbccccbbao..
+...ocbbbbbbao...
+....ocaaaaao....
+.....oooooo.....
+end

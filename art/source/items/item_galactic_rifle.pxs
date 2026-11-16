@@ -1,0 +1,37 @@
+# Long violet rifle with a star-lit scope. 16x16 item icon.
+sprite item_galactic_rifle
+size 16 16
+origin 8 15
+key o 1a1422
+key c 574b63
+key e a596ab
+key f d4c6cf
+key y ffe26b
+key z fff3a6
+key L a8b8ff
+key N 4a1f5c
+key P 7a2c84
+key Q b0409a
+key T e070c0
+key U 2a2340
+key V 4a3f69
+key W 6b5f8e
+key X 968bb4
+frame idle
+................
+..........o..oo.
+.........ozooTQo
+.......ooyeyTPNo
+......ofecoTPNo.
+.....ofccTQPNLo.
+....ofcoTPNNoo..
+.....ooTPNoo....
+....ooTPNo......
+...oTQPNo.......
+.ooTPNNo........
+oXWPNoo.........
+oWVWo...........
+oQWVWo..........
+.ooWUo..........
+...oo...........
+end

@@ -1,0 +1,29 @@
+# Sewing needle with a red thread through its eye. 16x16 item icon.
+sprite item_needle
+size 16 16
+origin 8 15
+key o 1a1422
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key g f4ecea
+key R c9281f
+key S f2561d
+frame idle
+................
+............oo..
+...........ogRo.
+..........ogoRo.
+.........ogedRo.
+........ogefoRo.
+.......ogedooRo.
+......ogedo.oSo.
+.....ogedo..oSo.
+....ogedo..oSo..
+...ogedo...oSo..
+..ogedo.....o...
+.ogedo..........
+.ofdo...........
+oeoo............
+.o..............
+end

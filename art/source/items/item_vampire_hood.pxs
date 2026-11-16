@@ -1,0 +1,32 @@
+# Black hood with a blood-red lining. 16x16 item icon.
+sprite item_vampire_hood
+size 16 16
+origin 8 15
+key k 0e0b14
+key o 1a1422
+key s 8a1f17
+key R c9281f
+key S f2561d
+key O ff8a2a
+key U 2a2340
+key V 4a3f69
+key W 6b5f8e
+key X 968bb4
+frame idle
+.......oo.......
+......oXWo......
+.....oXVVWo.....
+.....oWVVUo.....
+....oXVVVVWo....
+...oXVOSSSVWo...
+..oXVORRRRSVWo..
+.oXVVSkkkksVVWo.
+.oWVVSkkkksVVUo.
+.oWVORkSkSRSVUo.
+.oWVVSkkkksVVUo.
+.oWVVSkkkksVVUo.
+.oWVVSkkkksVVUo.
+.oWVVVSsssVVVUo.
+.oWUUUUUUUUUUUo.
+..oooooooooooo..
+end

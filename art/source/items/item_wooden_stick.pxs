@@ -1,0 +1,30 @@
+# Knotted wooden stick with a sprouting leaf. 16x16 item icon.
+sprite item_wooden_stick
+size 16 16
+origin 8 15
+key o 1a1422
+key C 5e2f24
+key D 8a4630
+key E b8683f
+key F d99a63
+key l 44803e
+key m 6aa84a
+key n 9fcf62
+frame idle
+...........oo...
+..........oFEo..
+.........oFDCo..
+........oFDCo...
+........oEDCo...
+.......oFDCo....
+......oFDCoooo..
+.....oFDCDDDDno.
+.....oEDCooonlmo
+....oFDCo...omo.
+...oFDCo.....o..
+..oFDCo.........
+..oEDCo.........
+.oFDCo..........
+.oECo...........
+..oo............
+end
