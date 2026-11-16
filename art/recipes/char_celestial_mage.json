@@ -1,0 +1,61 @@
+{
+  // Celestial mage: tall pointed hood and a floor-length night-black robe. The face is hidden in shadow,
+  // only two faint eyes glow; small emissive stars are scattered over the cloth and one burns above the palm.
+  // Front 3/4 view, 16x24, light from top-left.
+  "sprite": "char_celestial_mage",
+  "size": [16, 24],
+  "origin": [8, 23],
+  "seed": 1,
+  "materials": {
+    "robe":  { "ramp": ["0e0b14", "1b1d3f", "2c3070", "4250b0"], "bands": [0.36, 0.7], "spec": 0.95 },
+    "hood":  { "ramp": ["0e0b14", "1b1d3f", "2c3070", "4250b0"], "bands": [0.36, 0.7], "spec": 0.95 },
+    "sleeve": { "ramp": ["0e0b14", "1b1d3f", "2c3070", "4250b0"], "bands": [0.36, 0.7], "spec": 0.95 },
+    "void":  { "ramp": ["0e0b14"], "bands": [] },
+    "trim":  { "ramp": ["b8683f", "ffc23d", "ffe26b"], "bands": [0.4, 0.75] },
+    "boots": { "ramp": ["0e0b14", "1a1422", "2b2433"], "bands": [0.45, 0.75] },
+    "skin":  { "ramp": ["7a6c85", "a596ab", "d4c6cf"], "bands": [0.4, 0.7] }
+  },
+  "bones": {
+    "root": { "at": [8, 23] },
+    "hips": { "parent": "root", "at": [0, -5] },
+    "legL": { "parent": "hips", "at": [-2, 0] },
+    "legR": { "parent": "hips", "at": [2, 0] },
+    "body": { "parent": "hips", "at": [0, -5] },
+    "head": { "parent": "body", "at": [0, -5] },
+    "armL": { "parent": "body", "at": [-4.6, -1.5] },
+    "armR": { "parent": "body", "at": [4.6, -1.5] }
+  },
+  "parts": [
+    { "name": "bootL", "bone": "legL", "shape": "rect", "c": [-1.6, 3], "r": [3, 2], "round": 0.8, "mat": "boots", "z": 0.5 },
+    { "name": "bootR", "bone": "legR", "shape": "rect", "c": [-1.4, 3], "r": [3, 2], "round": 0.8, "mat": "boots", "z": 0.5 },
+    { "name": "robe",  "bone": "body", "shape": "poly", "pts": [[-3.4, -3], [3.4, -3], [5.2, 8.6], [-5.2, 8.6]], "mat": "robe", "z": 2 },
+    { "name": "hem",   "bone": "body", "shape": "poly", "pts": [[-5.1, 8], [5.1, 8], [5.2, 8.9], [-5.2, 8.9]], "mat": "trim", "z": 2.1, "profile": "cyl", "shadow": false },
+    { "name": "armL",  "bone": "armL", "shape": "poly", "pts": [[-0.6, -0.8], [1.6, -0.8], [2, 5.2], [-1.4, 5.2]], "mat": "sleeve", "z": 2.6 },
+    { "name": "armR",  "bone": "armR", "shape": "poly", "pts": [[-1.6, -0.8], [0.6, -0.8], [1.4, 5.2], [-2, 5.2]], "mat": "sleeve", "z": 2.6 },
+    { "name": "handL", "bone": "armL", "shape": "ellipse", "c": [0.4, 5.6], "r": [1.1, 1], "mat": "skin", "z": 2.7 },
+    { "name": "hood",  "bone": "head", "shape": "poly", "pts": [[-4.3, 2.2], [-4.2, -1.6], [-2.4, -3.8], [0.4, -5.4], [3.2, -6.5], [2.8, -4.6], [4.2, -1.6], [4.3, 2.2], [3, 3.6], [-3, 3.6]], "mat": "hood", "z": 4 },
+    { "name": "face",  "bone": "head", "shape": "ellipse", "c": [0, 0.7], "r": [2.7, 1.9], "mat": "void", "z": 4.2, "profile": "flat", "shadow": false }
+  ],
+  "decals": [
+    { "name": "eyes",   "bone": "head", "at": [-2, 0], "rows": ["e..e"], "keys": { "e": "6a7fe0" }, "emissive": ["e"] },
+    { "name": "blink",  "bone": "head", "at": [-2, 0], "rows": ["e..e"], "keys": { "e": "2c3070" } },
+    { "name": "stars",  "bone": "body", "at": [-3, -1], "rows": ["....y.", "......", "w.....", "......", "...w..", "......", ".....y", ".y...."],
+      "keys": { "y": "ffe26b", "w": "a8b8ff" }, "emissive": ["y", "w"] },
+    { "name": "hoodstar", "bone": "head", "at": [1, -4], "rows": ["y"], "keys": { "y": "ffe26b" }, "emissive": ["y"] },
+    { "name": "orb",    "bone": "armL", "at": [-1, 3], "rows": [".w.", "wWw", ".w."], "keys": { "w": "a8b8ff", "W": "ffffff" }, "emissive": ["w", "W"] },
+    { "name": "orb2",   "bone": "armL", "at": [-1, 3], "rows": [".y.", "yWy", ".y."], "keys": { "y": "ffe26b", "W": "fff3a6" }, "emissive": ["y", "W"] }
+  ],
+  "anims": {
+    "idle": { "fps": 3, "frames": [
+      { "hideDecals": ["blink", "orb2"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["blink", "orb"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["eyes", "orb2"] }
+    ] },
+    "walk": { "fps": 8, "frames": [
+      { "bones": { "legL": [0, -1], "armL": [0, 1], "armR": [0, -1] }, "hideDecals": ["blink", "orb2"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink", "orb2"] },
+      { "bones": { "legR": [0, -1], "armR": [0, 1], "armL": [0, -1] }, "hideDecals": ["blink", "orb2"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["blink", "orb2"] }
+    ] }
+  }
+}

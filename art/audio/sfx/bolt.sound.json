@@ -1,0 +1,36 @@
+{
+ "name": "bolt",
+ "_comment": "A magic bolt leaves the hero: a bright descending pew.",
+ "variants": 5,
+ "seed": 13,
+ "vary": 0.1,
+ "peak": 0.6,
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    1400,
+    500
+   ],
+   "decay": 35,
+   "gain": 0.35,
+   "wave": "square",
+   "lowpass": 5000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2600,
+    900
+   ],
+   "decay": 25,
+   "gain": 0.2
+  },
+  {
+   "type": "noise",
+   "decay": 10,
+   "gain": 0.15,
+   "highpass": 4000
+  }
+ ]
+}

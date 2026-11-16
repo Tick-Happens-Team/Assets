@@ -1,0 +1,31 @@
+{
+  "sprite": "enemy_guardian_r",
+  "size": [48, 48],
+  "origin": [24, 41],
+  "seed": 1,
+  "unify": 0.24,
+  "materials": {"cloth": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "968bb4"], "bands": [0.285, 0.565, 0.805], "dither": 0.025}, "skin": {"ramp": ["2b2433", "574b63", "968bb4", "f4ecea"], "bands": [0.32, 0.6, 0.84], "dither": 0.025}, "boot": {"ramp": ["0e0b14", "0e0b14", "1a1422", "574b63"], "bands": [0.285, 0.565, 0.805]}, "plate": {"ramp": ["1b1d3f", "2a2340", "6b5f8e", "d4c6cf"], "bands": [0.285, 0.565, 0.805]}, "badge": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "fff3a6"], "bands": [0.285, 0.565, 0.805]}, "light": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74]}, "rim": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "ffe26b"], "bands": [0.285, 0.565, 0.805]}},
+  "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
+  "parts": [
+    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-5.45, 0.0], "r": [3.93, 2.84]},
+    {"name": "left shin", "bone": "left", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[-5.45, -6.55], [-5.45, 0.0]], "r": [3.93], "shadow": true},
+    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "boot", "z": 1, "c": [5.45, 0.0], "r": [3.93, 2.84]},
+    {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[5.45, -6.55], [5.45, 0.0]], "r": [3.93], "shadow": true},
+    {"name": "tailored tunic", "bone": "body", "shape": "poly", "mat": "cloth", "z": 2, "pts": [[-9.82, -20.73], [-5.45, -24.0], [5.45, -24.0], [10.91, -20.73], [8.73, -14.18], [6.55, -8.73], [8.73, -3.27], [-8.73, -3.27], [-6.55, -9.82]], "profile": "bevel", "shadow": true},
+    {"name": "head", "bone": "body", "shape": "ellipse", "mat": "skin", "z": 3, "c": [0.0, -26.18], "r": [5.67, 6.0]},
+    {"name": "far arm", "bone": "body", "shape": "line", "mat": "cloth", "z": 2.1, "pts": [[-6.55, -19.64], [-10.91, -15.27], [-8.73, -10.91]], "r": [4.36], "shadow": true},
+    {"name": "near arm", "bone": "body", "shape": "line", "mat": "cloth", "z": 3.1, "pts": [[6.55, -19.64], [10.91, -16.36], [12.0, -13.09]], "r": [4.36], "shadow": true},
+    {"name": "sallet helmet", "bone": "body", "shape": "poly", "mat": "plate", "z": 3.4, "pts": [[-6.55, -25.09], [-6.55, -31.64], [-2.18, -34.91], [3.27, -34.91], [6.55, -29.45], [6.55, -25.09], [2.18, -22.91], [-4.36, -24.0]], "profile": "bevel", "shadow": true},
+    {"name": "helmet crest", "bone": "body", "shape": "line", "mat": "badge", "z": 3.6, "pts": [[-3.27, -32.73], [0.0, -34.91], [3.27, -32.73]], "r": [3.27], "shadow": true},
+    {"name": "tower shield", "bone": "tool", "shape": "poly", "mat": "plate", "z": 4, "pts": [[2.18, -20.73], [12.0, -24.0], [18.55, -19.64], [17.45, -7.64], [10.91, -2.18], [5.45, -6.55]], "profile": "bevel", "shadow": true},
+    {"name": "shield inset", "bone": "tool", "shape": "poly", "mat": "cloth", "z": 4.2, "pts": [[5.45, -18.55], [12.0, -20.73], [15.27, -17.45], [14.18, -8.73], [10.91, -5.45], [7.64, -8.73]], "profile": "bevel", "shadow": true},
+    {"name": "shield spine", "bone": "tool", "shape": "line", "mat": "light", "z": 4.4, "pts": [[10.91, -17.45], [10.91, -7.64]], "r": [2.18], "shadow": false},
+    {"name": "tower shield brass rim", "bone": "tool", "shape": "line", "mat": "rim", "z": 3.7, "pts": [[4, -19], [12, -22], [17, -19], [16, -8], [11, -4]], "r": [1], "shadow": false}
+  ],
+  "decals": [
+    {"name": "face", "bone": "body", "at": [-2, -27], "rows": ["D.dD", "....", ".dd."], "keys": {"D": "0e0b14", "d": "3d3447"}, "emissive": []},
+    {"name": "visor slit", "bone": "body", "at": [-3, -28], "rows": ["kkkkk"], "keys": {"k": "0e0b14"}, "emissive": []},
+    {"name": "shield heraldry", "bone": "tool", "at": [9, -16], "rows": ["..g..", ".ggg.", "ggggg", ".ggg.", "..g.."], "keys": {"g": "ffe26b"}, "emissive": []}
+  ],
+  "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}}
+}

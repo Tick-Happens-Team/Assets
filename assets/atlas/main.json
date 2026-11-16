@@ -1,9 +1,1919 @@
 {
   "size": [
-    256,
-    128
+    1024,
+    1024
   ],
   "sprites": {
+    "char_celestial_mage": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          925,
+          642
+        ],
+        [
+          942,
+          642
+        ],
+        [
+          959,
+          642
+        ],
+        [
+          976,
+          642
+        ],
+        [
+          993,
+          642
+        ],
+        [
+          0,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "char_cybernetic_cube": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          859,
+          584
+        ],
+        [
+          884,
+          584
+        ],
+        [
+          909,
+          584
+        ],
+        [
+          934,
+          584
+        ],
+        [
+          959,
+          584
+        ],
+        [
+          984,
+          584
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "attack_0"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            1
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            5,
+            3,
+            2,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_diver": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          17,
+          667
+        ],
+        [
+          34,
+          667
+        ],
+        [
+          51,
+          667
+        ],
+        [
+          68,
+          667
+        ],
+        [
+          85,
+          667
+        ],
+        [
+          102,
+          667
+        ],
+        [
+          119,
+          667
+        ],
+        [
+          136,
+          667
+        ],
+        [
+          153,
+          667
+        ],
+        [
+          170,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_goflin": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          187,
+          667
+        ],
+        [
+          204,
+          667
+        ],
+        [
+          221,
+          667
+        ],
+        [
+          238,
+          667
+        ],
+        [
+          255,
+          667
+        ],
+        [
+          272,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "char_illusionist": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          289,
+          667
+        ],
+        [
+          306,
+          667
+        ],
+        [
+          323,
+          667
+        ],
+        [
+          340,
+          667
+        ],
+        [
+          357,
+          667
+        ],
+        [
+          374,
+          667
+        ],
+        [
+          391,
+          667
+        ],
+        [
+          408,
+          667
+        ],
+        [
+          425,
+          667
+        ],
+        [
+          442,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_king_arthur": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        22,
+        35
+      ],
+      "frames": [
+        [
+          776,
+          291
+        ],
+        [
+          825,
+          291
+        ],
+        [
+          874,
+          291
+        ],
+        [
+          923,
+          291
+        ],
+        [
+          972,
+          291
+        ],
+        [
+          0,
+          388
+        ],
+        [
+          49,
+          388
+        ],
+        [
+          98,
+          388
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            0
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            2,
+            3,
+            4,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 14,
+          "frames": [
+            5,
+            6,
+            7,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_masochist": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          459,
+          667
+        ],
+        [
+          476,
+          667
+        ],
+        [
+          493,
+          667
+        ],
+        [
+          510,
+          667
+        ],
+        [
+          527,
+          667
+        ],
+        [
+          544,
+          667
+        ],
+        [
+          561,
+          667
+        ],
+        [
+          578,
+          667
+        ],
+        [
+          595,
+          667
+        ],
+        [
+          612,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_miner": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          0,
+          617
+        ],
+        [
+          25,
+          617
+        ],
+        [
+          50,
+          617
+        ],
+        [
+          75,
+          617
+        ],
+        [
+          100,
+          617
+        ],
+        [
+          125,
+          617
+        ],
+        [
+          150,
+          617
+        ],
+        [
+          175,
+          617
+        ],
+        [
+          200,
+          617
+        ],
+        [
+          225,
+          617
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_necromancer": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          250,
+          617
+        ],
+        [
+          275,
+          617
+        ],
+        [
+          300,
+          617
+        ],
+        [
+          325,
+          617
+        ],
+        [
+          350,
+          617
+        ],
+        [
+          375,
+          617
+        ],
+        [
+          400,
+          617
+        ],
+        [
+          425,
+          617
+        ],
+        [
+          450,
+          617
+        ],
+        [
+          475,
+          617
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_nekochan": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          629,
+          667
+        ],
+        [
+          646,
+          667
+        ],
+        [
+          663,
+          667
+        ],
+        [
+          680,
+          667
+        ],
+        [
+          697,
+          667
+        ],
+        [
+          714,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "char_octarine": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          731,
+          667
+        ],
+        [
+          748,
+          667
+        ],
+        [
+          765,
+          667
+        ],
+        [
+          782,
+          667
+        ],
+        [
+          799,
+          667
+        ],
+        [
+          816,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "char_pig": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          500,
+          617
+        ],
+        [
+          525,
+          617
+        ],
+        [
+          550,
+          617
+        ],
+        [
+          575,
+          617
+        ],
+        [
+          600,
+          617
+        ],
+        [
+          625,
+          617
+        ],
+        [
+          650,
+          617
+        ],
+        [
+          675,
+          617
+        ],
+        [
+          700,
+          617
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            2,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_pig_ghost": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          725,
+          617
+        ],
+        [
+          750,
+          617
+        ],
+        [
+          775,
+          617
+        ],
+        [
+          800,
+          617
+        ],
+        [
+          825,
+          617
+        ],
+        [
+          850,
+          617
+        ],
+        [
+          875,
+          617
+        ],
+        [
+          900,
+          617
+        ],
+        [
+          925,
+          617
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            1
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            6,
+            7,
+            8,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_puppeteer": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          833,
+          667
+        ],
+        [
+          850,
+          667
+        ],
+        [
+          867,
+          667
+        ],
+        [
+          884,
+          667
+        ],
+        [
+          901,
+          667
+        ],
+        [
+          918,
+          667
+        ],
+        [
+          935,
+          667
+        ],
+        [
+          952,
+          667
+        ],
+        [
+          969,
+          667
+        ],
+        [
+          986,
+          667
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_skater": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          950,
+          617
+        ],
+        [
+          975,
+          617
+        ],
+        [
+          0,
+          642
+        ],
+        [
+          25,
+          642
+        ],
+        [
+          50,
+          642
+        ],
+        [
+          75,
+          642
+        ],
+        [
+          100,
+          642
+        ],
+        [
+          125,
+          642
+        ],
+        [
+          150,
+          642
+        ],
+        [
+          175,
+          642
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            7,
+            8,
+            9,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_smith": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          1003,
+          667
+        ],
+        [
+          0,
+          692
+        ],
+        [
+          17,
+          692
+        ],
+        [
+          34,
+          692
+        ],
+        [
+          51,
+          692
+        ],
+        [
+          68,
+          692
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "char_swordsman": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          85,
+          692
+        ],
+        [
+          102,
+          692
+        ],
+        [
+          119,
+          692
+        ],
+        [
+          136,
+          692
+        ],
+        [
+          153,
+          692
+        ],
+        [
+          170,
+          692
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "char_vampire": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          187,
+          692
+        ],
+        [
+          204,
+          692
+        ],
+        [
+          221,
+          692
+        ],
+        [
+          238,
+          692
+        ],
+        [
+          255,
+          692
+        ],
+        [
+          272,
+          692
+        ],
+        [
+          289,
+          692
+        ],
+        [
+          306,
+          692
+        ],
+        [
+          323,
+          692
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 13,
+          "frames": [
+            6,
+            7,
+            8,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "char_watchman": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        23
+      ],
+      "frames": [
+        [
+          340,
+          692
+        ],
+        [
+          357,
+          692
+        ],
+        [
+          374,
+          692
+        ],
+        [
+          391,
+          692
+        ],
+        [
+          408,
+          692
+        ],
+        [
+          425,
+          692
+        ]
+      ],
+      "frameNames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "walk_0",
+        "walk_1",
+        "walk_2"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 3,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
+        "walk": {
+          "fps": 8,
+          "frames": [
+            3,
+            4,
+            5,
+            4
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_boar_r": {
+      "w": 24,
+      "h": 16,
+      "origin": [
+        12,
+        15
+      ],
+      "frames": [
+        [
+          799,
+          692
+        ],
+        [
+          824,
+          692
+        ],
+        [
+          849,
+          692
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 7,
+          "frames": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_demon_r": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        21
+      ],
+      "frames": [
+        [
+          442,
+          692
+        ],
+        [
+          459,
+          692
+        ],
+        [
+          476,
+          692
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_dog_r": {
+      "w": 24,
+      "h": 16,
+      "origin": [
+        12,
+        15
+      ],
+      "frames": [
+        [
+          874,
+          692
+        ],
+        [
+          899,
+          692
+        ],
+        [
+          924,
+          692
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 9,
+          "frames": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_drone_r": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        16
+      ],
+      "frames": [
+        [
+          200,
+          642
+        ],
+        [
+          225,
+          642
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1"
+      ],
+      "anims": {
+        "move": {
+          "fps": 18,
+          "frames": [
+            0,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_eagle_r": {
+      "w": 24,
+      "h": 16,
+      "origin": [
+        12,
+        15
+      ],
+      "frames": [
+        [
+          949,
+          692
+        ],
+        [
+          974,
+          692
+        ],
+        [
+          999,
+          692
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_gnome_r": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        21
+      ],
+      "frames": [
+        [
+          493,
+          692
+        ],
+        [
+          510,
+          692
+        ],
+        [
+          527,
+          692
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 7,
+          "frames": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_leech_r": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        17
+      ],
+      "frames": [
+        [
+          250,
+          642
+        ],
+        [
+          275,
+          642
+        ],
+        [
+          300,
+          642
+        ],
+        [
+          325,
+          642
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_soul_healer": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          0,
+          717
+        ],
+        [
+          17,
+          717
+        ],
+        [
+          34,
+          717
+        ],
+        [
+          51,
+          717
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 6,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_soul_warrior": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          68,
+          717
+        ],
+        [
+          85,
+          717
+        ],
+        [
+          102,
+          717
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 6,
+          "frames": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "loop": true
+        }
+      }
+    },
+    "companion_soul_wraith": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        23
+      ],
+      "frames": [
+        [
+          350,
+          642
+        ],
+        [
+          375,
+          642
+        ],
+        [
+          400,
+          642
+        ],
+        [
+          425,
+          642
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 6,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        }
+      }
+    },
     "enemy_amberslime": {
       "w": 16,
       "h": 16,
@@ -13,12 +1923,12 @@
       ],
       "frames": [
         [
-          17,
-          33
+          119,
+          717
         ],
         [
-          34,
-          33
+          136,
+          717
         ]
       ],
       "frameNames": [
@@ -37,54 +1947,44 @@
       }
     },
     "enemy_amberslime_r": {
-      "w": 16,
-      "h": 16,
+      "w": 24,
+      "h": 24,
       "origin": [
-        8,
-        14
+        12,
+        20
       ],
       "frames": [
         [
-          51,
-          33
+          450,
+          642
         ],
         [
-          68,
-          33
+          475,
+          642
         ],
         [
-          85,
-          33
-        ],
-        [
-          102,
-          33
-        ],
-        [
-          119,
-          33
-        ],
-        [
-          136,
-          33
-        ],
-        [
-          153,
-          33
+          500,
+          642
         ]
       ],
       "frameNames": [
-        "idle_0",
-        "idle_1",
-        "idle_2",
-        "hop_1",
-        "hop_2",
-        "hop_3",
-        "hop_4"
+        "move_0",
+        "move_1",
+        "move_2"
       ],
       "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
         "idle": {
-          "fps": 6,
+          "fps": 5,
           "frames": [
             0,
             1,
@@ -94,13 +1994,465 @@
           "loop": true
         },
         "hop": {
-          "fps": 10,
+          "fps": 5,
           "frames": [
+            0,
+            1,
             2,
-            3,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_ancient_cultist_r": {
+      "w": 96,
+      "h": 96,
+      "origin": [
+        48,
+        82
+      ],
+      "frames": [
+        [
+          0,
+          0
+        ],
+        [
+          97,
+          0
+        ],
+        [
+          194,
+          0
+        ],
+        [
+          291,
+          0
+        ],
+        [
+          388,
+          0
+        ],
+        [
+          485,
+          0
+        ],
+        [
+          582,
+          0
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
             4,
             5,
             6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_butcher_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          147,
+          388
+        ],
+        [
+          196,
+          388
+        ],
+        [
+          245,
+          388
+        ],
+        [
+          294,
+          388
+        ],
+        [
+          343,
+          388
+        ],
+        [
+          392,
+          388
+        ],
+        [
+          441,
+          388
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_cultist_shaman_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          147,
+          535
+        ],
+        [
+          180,
+          535
+        ],
+        [
+          213,
+          535
+        ],
+        [
+          246,
+          535
+        ],
+        [
+          279,
+          535
+        ],
+        [
+          312,
+          535
+        ],
+        [
+          345,
+          535
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_dark_mage_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          490,
+          388
+        ],
+        [
+          539,
+          388
+        ],
+        [
+          588,
+          388
+        ],
+        [
+          637,
+          388
+        ],
+        [
+          686,
+          388
+        ],
+        [
+          735,
+          388
+        ],
+        [
+          784,
+          388
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_devourer_r": {
+      "w": 96,
+      "h": 96,
+      "origin": [
+        48,
+        82
+      ],
+      "frames": [
+        [
+          679,
+          0
+        ],
+        [
+          776,
+          0
+        ],
+        [
+          873,
+          0
+        ],
+        [
+          0,
+          97
+        ],
+        [
+          97,
+          97
+        ],
+        [
+          194,
+          97
+        ],
+        [
+          291,
+          97
+        ],
+        [
+          388,
+          97
+        ],
+        [
+          485,
+          97
+        ],
+        [
+          582,
+          97
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2",
+        "lunge_0",
+        "lunge_1",
+        "lunge_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        },
+        "lunge": {
+          "fps": 8,
+          "frames": [
+            7,
+            8,
+            9
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_duskslime_r": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        20
+      ],
+      "frames": [
+        [
+          525,
+          642
+        ],
+        [
+          550,
+          642
+        ],
+        [
+          575,
+          642
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
+        "hop": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
+        "idle": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
           ],
           "loop": true
         }
@@ -115,12 +2467,12 @@
       ],
       "frames": [
         [
-          85,
-          58
+          255,
+          717
         ],
         [
-          102,
-          58
+          272,
+          717
         ]
       ],
       "frameNames": [
@@ -139,39 +2491,135 @@
       }
     },
     "enemy_gloombat_r": {
-      "w": 16,
-      "h": 16,
+      "w": 24,
+      "h": 24,
       "origin": [
-        8,
-        14
+        12,
+        20
       ],
       "frames": [
         [
-          170,
-          33
+          600,
+          642
         ],
         [
-          187,
-          33
+          625,
+          642
         ],
         [
-          204,
-          33
-        ],
-        [
-          221,
-          33
+          650,
+          642
         ]
       ],
       "frameNames": [
-        "fly_0",
-        "fly_1",
-        "fly_2",
-        "fly_3"
+        "move_0",
+        "move_1",
+        "move_2"
       ],
       "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        },
         "fly": {
-          "fps": 12,
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_gold_vein_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          378,
+          535
+        ],
+        [
+          411,
+          535
+        ],
+        [
+          444,
+          535
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
+        "idle": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_guardian_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          833,
+          388
+        ],
+        [
+          882,
+          388
+        ],
+        [
+          931,
+          388
+        ],
+        [
+          0,
+          437
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
           "frames": [
             0,
             1,
@@ -179,6 +2627,1234 @@
             3
           ],
           "loop": true
+        }
+      }
+    },
+    "enemy_jumper_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        30
+      ],
+      "frames": [
+        [
+          477,
+          535
+        ],
+        [
+          510,
+          535
+        ],
+        [
+          543,
+          535
+        ],
+        [
+          576,
+          535
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "hop": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_junior_cultist_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          609,
+          535
+        ],
+        [
+          642,
+          535
+        ],
+        [
+          675,
+          535
+        ],
+        [
+          708,
+          535
+        ],
+        [
+          741,
+          535
+        ],
+        [
+          774,
+          535
+        ],
+        [
+          807,
+          535
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "lurch": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_kamikaze_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          840,
+          535
+        ],
+        [
+          873,
+          535
+        ],
+        [
+          906,
+          535
+        ],
+        [
+          939,
+          535
+        ],
+        [
+          972,
+          535
+        ],
+        [
+          0,
+          584
+        ],
+        [
+          33,
+          584
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "sprint": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_ninja_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          49,
+          437
+        ],
+        [
+          98,
+          437
+        ],
+        [
+          147,
+          437
+        ],
+        [
+          196,
+          437
+        ],
+        [
+          245,
+          437
+        ],
+        [
+          294,
+          437
+        ],
+        [
+          343,
+          437
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "sprint": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_ogre_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          392,
+          437
+        ],
+        [
+          441,
+          437
+        ],
+        [
+          490,
+          437
+        ],
+        [
+          539,
+          437
+        ],
+        [
+          588,
+          437
+        ],
+        [
+          637,
+          437
+        ],
+        [
+          686,
+          437
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "lurch": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_phantom_r": {
+      "w": 96,
+      "h": 96,
+      "origin": [
+        48,
+        82
+      ],
+      "frames": [
+        [
+          679,
+          97
+        ],
+        [
+          776,
+          97
+        ],
+        [
+          873,
+          97
+        ],
+        [
+          0,
+          194
+        ],
+        [
+          97,
+          194
+        ],
+        [
+          194,
+          194
+        ],
+        [
+          291,
+          194
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "fly": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_prospector_r": {
+      "w": 96,
+      "h": 96,
+      "origin": [
+        48,
+        82
+      ],
+      "frames": [
+        [
+          388,
+          194
+        ],
+        [
+          485,
+          194
+        ],
+        [
+          582,
+          194
+        ],
+        [
+          679,
+          194
+        ],
+        [
+          776,
+          194
+        ],
+        [
+          873,
+          194
+        ],
+        [
+          0,
+          291
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_rot_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          66,
+          584
+        ],
+        [
+          99,
+          584
+        ],
+        [
+          132,
+          584
+        ],
+        [
+          165,
+          584
+        ],
+        [
+          198,
+          584
+        ],
+        [
+          231,
+          584
+        ],
+        [
+          264,
+          584
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "lurch": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_screamer_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        30
+      ],
+      "frames": [
+        [
+          297,
+          584
+        ],
+        [
+          330,
+          584
+        ],
+        [
+          363,
+          584
+        ],
+        [
+          396,
+          584
+        ],
+        [
+          429,
+          584
+        ],
+        [
+          462,
+          584
+        ],
+        [
+          495,
+          584
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "fly": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 6,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_senior_cultist_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          735,
+          437
+        ],
+        [
+          784,
+          437
+        ],
+        [
+          833,
+          437
+        ],
+        [
+          882,
+          437
+        ],
+        [
+          931,
+          437
+        ],
+        [
+          0,
+          486
+        ],
+        [
+          49,
+          486
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_she_wolf_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          98,
+          486
+        ],
+        [
+          147,
+          486
+        ],
+        [
+          196,
+          486
+        ],
+        [
+          245,
+          486
+        ],
+        [
+          294,
+          486
+        ],
+        [
+          343,
+          486
+        ],
+        [
+          392,
+          486
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "sprint": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_siphoner_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          528,
+          584
+        ],
+        [
+          561,
+          584
+        ],
+        [
+          594,
+          584
+        ],
+        [
+          627,
+          584
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        }
+      }
+    },
+    "enemy_skeleton_swordsman_r": {
+      "w": 32,
+      "h": 32,
+      "origin": [
+        16,
+        27
+      ],
+      "frames": [
+        [
+          660,
+          584
+        ],
+        [
+          693,
+          584
+        ],
+        [
+          726,
+          584
+        ],
+        [
+          759,
+          584
+        ],
+        [
+          792,
+          584
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_3",
+        "attack_0",
+        "attack_1"
+      ],
+      "anims": {
+        "move": {
+          "fps": 7,
+          "frames": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            3,
+            4,
+            0
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_spark_r": {
+      "w": 24,
+      "h": 24,
+      "origin": [
+        12,
+        20
+      ],
+      "frames": [
+        [
+          675,
+          642
+        ],
+        [
+          700,
+          642
+        ],
+        [
+          725,
+          642
+        ],
+        [
+          750,
+          642
+        ],
+        [
+          775,
+          642
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "attack_0",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            3,
+            1,
+            4
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_thief_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          441,
+          486
+        ],
+        [
+          490,
+          486
+        ],
+        [
+          539,
+          486
+        ],
+        [
+          588,
+          486
+        ],
+        [
+          637,
+          486
+        ],
+        [
+          686,
+          486
+        ],
+        [
+          735,
+          486
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "sprint": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_timekeeper_r": {
+      "w": 96,
+      "h": 96,
+      "origin": [
+        48,
+        86
+      ],
+      "frames": [
+        [
+          97,
+          291
+        ],
+        [
+          194,
+          291
+        ],
+        [
+          291,
+          291
+        ],
+        [
+          388,
+          291
+        ],
+        [
+          485,
+          291
+        ],
+        [
+          582,
+          291
+        ],
+        [
+          679,
+          291
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "flicker": {
+          "fps": 5,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
+        }
+      }
+    },
+    "enemy_witch_r": {
+      "w": 48,
+      "h": 48,
+      "origin": [
+        24,
+        41
+      ],
+      "frames": [
+        [
+          784,
+          486
+        ],
+        [
+          833,
+          486
+        ],
+        [
+          882,
+          486
+        ],
+        [
+          931,
+          486
+        ],
+        [
+          0,
+          535
+        ],
+        [
+          49,
+          535
+        ],
+        [
+          98,
+          535
+        ]
+      ],
+      "frameNames": [
+        "move_0",
+        "move_1",
+        "move_2",
+        "move_3",
+        "attack_0",
+        "attack_1",
+        "attack_2"
+      ],
+      "anims": {
+        "move": {
+          "fps": 8,
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "loop": true
+        },
+        "attack": {
+          "fps": 12,
+          "frames": [
+            4,
+            5,
+            6
+          ],
+          "loop": false
         }
       }
     },
@@ -191,20 +3867,20 @@
       ],
       "frames": [
         [
-          34,
-          0
+          544,
+          692
         ],
         [
-          51,
-          0
+          561,
+          692
         ],
         [
-          68,
-          0
+          578,
+          692
         ],
         [
-          85,
-          0
+          595,
+          692
         ]
       ],
       "frameNames": [
@@ -243,44 +3919,44 @@
       ],
       "frames": [
         [
-          102,
-          0
+          612,
+          692
         ],
         [
-          119,
-          0
+          629,
+          692
         ],
         [
-          136,
-          0
+          646,
+          692
         ],
         [
-          153,
-          0
+          663,
+          692
         ],
         [
-          170,
-          0
+          680,
+          692
         ],
         [
-          187,
-          0
+          697,
+          692
         ],
         [
-          204,
-          0
+          714,
+          692
         ],
         [
-          221,
-          0
+          731,
+          692
         ],
         [
-          238,
-          0
+          748,
+          692
         ],
         [
-          0,
-          33
+          765,
+          692
         ]
       ],
       "frameNames": [
@@ -336,12 +4012,12 @@
       ],
       "frames": [
         [
-          136,
-          58
+          289,
+          717
         ],
         [
-          145,
-          58
+          298,
+          717
         ]
       ],
       "frameNames": [
@@ -360,20 +4036,66 @@
       }
     },
     "prop_chest": {
-      "w": 16,
-      "h": 12,
+      "w": 24,
+      "h": 24,
       "origin": [
-        8,
-        11
+        12,
+        18
       ],
       "frames": [
         [
-          119,
-          58
+          800,
+          642
+        ],
+        [
+          825,
+          642
+        ],
+        [
+          850,
+          642
+        ],
+        [
+          875,
+          642
+        ],
+        [
+          900,
+          642
         ]
       ],
       "frameNames": [
-        "closed"
+        "closed",
+        "open",
+        "free",
+        "rare",
+        "boss"
+      ],
+      "anims": {
+        "idle": {
+          "fps": 1,
+          "frames": [
+            0
+          ],
+          "loop": true
+        }
+      }
+    },
+    "prop_soda_r": {
+      "w": 16,
+      "h": 24,
+      "origin": [
+        8,
+        19
+      ],
+      "frames": [
+        [
+          782,
+          692
+        ]
+      ],
+      "frameNames": [
+        "idle_0"
       ],
       "anims": {
         "idle": {
@@ -394,12 +4116,12 @@
       ],
       "frames": [
         [
-          0,
-          0
+          825,
+          584
         ],
         [
-          17,
-          0
+          842,
+          584
         ]
       ],
       "frameNames": [
@@ -426,20 +4148,20 @@
       ],
       "frames": [
         [
-          238,
-          33
+          153,
+          717
         ],
         [
-          0,
-          58
+          170,
+          717
         ],
         [
-          17,
-          58
+          187,
+          717
         ],
         [
-          34,
-          58
+          204,
+          717
         ]
       ],
       "frameNames": [
@@ -459,12 +4181,12 @@
       ],
       "frames": [
         [
-          51,
-          58
+          221,
+          717
         ],
         [
-          68,
-          58
+          238,
+          717
         ]
       ],
       "frameNames": [

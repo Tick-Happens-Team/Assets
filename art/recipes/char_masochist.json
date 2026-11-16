@@ -1,0 +1,357 @@
+{
+  "sprite": "char_masochist",
+  "size": [16,24],
+  "origin": [8,23],
+  "seed": 1,
+  "materials": {
+    "boot": {
+      "ramp": [
+        "0e0b14",
+        "2b2433",
+        "574b63"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "skin": {
+      "ramp": [
+        "8a4630",
+        "d99a63",
+        "f0c896"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "bone": {
+      "ramp": [
+        "574b63",
+        "a596ab",
+        "f4ecea"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "steel": {
+      "ramp": [
+        "3d3447",
+        "7a6c85",
+        "d4c6cf"
+      ],
+      "bands": [0.34,0.66]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [8,23]
+    },
+    "hips": {
+      "parent": "root",
+      "at": [0,-6]
+    },
+    "body": {
+      "parent": "hips",
+      "at": [0,-5]
+    },
+    "head": {
+      "parent": "body",
+      "at": [0,-5]
+    },
+    "left": {
+      "parent": "hips",
+      "at": [-2,0]
+    },
+    "right": {
+      "parent": "hips",
+      "at": [2,0]
+    },
+    "handL": {
+      "parent": "body",
+      "at": [-4,0]
+    },
+    "handR": {
+      "parent": "body",
+      "at": [4,0]
+    }
+  },
+  "parts": [
+    {
+      "name": "leg0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 0
+    },
+    {
+      "name": "boot0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 1
+    },
+    {
+      "name": "leg1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 0
+    },
+    {
+      "name": "boot1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "boot",
+      "z": 1
+    },
+    {
+      "name": "sleeve0",
+      "bone": "handL",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "skin",
+      "z": 2
+    },
+    {
+      "name": "hand0",
+      "bone": "handL",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "skin",
+      "z": 3
+    },
+    {
+      "name": "sleeve1",
+      "bone": "handR",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "skin",
+      "z": 2
+    },
+    {
+      "name": "hand1",
+      "bone": "handR",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "skin",
+      "z": 3
+    },
+    {
+      "name": "torso",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-3.9,-2],
+        [3.9,-2],
+        [3,5.5],
+        [-3,5.5]
+      ],
+      "mat": "skin",
+      "z": 3
+    },
+    {
+      "name": "face",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [0.2,0],
+      "r": [3.3,3.5],
+      "mat": "skin",
+      "z": 5
+    },
+    {
+      "name": "hair",
+      "bone": "head",
+      "shape": "poly",
+      "pts": [
+        [-3.8,0],
+        [-3.9,-3],
+        [-1,-4.2],
+        [2.5,-4],
+        [4,-2],
+        [0.5,-2],
+        [-0.8,-1]
+      ],
+      "mat": "boot",
+      "z": 6
+    },
+    {
+      "name": "wrapL",
+      "bone": "handL",
+      "shape": "rect",
+      "c": [-1.3,1],
+      "r": [2.6,2.2],
+      "round": 0.6,
+      "mat": "bone",
+      "z": 4
+    },
+    {
+      "name": "wrap",
+      "bone": "body",
+      "shape": "rect",
+      "c": [-3,2.2],
+      "r": [6,2.2],
+      "round": 0.6,
+      "mat": "bone",
+      "z": 4
+    },
+    {
+      "name": "buckle",
+      "bone": "body",
+      "shape": "rect",
+      "c": [-1,4.4],
+      "r": [2,1.3],
+      "round": 0.6,
+      "mat": "steel",
+      "z": 5
+    }
+  ],
+  "decals": [
+    {
+      "name": "eyes",
+      "bone": "head",
+      "at": [-1,0],
+      "rows": [
+        "x..x"
+      ],
+      "keys": {
+        "x": "1a1422"
+      },
+      "emissive": []
+    },
+    {
+      "name": "scars",
+      "bone": "body",
+      "at": [-2,-2],
+      "rows": [
+        "r....",
+        ".r.r.",
+        "..rr.",
+        "..r.."
+      ],
+      "keys": {
+        "r": "8a4630"
+      },
+      "emissive": []
+    },
+    {
+      "name": "bandage",
+      "bone": "head",
+      "at": [-1,-2],
+      "rows": [
+        "..ww",
+        ".ww."
+      ],
+      "keys": {
+        "w": "d4c6cf"
+      },
+      "emissive": []
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 3,
+      "frames": [
+        {
+          "bones": {},
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,1],
+            "handL": [1,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,1],
+            "handL": [1,-2],
+            "head": [1,0]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "walk": {
+      "fps": 8,
+      "frames": [
+        {
+          "bones": {
+            "left": [-1,-1],
+            "right": [0,0],
+            "handL": [0,1],
+            "handR": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,-1],
+            "hips": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "right": [1,-1],
+            "left": [0,0],
+            "handL": [0,-1],
+            "handR": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,-1],
+            "hips": [0,-1],
+            "head": [0,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "attack": {
+      "fps": 13,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "head": [-1,1],
+            "handL": [1,-2],
+            "handR": [-1,0]
+          }
+        },
+        {
+          "bones": {
+            "head": [1,0],
+            "handL": [-1,0],
+            "handR": [1,-3]
+          }
+        },
+        {
+          "bones": {
+            "body": [0,1],
+            "head": [1,0],
+            "handR": [0,-1]
+          }
+        },
+        {
+          "bones": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+ "name": "dash",
+ "_comment": "Dash: an airy whoosh, a splash burst and droplets landing behind the hero.",
+ "variants": 3,
+ "seed": 21,
+ "vary": 0.1,
+ "peak": 0.75,
+ "echo": {
+  "delay": 70,
+  "feedback": 0.25,
+  "mix": 0.2,
+  "damp": 5000
+ },
+ "layers": [
+  {
+   "type": "noise",
+   "decay": 70,
+   "gain": 0.7,
+   "highpass": 600,
+   "lowpass": 6000,
+   "attack": 30,
+   "hold": 40
+  },
+  {
+   "type": "tone",
+   "freq": [
+    180,
+    700
+   ],
+   "decay": 60,
+   "gain": 0.25,
+   "attack": 5
+  },
+  {
+   "type": "noise",
+   "decay": 90,
+   "gain": 0.35,
+   "highpass": 2500,
+   "start": 40
+  },
+  {
+   "type": "tone",
+   "freq": [
+    1800,
+    2600
+   ],
+   "decay": 15,
+   "gain": 0.12,
+   "start": 60
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2000,
+    2900
+   ],
+   "decay": 15,
+   "gain": 0.1,
+   "start": 95
+  },
+  {
+   "type": "tone",
+   "freq": [
+    1700,
+    2400
+   ],
+   "decay": 15,
+   "gain": 0.08,
+   "start": 130
+  }
+ ]
+}

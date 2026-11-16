@@ -1,0 +1,80 @@
+{
+ "name": "chest",
+ "_comment": "Chest opens: a wooden clunk followed by a run of coin sparkles.",
+ "variants": 1,
+ "seed": 19,
+ "vary": 0,
+ "peak": 0.7,
+ "echo": {
+  "delay": 90,
+  "feedback": 0.3,
+  "mix": 0.25,
+  "damp": 5000
+ },
+ "layers": [
+  {
+   "type": "noise",
+   "decay": 50,
+   "gain": 0.6,
+   "lowpass": 800
+  },
+  {
+   "type": "tone",
+   "freq": [
+    160,
+    120
+   ],
+   "decay": 60,
+   "gain": 0.5,
+   "wave": "triangle"
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2093,
+    2093
+   ],
+   "decay": 120,
+   "gain": 0.15,
+   "wave": "square",
+   "start": 60,
+   "lowpass": 6000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2637,
+    2637
+   ],
+   "decay": 120,
+   "gain": 0.15,
+   "wave": "square",
+   "start": 110,
+   "lowpass": 6000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    3136,
+    3136
+   ],
+   "decay": 120,
+   "gain": 0.15,
+   "wave": "square",
+   "start": 160,
+   "lowpass": 6000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    4186,
+    4186
+   ],
+   "decay": 200,
+   "gain": 0.15,
+   "wave": "square",
+   "start": 210,
+   "lowpass": 6000
+  }
+ ]
+}

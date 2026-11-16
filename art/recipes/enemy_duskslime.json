@@ -1,0 +1,20 @@
+{
+  "sprite": "enemy_duskslime_r",
+  "size": [24, 24],
+  "origin": [12, 20],
+  "seed": 1,
+  "unify": 0.24,
+  "materials": {"gel": {"ramp": ["2a1433", "2a1433", "4a1f5c", "b0409a"], "bands": [0.285, 0.565, 0.805]}, "core": {"ramp": ["1b1d3f", "1b1d3f", "4250b0", "a8b8ff"], "bands": [0.285, 0.565, 0.805]}, "edge": {"ramp": ["1b1d3f", "2a2340", "4a3f69", "968bb4"], "bands": [0.285, 0.565, 0.805]}, "shine": {"ramp": ["2b2433", "574b63", "968bb4", "f4ecea"], "bands": [0.285, 0.565, 0.805]}},
+  "bones": {"root": {"at": [12, 20]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
+  "parts": [
+    {"name": "weighted jelly body", "bone": "body", "shape": "poly", "mat": "gel", "z": 2, "pts": [[-8.73, -1.09], [-7.09, -3.82], [-6.55, -7.64], [-3.82, -10.91], [-0.55, -12.55], [2.73, -11.45], [5.45, -8.73], [7.09, -4.91], [9.27, -1.09], [7.09, 0.0], [3.27, -0.55], [-1.64, 0.55], [-6.55, 0.0]], "profile": "bevel", "shadow": true},
+    {"name": "suspended core", "bone": "body", "shape": "ellipse", "mat": "core", "z": 2.3, "c": [1.64, -4.91], "r": [3.27, 2.18]},
+    {"name": "pooled underside", "bone": "body", "shape": "line", "mat": "edge", "z": 2.6, "pts": [[-6.55, -1.09], [-2.73, -1.64], [2.73, -1.09], [6.55, -1.64]], "r": [1.53], "shadow": false},
+    {"name": "reflected jelly rim", "bone": "body", "shape": "line", "mat": "shine", "z": 3, "pts": [[-4.91, -6.55], [-3.82, -8.73], [-2.18, -9.82]], "r": [1.31], "shadow": false},
+    {"name": "top crystal", "bone": "body", "shape": "poly", "mat": "core", "z": 3, "pts": [[-0.55, -9.27], [0.55, -13.09], [2.18, -12.0], [2.73, -9.27], [1.09, -7.64]], "profile": "bevel", "shadow": true},
+    {"name": "side crystal", "bone": "body", "shape": "poly", "mat": "edge", "z": 2.9, "pts": [[4.36, -4.36], [6.0, -9.27], [7.64, -8.18], [7.64, -4.36], [6.55, -2.73]], "profile": "bevel", "shadow": true},
+    {"name": "fluid inclusion", "bone": "body", "shape": "ellipse", "mat": "edge", "z": 3.5, "c": [3, -5], "r": [1.45, 1.1]}
+  ],
+  "decals": [],
+  "anims": {"move": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "hop": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "idle": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}}
+}

@@ -1,0 +1,17 @@
+{
+  "sprite": "enemy_spark_r",
+  "size": [24, 24],
+  "origin": [12, 20],
+  "seed": 1,
+  "unify": 0.24,
+  "materials": {"field": {"ramp": ["3b1f1d", "8a1f17", "c9281f", "ffc23d"], "bands": [0.285, 0.565, 0.805]}, "core": {"ramp": ["4a1712", "c9281f", "f2561d", "ffc23d"], "bands": [0.285, 0.565, 0.805]}, "hot": {"ramp": ["c9281f", "ff8a2a", "ffe26b", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "electric": {"ramp": ["8a1f17", "f2561d", "ffc23d", "ffe26b"], "bands": [0.22, 0.5, 0.74]}},
+  "bones": {"root": {"at": [12, 20]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
+  "parts": [
+    {"name": "uneven electric corona", "bone": "body", "shape": "poly", "mat": "field", "z": 1, "pts": [[-8.73, -6.55], [-4.36, -10.36], [-5.45, -12.55], [-1.64, -11.45], [0.0, -15.82], [3.27, -12.0], [5.45, -13.09], [6.55, -8.73], [9.27, -7.09], [5.45, -4.91], [4.91, -1.09], [1.09, -3.82], [-1.64, -2.18], [-4.36, -4.91]], "profile": "bevel", "shadow": true},
+    {"name": "angular spark kernel", "bone": "body", "shape": "poly", "mat": "core", "z": 2, "pts": [[-4.91, -8.18], [-1.64, -12.55], [2.18, -11.45], [5.45, -8.73], [3.82, -4.91], [0.55, -3.82], [-3.27, -5.45]], "profile": "bevel", "shadow": true},
+    {"name": "bolt inside core", "bone": "body", "shape": "poly", "mat": "hot", "z": 3, "pts": [[-0.55, -12.0], [2.18, -10.91], [0.55, -8.73], [3.27, -8.73], [0.0, -4.91], [-1.09, -7.09], [0.55, -7.64], [-2.18, -8.73]], "profile": "bevel", "shadow": true},
+    {"name": "charge loop", "bone": "body", "shape": "line", "mat": "electric", "z": 2.2, "pts": [[-6.55, -6.55], [-3.27, -5.45], [0.0, -4.91], [3.27, -5.45], [6.55, -7.09]], "r": [1.36], "shadow": false}
+  ],
+  "decals": [],
+  "anims": {"move": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "flicker": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
+}

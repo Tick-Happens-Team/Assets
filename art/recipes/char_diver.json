@@ -1,0 +1,329 @@
+{
+  "sprite": "char_diver",
+  "size": [16,24],
+  "origin": [8,23],
+  "seed": 1,
+  "materials": {
+    "rust": {
+      "ramp": [
+        "3b1f1d",
+        "8a4630",
+        "d99a63"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "steel": {
+      "ramp": [
+        "3d3447",
+        "7a6c85",
+        "d4c6cf"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "teal": {
+      "ramp": [
+        "10303c",
+        "1f8a96",
+        "8ff0de"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "gold": {
+      "ramp": [
+        "5e2f24",
+        "b8683f",
+        "ffe26b"
+      ],
+      "bands": [0.34,0.66]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [8,23]
+    },
+    "hips": {
+      "parent": "root",
+      "at": [0,-6]
+    },
+    "body": {
+      "parent": "hips",
+      "at": [0,-5]
+    },
+    "head": {
+      "parent": "body",
+      "at": [0,-5]
+    },
+    "left": {
+      "parent": "hips",
+      "at": [-2,0]
+    },
+    "right": {
+      "parent": "hips",
+      "at": [2,0]
+    },
+    "handL": {
+      "parent": "body",
+      "at": [-4,0]
+    },
+    "handR": {
+      "parent": "body",
+      "at": [4,0]
+    }
+  },
+  "parts": [
+    {
+      "name": "leg0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "rust",
+      "z": 0
+    },
+    {
+      "name": "boot0",
+      "bone": "left",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "steel",
+      "z": 1
+    },
+    {
+      "name": "leg1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.2,-1],
+      "r": [2.5,5.7],
+      "round": 0.6,
+      "mat": "rust",
+      "z": 0
+    },
+    {
+      "name": "boot1",
+      "bone": "right",
+      "shape": "rect",
+      "c": [-1.4,3.3],
+      "r": [3,2.3],
+      "round": 0.6,
+      "mat": "steel",
+      "z": 1
+    },
+    {
+      "name": "sleeve0",
+      "bone": "handL",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "rust",
+      "z": 2
+    },
+    {
+      "name": "hand0",
+      "bone": "handL",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "steel",
+      "z": 3
+    },
+    {
+      "name": "sleeve1",
+      "bone": "handR",
+      "shape": "rect",
+      "c": [-1.4,-1.4],
+      "r": [2.8,5],
+      "round": 0.6,
+      "mat": "rust",
+      "z": 2
+    },
+    {
+      "name": "hand1",
+      "bone": "handR",
+      "shape": "ellipse",
+      "c": [0,3.1],
+      "r": [1.3,1.3],
+      "mat": "steel",
+      "z": 3
+    },
+    {
+      "name": "tank",
+      "bone": "body",
+      "shape": "ellipse",
+      "c": [-3,-0.8],
+      "r": [2.8,5],
+      "mat": "teal",
+      "z": 1
+    },
+    {
+      "name": "torso",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-3.9,-2],
+        [3.9,-2],
+        [3,5.5],
+        [-3,5.5]
+      ],
+      "mat": "rust",
+      "z": 3
+    },
+    {
+      "name": "helmet",
+      "bone": "head",
+      "shape": "ellipse",
+      "c": [0,-0.4],
+      "r": [5,4.5],
+      "mat": "rust",
+      "z": 5
+    },
+    {
+      "name": "visor",
+      "bone": "head",
+      "shape": "rect",
+      "c": [-3,-2.2],
+      "r": [6.7,4.5],
+      "round": 0.6,
+      "mat": "teal",
+      "z": 6
+    },
+    {
+      "name": "flange",
+      "bone": "head",
+      "shape": "rect",
+      "c": [-5,1.3],
+      "r": [10,3],
+      "round": 0.6,
+      "mat": "gold",
+      "z": 4
+    },
+    {
+      "name": "weight",
+      "bone": "body",
+      "shape": "rect",
+      "c": [-3.7,3],
+      "r": [7.4,1.5],
+      "round": 0.6,
+      "mat": "steel",
+      "z": 4
+    }
+  ],
+  "decals": [
+    {
+      "name": "glass",
+      "bone": "head",
+      "at": [-2,-1],
+      "rows": [
+        "ttgg",
+        "g..g",
+        ".gg."
+      ],
+      "keys": {
+        "t": "8ff0de",
+        "g": "3fc4c0"
+      },
+      "emissive": [
+        "t"
+      ]
+    },
+    {
+      "name": "rivets",
+      "bone": "head",
+      "at": [-4,1],
+      "rows": [
+        "b.......b"
+      ],
+      "keys": {
+        "b": "d99a63"
+      },
+      "emissive": []
+    }
+  ],
+  "anims": {
+    "idle": {
+      "fps": 3,
+      "frames": [
+        {
+          "bones": {},
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "body": [0,1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "head": [1,1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "walk": {
+      "fps": 8,
+      "frames": [
+        {
+          "bones": {
+            "left": [-1,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [0,1],
+            "handR": [0,-1],
+            "right": [0,-1],
+            "left": [0,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "right": [1,-1]
+          },
+          "hideDecals": []
+        },
+        {
+          "bones": {
+            "hips": [0,-1],
+            "handL": [0,-1]
+          },
+          "hideDecals": []
+        }
+      ]
+    },
+    "attack": {
+      "fps": 13,
+      "loop": false,
+      "frames": [
+        {
+          "bones": {
+            "head": [0,1],
+            "handR": [-1,-1]
+          }
+        },
+        {
+          "bones": {
+            "head": [0,-1],
+            "handR": [1,-2],
+            "handL": [-1,-1]
+          }
+        },
+        {
+          "bones": {
+            "head": [0,1],
+            "handR": [1,0]
+          }
+        },
+        {
+          "bones": {}
+        }
+      ]
+    }
+  }
+}

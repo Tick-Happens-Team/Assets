@@ -1,38 +1,19 @@
 {
-  // Amber slime: slow tank. 16x16. Bone sits on the ground so squash keeps the base planted.
   "sprite": "enemy_amberslime_r",
-  "size": [16, 16],
-  "origin": [8, 14],
+  "size": [24, 24],
+  "origin": [12, 20],
   "seed": 1,
-  "materials": {
-    "gel":  { "ramp": ["5e2f24", "8a4630", "b8683f", "d99a63", "f0c896"], "bands": [0.36, 0.6, 0.82], "spec": 0.95,
-              "variants": [["2a1433", "4a1f5c", "7a2c84", "b0409a", "e070c0"]] }
-  },
-  "bones": {
-    "root": { "at": [8, 14] },
-    "body": { "parent": "root", "at": [0, 0] }
-  },
+  "unify": 0.24,
+  "materials": {"gel": {"ramp": ["3b1f1d", "8a4630", "ff8a2a", "fff3a6"], "bands": [0.285, 0.565, 0.805], "variants": [["2a1433", "4a1f5c", "7a2c84", "e070c0"]]}, "core": {"ramp": ["3b1f1d", "8a1f17", "f2561d", "fff3a6"], "bands": [0.285, 0.565, 0.805]}, "edge": {"ramp": ["3b1f1d", "5e2f24", "b8683f", "f0c896"], "bands": [0.285, 0.565, 0.805]}, "shine": {"ramp": ["2b2433", "574b63", "968bb4", "f4ecea"], "bands": [0.285, 0.565, 0.805]}},
+  "bones": {"root": {"at": [12, 20]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    { "name": "gel",  "bone": "body", "shape": "ellipse", "c": [0, -4.8], "r": [5.9, 4.8], "mat": "gel", "z": 1 },
-    { "name": "base", "bone": "body", "shape": "rect", "c": [-5.2, -2.4], "r": [10.4, 2.4], "round": 1.2, "mat": "gel", "z": 0.9, "profile": "cyl" }
+    {"name": "weighted jelly body", "bone": "body", "shape": "poly", "mat": "gel", "z": 2, "pts": [[-8.73, -1.09], [-7.09, -3.82], [-6.55, -7.64], [-3.82, -10.91], [-0.55, -12.55], [2.73, -11.45], [5.45, -8.73], [7.09, -4.91], [9.27, -1.09], [7.09, 0.0], [3.27, -0.55], [-1.64, 0.55], [-6.55, 0.0]], "profile": "bevel", "shadow": true},
+    {"name": "suspended core", "bone": "body", "shape": "ellipse", "mat": "core", "z": 2.3, "c": [1.64, -4.91], "r": [3.27, 2.18]},
+    {"name": "pooled underside", "bone": "body", "shape": "line", "mat": "edge", "z": 2.6, "pts": [[-6.55, -1.09], [-2.73, -1.64], [2.73, -1.09], [6.55, -1.64]], "r": [1.53], "shadow": false},
+    {"name": "reflected jelly rim", "bone": "body", "shape": "line", "mat": "shine", "z": 3, "pts": [[-4.91, -6.55], [-3.82, -8.73], [-2.18, -9.82]], "r": [1.31], "shadow": false},
+    {"name": "trapped bubble", "bone": "body", "shape": "ellipse", "mat": "shine", "z": 3, "c": [-2.73, -3.82], "r": [1.36, 1.09]},
+    {"name": "fluid inclusion", "bone": "body", "shape": "ellipse", "mat": "edge", "z": 3.5, "c": [3, -5], "r": [1.45, 1.1]}
   ],
-  "decals": [
-    { "name": "eyes",  "bone": "body", "at": [-3, -6], "rows": ["e....e", "e....e"], "keys": { "e": "0e0b14" } },
-    { "name": "shine", "bone": "body", "at": [-4, -8], "rows": ["ww", "w."], "keys": { "w": "f4ecea" } }
-  ],
-  "anims": {
-    "idle": { "fps": 6, "frames": [
-      { },
-      { "bones": { "body": [0, 0, 1.08, 0.9] } },
-      { "bones": { "body": [0, 0, 1.1, 0.84] } },
-      { "bones": { "body": [0, 0, 1.08, 0.9] } }
-    ] },
-    "hop": { "fps": 10, "frames": [
-      { "bones": { "body": [0, 0, 1.1, 0.84] } },
-      { "bones": { "body": [0, -1, 0.9, 1.1] } },
-      { "bones": { "body": [0, -2, 0.94, 1.04] } },
-      { "bones": { "body": [0, -1, 1.0, 1.0] } },
-      { "bones": { "body": [0, 0, 1.1, 0.82] } }
-    ] }
-  }
+  "decals": [],
+  "anims": {"move": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "idle": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "hop": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}}
 }

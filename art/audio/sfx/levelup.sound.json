@@ -1,0 +1,73 @@
+{
+ "name": "levelup",
+ "_comment": "Level up: a rising C major arpeggio with a shimmer on top.",
+ "variants": 1,
+ "seed": 17,
+ "vary": 0,
+ "peak": 0.7,
+ "echo": {
+  "delay": 120,
+  "feedback": 0.4,
+  "mix": 0.35,
+  "damp": 5000
+ },
+ "layers": [
+  {
+   "type": "tone",
+   "freq": [
+    1046,
+    1046
+   ],
+   "decay": 180,
+   "gain": 0.25,
+   "wave": "square",
+   "lowpass": 4000
+  },
+  {
+   "type": "tone",
+   "freq": [
+    1318,
+    1318
+   ],
+   "decay": 180,
+   "gain": 0.25,
+   "wave": "square",
+   "lowpass": 4000,
+   "start": 70
+  },
+  {
+   "type": "tone",
+   "freq": [
+    1568,
+    1568
+   ],
+   "decay": 180,
+   "gain": 0.25,
+   "wave": "square",
+   "lowpass": 4000,
+   "start": 140
+  },
+  {
+   "type": "tone",
+   "freq": [
+    2093,
+    2093
+   ],
+   "decay": 260,
+   "gain": 0.25,
+   "wave": "square",
+   "lowpass": 4000,
+   "start": 210
+  },
+  {
+   "type": "tone",
+   "freq": [
+    4186,
+    4186
+   ],
+   "decay": 400,
+   "gain": 0.1,
+   "start": 210
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+  "sprite": "companion_soul_healer",
+  "size": [16,16],
+  "origin": [8,15],
+  "seed": 1,
+  "materials": {
+    "teal": {
+      "ramp": [
+        "10303c",
+        "1f8a96",
+        "8ff0de"
+      ],
+      "bands": [0.34,0.66]
+    },
+    "spirit": {
+      "ramp": [
+        "2a1433",
+        "7a2c84",
+        "e070c0"
+      ]
+    }
+  },
+  "bones": {
+    "root": {
+      "at": [8,15]
+    },
+    "body": {
+      "parent": "root",
+      "at": [0,-7]
+    }
+  },
+  "parts": [
+    {
+      "name": "shroud",
+      "bone": "body",
+      "shape": "poly",
+      "pts": [
+        [-4,1],
+        [-3,-4],
+        [0,-6],
+        [3,-4],
+        [4,1],
+        [2,3],
+        [0,5],
+        [-1,3],
+        [-4,4]
+      ],
+      "mat": "teal",
+      "z": 1
+    },
+    {
+      "name": "mask",
+      "bone": "body",
+      "shape": "ellipse",
+      "c": [0,-1],
+      "r": [1.75,1.75],
+      "mat": "teal",
+      "z": 2
+    }
+  ],
+  "decals": [
+    {
+      "name": "eyes",
+      "bone": "body",
+      "at": [-1,-2],
+      "rows": [
+        "x.x"
+      ],
+      "keys": {
+        "x": "8ff0de"
+      },
+      "emissive": [
+        "x"
+      ]
+    }
+  ],
+  "anims": {
+    "move": {
+      "fps": 6,
+      "frames": [
+        {},
+        {
+          "bones": {
+            "body": [0,-1]
+          }
+        },
+        {
+          "bones": {
+            "body": [1,-1]
+          }
+        },
+        {
+          "bones": {
+            "body": [0,1]
+          }
+        }
+      ]
+    }
+  }
+}

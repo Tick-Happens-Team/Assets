@@ -1,0 +1,53 @@
+// Top-down FPV quadcopter. The orange camera faces right in the source frames.
+{
+  "sprite": "companion_drone_r",
+  "size": [24, 24],
+  "origin": [12, 16],
+  "seed": 1,
+  "materials": {
+    "fire": {
+      "ramp": ["4a1712", "8a1f17", "c9281f", "f2561d", "ffc23d"],
+      "bands": [0.25, 0.45, 0.64, 0.83]
+    },
+    "iron": {
+      "ramp": ["1a1422", "2b2433", "3d3447", "574b63", "a596ab"],
+      "bands": [0.25, 0.45, 0.64, 0.83]
+    },
+    "teal": {
+      "ramp": ["10303c", "17566a", "1f8a96", "3fc4c0", "8ff0de"],
+      "bands": [0.25, 0.45, 0.64, 0.83]
+    }
+  },
+  "bones": {
+    "root": { "at": [12, 16] },
+    "body": { "parent": "root", "at": [0, -4] },
+    "front": { "parent": "body", "at": [6, 0] },
+    "rear": { "parent": "body", "at": [-6, 0] }
+  },
+  "parts": [
+    { "name": "arm_ne", "bone": "body", "mat": "iron", "shape": "line", "pts": [[-6, 6], [6, -6]], "r": [2] },
+    { "name": "arm_se", "bone": "body", "mat": "iron", "shape": "line", "pts": [[-6, -6], [6, 6]], "r": [2] },
+    { "name": "front_top", "bone": "front", "mat": "iron", "z": 1, "profile": "flat", "c": [0, -6], "r": [3.6, 3.6] },
+    { "name": "front_bottom", "bone": "front", "mat": "iron", "z": 1, "profile": "flat", "c": [0, 6], "r": [3.6, 3.6] },
+    { "name": "rear_top", "bone": "rear", "mat": "iron", "z": 1, "profile": "flat", "c": [0, -6], "r": [3.6, 3.6] },
+    { "name": "rear_bottom", "bone": "rear", "mat": "iron", "z": 1, "profile": "flat", "c": [0, 6], "r": [3.6, 3.6] },
+    { "name": "case", "bone": "body", "mat": "teal", "z": 2, "shape": "rect", "c": [-5, -3], "r": [10, 6], "round": 2 },
+    { "name": "camera", "bone": "body", "mat": "fire", "z": 3, "c": [5, 0], "r": [2, 2] }
+  ],
+  "decals": [
+    { "name": "status", "bone": "body", "at": [-3, -1], "rows": ["t"], "keys": { "t": "8ff0de" }, "emissive": ["t"] },
+    { "name": "front_blades_a", "bone": "front", "at": [-2, -7], "rows": [".....", "bbhbb", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", "..b..", "..h..", "..b.."], "keys": { "b": "a596ab", "h": "574b63" } },
+    { "name": "rear_blades_a", "bone": "rear", "at": [-2, -7], "rows": ["..b..", "..h..", "..b..", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", "bbhbb"], "keys": { "b": "a596ab", "h": "574b63" } },
+    { "name": "front_blades_b", "bone": "front", "at": [-2, -7], "rows": ["...b.", "..h..", ".b...", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".b...", "..h..", "...b."], "keys": { "b": "a596ab", "h": "574b63" } },
+    { "name": "rear_blades_b", "bone": "rear", "at": [-2, -7], "rows": [".b...", "..h..", "...b.", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", ".....", "...b.", "..h..", ".b..."], "keys": { "b": "a596ab", "h": "574b63" } }
+  ],
+  "anims": {
+    "move": {
+      "fps": 18,
+      "frames": [
+        { "hideDecals": ["front_blades_b", "rear_blades_b"] },
+        { "hideDecals": ["front_blades_a", "rear_blades_a"] }
+      ]
+    }
+  }
+}

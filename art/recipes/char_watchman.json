@@ -1,0 +1,66 @@
+{
+  // Watchman: a gentleman whose head is a brass-rimmed clock. Charcoal suit, white collar, red tie, white gloves.
+  // The idle "blink" is the minute hand ticking forward. Front 3/4 view, 16x24, light from top-left.
+  "sprite": "char_watchman",
+  "size": [16, 24],
+  "origin": [8, 23],
+  "seed": 1,
+  "materials": {
+    "brass": { "ramp": ["5e2f24", "b8683f", "ffc23d", "ffe26b", "fff3a6"], "bands": [0.36, 0.62, 0.84], "spec": 0.96 },
+    "knob":  { "ramp": ["3b1f1d", "b8683f", "ffc23d", "ffe26b"], "bands": [0.36, 0.62] },
+    "dial":  { "ramp": ["a596ab", "d4c6cf", "f4ecea"], "bands": [0.3, 0.6] },
+    "suit":  { "ramp": ["2b2433", "3d3447", "574b63", "7a6c85"], "bands": [0.36, 0.62, 0.84],
+               "variants": [["3b1f1d", "5e2f24", "8a4630", "b8683f"]] },
+    "shirt": { "ramp": ["a596ab", "d4c6cf", "f4ecea"], "bands": [0.4, 0.7] },
+    "tie":   { "ramp": ["8a1f17", "c9281f", "f2561d"], "bands": [0.45, 0.75] },
+    "glove": { "ramp": ["a596ab", "d4c6cf", "f4ecea"], "bands": [0.4, 0.7] },
+    "shoes": { "ramp": ["0e0b14", "1a1422", "2b2433"], "bands": [0.45, 0.75] }
+  },
+  "bones": {
+    "root": { "at": [8, 23] },
+    "hips": { "parent": "root", "at": [0, -5] },
+    "legL": { "parent": "hips", "at": [-2, 0] },
+    "legR": { "parent": "hips", "at": [2, 0] },
+    "body": { "parent": "hips", "at": [0, -5] },
+    "head": { "parent": "body", "at": [0, -5.6] },
+    "armL": { "parent": "body", "at": [-4.6, -1.5] },
+    "armR": { "parent": "body", "at": [4.6, -1.5] }
+  },
+  "parts": [
+    { "name": "legL",  "bone": "legL", "shape": "rect", "c": [-1, 0], "r": [2, 4], "mat": "suit", "z": 0, "profile": "cyl" },
+    { "name": "legR",  "bone": "legR", "shape": "rect", "c": [-1, 0], "r": [2, 4], "mat": "suit", "z": 0, "profile": "cyl" },
+    { "name": "shoeL", "bone": "legL", "shape": "rect", "c": [-1.6, 3], "r": [3, 2], "round": 0.8, "mat": "shoes", "z": 0.5 },
+    { "name": "shoeR", "bone": "legR", "shape": "rect", "c": [-1.4, 3], "r": [3, 2], "round": 0.8, "mat": "shoes", "z": 0.5 },
+    { "name": "jacket", "bone": "body", "shape": "poly", "pts": [[-3.8, -2.6], [3.8, -2.6], [3.6, 5.6], [-3.6, 5.6]], "mat": "suit", "z": 2 },
+    { "name": "shirt", "bone": "body", "shape": "poly", "pts": [[-1.8, -2.6], [1.8, -2.6], [0, 1.6]], "mat": "shirt", "z": 2.2, "profile": "flat" },
+    { "name": "tie",   "bone": "body", "shape": "rect", "c": [-0.5, -2.4], "r": [1, 3.2], "mat": "tie", "z": 2.3, "profile": "flat", "shadow": false },
+    { "name": "armL",  "bone": "armL", "shape": "rect", "c": [-0.4, -0.5], "r": [2, 4.8], "round": 0.9, "mat": "suit", "z": 2.6 },
+    { "name": "armR",  "bone": "armR", "shape": "rect", "c": [-1.6, -0.5], "r": [2, 4.8], "round": 0.9, "mat": "suit", "z": 2.6 },
+    { "name": "handL", "bone": "armL", "shape": "ellipse", "c": [0.6, 4.9], "r": [1.15, 1.15], "mat": "glove", "z": 2.7 },
+    { "name": "handR", "bone": "armR", "shape": "ellipse", "c": [-0.6, 4.9], "r": [1.15, 1.15], "mat": "glove", "z": 2.7 },
+    { "name": "neck",  "bone": "body", "shape": "rect", "c": [-1, -4], "r": [2, 1.6], "mat": "brass", "z": 1.9, "profile": "cyl" },
+    { "name": "crown", "bone": "head", "shape": "rect", "c": [-1, -5.1], "r": [2, 1.8], "round": 0.3, "mat": "knob", "z": 3.9, "profile": "cyl" },
+    { "name": "rim",   "bone": "head", "shape": "ellipse", "c": [0, 0], "r": [4.4, 4.2], "mat": "brass", "z": 4 },
+    { "name": "dial",  "bone": "head", "shape": "ellipse", "c": [0, 0.1], "r": [3.3, 3.2], "mat": "dial", "z": 4.2, "profile": "flat", "shadow": false }
+  ],
+  "decals": [
+    { "name": "ticks",  "bone": "head", "at": [-3, -3], "rows": ["...t...", ".......", ".......", "t.....t", ".......", ".......", "...t..."],
+      "keys": { "t": "7a6c85" } },
+    { "name": "hands",  "bone": "head", "at": [-1, -2], "rows": [".k.", ".k.", ".kk"], "keys": { "k": "1a1422" } },
+    { "name": "hands2", "bone": "head", "at": [-1, -2], "rows": ["...k", "..k.", ".kk."], "keys": { "k": "1a1422" } },
+    { "name": "pin",    "bone": "head", "at": [0, 0], "rows": ["r"], "keys": { "r": "c9281f" } }
+  ],
+  "anims": {
+    "idle": { "fps": 3, "frames": [
+      { "hideDecals": ["hands2"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["hands2"] },
+      { "bones": { "body": [0, 1], "armL": [0, -1], "armR": [0, -1] }, "hideDecals": ["hands"] }
+    ] },
+    "walk": { "fps": 8, "frames": [
+      { "bones": { "legL": [0, -1], "armL": [0, 1], "armR": [0, -1] }, "hideDecals": ["hands2"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["hands2"] },
+      { "bones": { "legR": [0, -1], "armR": [0, 1], "armL": [0, -1] }, "hideDecals": ["hands2"] },
+      { "bones": { "body": [0, -1] }, "hideDecals": ["hands2"] }
+    ] }
+  }
+}
