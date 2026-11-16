@@ -2467,12 +2467,12 @@
       ],
       "frames": [
         [
-          280,
-          725
+          374,
+          742
         ],
         [
-          297,
-          725
+          391,
+          742
         ]
       ],
       "frameNames": [
@@ -4003,6 +4003,1176 @@
         }
       }
     },
+    "item_accelerator": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          178,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_archmage_cloak": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          195,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_bait": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          212,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_bloodstone": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          229,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_blue_cheese": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          246,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_broken_clock": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          263,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_cane": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          280,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_chocolate": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          297,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_death_eagle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          314,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_devourer_heart": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          331,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_dice": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          348,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_dominator_helm": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          365,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_dumbbell": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          382,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_electric_gloves": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          399,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_executioner_blade": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          416,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_expander": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          433,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fan": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          450,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fb_ring": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          467,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_finisher": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          484,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_flamethrower": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          501,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fork": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          518,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_fpv_drone": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          535,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_galactic_rifle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          552,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_garden_gnome": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          569,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_garlic": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          586,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_gold_vein_heart": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          603,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_grandmas_compote": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          620,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_heavy_shackles": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          637,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_hookah": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          654,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_hyena_tooth": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          671,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_icicle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          688,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_inverted_cross": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          705,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_jar_of_wind": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          722,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_jetpack": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          739,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_laser": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          756,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_leaders_heart": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          773,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_leech": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          790,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_magic_projectile": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          807,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_magnet": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          824,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_motivation_mask": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          841,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_needle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          858,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_nettle": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          875,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_phantom_mask": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          892,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_poor_mans_shield": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          909,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_rocket": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          926,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_satanic_bible": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          943,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_sausages": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          960,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_sentient_grass": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          977,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_shared_heart": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          994,
+          725
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_shield": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          0,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_sight": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          17,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_snack_bar": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          34,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_sneakers": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          51,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_soda": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          68,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_spiked_boots": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          85,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_sprats": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          102,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_star_of_david": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          119,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_sword": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          136,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_totem": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          153,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_trident": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          170,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_vampire_hood": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          187,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_welding_mask": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          204,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_whoopee_cushion": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          221,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_wild_aura": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          238,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
+    "item_wooden_stick": {
+      "w": 16,
+      "h": 16,
+      "origin": [
+        8,
+        15
+      ],
+      "frames": [
+        [
+          255,
+          742
+        ]
+      ],
+      "frameNames": [
+        "idle"
+      ],
+      "anims": {}
+    },
     "pickup_xpgem": {
       "w": 8,
       "h": 8,
@@ -4012,12 +5182,12 @@
       ],
       "frames": [
         [
-          314,
-          725
+          408,
+          742
         ],
         [
-          323,
-          725
+          417,
+          742
         ]
       ],
       "frameNames": [
@@ -4148,20 +5318,20 @@
       ],
       "frames": [
         [
-          178,
-          725
+          272,
+          742
         ],
         [
-          195,
-          725
+          289,
+          742
         ],
         [
-          212,
-          725
+          306,
+          742
         ],
         [
-          229,
-          725
+          323,
+          742
         ]
       ],
       "frameNames": [
@@ -4181,12 +5351,12 @@
       ],
       "frames": [
         [
-          246,
-          725
+          340,
+          742
         ],
         [
-          263,
-          725
+          357,
+          742
         ]
       ],
       "frameNames": [

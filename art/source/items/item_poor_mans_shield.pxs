@@ -1,0 +1,35 @@
+# Patched round plank shield with an iron rim. 16x16 item icon.
+sprite item_poor_mans_shield
+size 16 16
+origin 8 15
+key o 1a1422
+key c 574b63
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key C 5e2f24
+key D 8a4630
+key E b8683f
+key F d99a63
+key U 2a2340
+key V 4a3f69
+key W 6b5f8e
+key X 968bb4
+frame idle
+.....oooooo.....
+....ofeeeeeo....
+...ofdFCCEdeo...
+..ofCCDCCDCCeo..
+.ofFCCDCCDCCEeo.
+ofdECCDCCDCCCdeo
+oeFDCCDCCDCCDEco
+oeEDCCDfeDCCDCco
+oeEDCCDecDCCDCco
+oeEDCCDCCXWWDCco
+oedECCDCCWVUCdco
+.oeECCDCCWUUCco.
+..oeCCDCCDCCco..
+...oedECCCdco...
+....oeccccco....
+.....oooooo.....
+end

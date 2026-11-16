@@ -1,0 +1,31 @@
+# Teal kite shield with a gold rim. 16x16 item icon.
+sprite item_shield
+size 16 16
+origin 8 15
+key o 1a1422
+key E b8683f
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+key t 17566a
+key u 1f8a96
+key v 3fc4c0
+key x 8ff0de
+frame idle
+................
+..oooooooooooo..
+.ozyyyyyyyyyyyo.
+.oyxvvvvvvvvYEo.
+.oyYvuuYYuutYEo.
+.oyYvuuYYuutYEo.
+.oyYvuuYYuutYEo.
+.oyYvuuYYuutYEo.
+..oyvuuYYuutEo..
+...oyvuYYutEo...
+...oyYvYYtYEo...
+....oyYYYYEo....
+.....oyYYEo.....
+......oyEo......
+.......oo.......
+................
+end

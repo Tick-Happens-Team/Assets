@@ -1,0 +1,32 @@
+# Glass jar of cherry compote with a checkered cloth lid. 16x16 item icon.
+sprite item_grandmas_compote
+size 16 16
+origin 8 15
+key o 1a1422
+key w ffffff
+key D 8a4630
+key s 8a1f17
+key R c9281f
+key S f2561d
+key t 17566a
+key u 1f8a96
+key v 3fc4c0
+key x 8ff0de
+frame idle
+................
+..oooooooooooo..
+.owSwSwSwSwSwSo.
+.oSwRwRwRwRwRwo.
+.owswswswswswso.
+..oDDDDDDDDDDo..
+..ovuuuuuuuuto..
+..ovxuuuuuuuto..
+..ovxSSSSSSSto..
+..ovSsRRRRssto..
+..ovSRRRRRRsto..
+..ovSRRRsRRsto..
+..ovSRsRRRRsto..
+..ovSsssssssto..
+..ovttttttttto..
+...oooooooooo...
+end

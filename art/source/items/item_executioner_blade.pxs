@@ -1,0 +1,33 @@
+# Broad executioner axe. 16x16 item icon.
+sprite item_executioner_blade
+size 16 16
+origin 8 15
+key o 1a1422
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key g f4ecea
+key w ffffff
+key C 5e2f24
+key D 8a4630
+key E b8683f
+key F d99a63
+key s 8a1f17
+frame idle
+............o...
+.........ooowo..
+.......oogffwo..
+......ogfeeedwo.
+.......ofeeeewo.
+.......oFfesewo.
+......oFDfeeedo.
+......oECofeedo.
+.....oFCo.ofdo..
+....oFCo...oo...
+...oFDCo........
+...oECo.........
+..oFCo..........
+.oFCo...........
+.oECo...........
+..oo............
+end

@@ -1,0 +1,31 @@
+# Quadcopter seen from above with four rotors. 16x16 item icon.
+sprite item_fpv_drone
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key b 3d3447
+key c 574b63
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key R c9281f
+key S f2561d
+frame idle
+...oo......oo...
+..ofeo....ofeo..
+.ofddeo..ofddeo.
+ofddddeoofddddeo
+oeddddcooeddddco
+.oeddccoodeddco.
+..oeccdcccaeco..
+...ooocSbaooo...
+...ooocbRaooo...
+..ofedcaaacfeo..
+.ofddeaoocfddeo.
+ofddddeoofddddeo
+oeddddcooeddddco
+.oeddco..oeddco.
+..oeco....oeco..
+...oo......oo...
+end

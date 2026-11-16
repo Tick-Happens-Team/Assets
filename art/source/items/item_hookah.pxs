@@ -1,0 +1,35 @@
+# Hookah: glass vase, brass stem, glowing coal bowl and hose. 16x16 item icon.
+sprite item_hookah
+size 16 16
+origin 8 15
+key o 1a1422
+key C 5e2f24
+key D 8a4630
+key E b8683f
+key F d99a63
+key O ff8a2a
+key y ffe26b
+key z fff3a6
+key t 17566a
+key u 1f8a96
+key v 3fc4c0
+key x 8ff0de
+key P 7a2c84
+frame idle
+.....oooooo.....
+....oFEOyOEo....
+.....oEDDCo.....
+.....oECCCo.....
+......ozyo......
+.....ooyEoo.....
+....oEEEEEEo....
+.....ooyEoo.....
+.....ooyEooooo..
+....oxvyEvvPPPo.
+...oxuuuuuuvoPPo
+...ovuxuuuutoPPo
+...ovuxuuuutoPPo
+...ovuuuuuutoPPo
+....ovttttto.oo.
+.....oooooo.....
+end

@@ -1,0 +1,32 @@
+# Gold ring set with a blue gem. 16x16 item icon.
+sprite item_fb_ring
+size 16 16
+origin 8 15
+key o 1a1422
+key w ffffff
+key E b8683f
+key Y ffc23d
+key y ffe26b
+key z fff3a6
+key I 2c3070
+key J 4250b0
+key K 6a7fe0
+key L a8b8ff
+frame idle
+.......oo.......
+......oLKo......
+.....oLJJKo.....
+....oLJwJJKo....
+....ooKJJIoo....
+...ozyYKIYyyo...
+..ozYEEooyEYyo..
+..oyEoo..ooyEo..
+..oyEo....oyEo..
+.ozYEo....oyYyo.
+..oyEo....oyEo..
+..oyEoo..ooyEo..
+..oyYyyoozyYEo..
+...oyEYyyYEEo...
+....ooyEEEoo....
+......oooo......
+end

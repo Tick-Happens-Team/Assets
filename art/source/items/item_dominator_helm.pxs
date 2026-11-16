@@ -1,0 +1,32 @@
+# Horned dark iron helm with a violet visor. 16x16 item icon.
+sprite item_dominator_helm
+size 16 16
+origin 8 15
+key o 1a1422
+key a 2b2433
+key b 3d3447
+key c 574b63
+key d 7a6c85
+key e a596ab
+key f d4c6cf
+key g f4ecea
+key w ffffff
+key T e070c0
+frame idle
+................
+.o............o.
+owo..........owo
+oggo........oweo
+ogfgoooooooowfeo
+ogeedccccccweeeo
+.ooocbbbbbbaooo.
+...ocbbbbbbao...
+..odbTTTTTTao...
+..ocbTTTTTTbco..
+..ocbbbaabbbao..
+..ocbbbaabbbao..
+..ocbbbaabbao...
+...ocbbaabao....
+....ocaaaao.....
+.....ooooo......
+end

@@ -1,0 +1,28 @@
+# Tuft of grass with two watchful eyes. 16x16 item icon.
+sprite item_sentient_grass
+size 16 16
+origin 8 15
+key k 0e0b14
+key o 1a1422
+key w ffffff
+key j 2d5a35
+key m 6aa84a
+key n 9fcf62
+frame idle
+................
+...........o....
+..........ono...
+..........omo...
+..o.......omo...
+.onooo.oo.omoo..
+.omonmonmoomono.
+.omomjomjoomomo.
+.omomjwwjowwomo.
+.omomjwkjowkomo.
+.ommmjomjomjnjo.
+.omjmjomjomjmjo.
+.ojjjjjjjjjjjjjo
+.ojjjjjjjjjjjjjo
+.ojjjjjjjjjjjjjo
+..ooooooooooooo.
+end
