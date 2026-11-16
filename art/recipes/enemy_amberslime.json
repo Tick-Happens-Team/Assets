@@ -11,10 +11,9 @@
     {"name": "suspended core", "bone": "body", "shape": "ellipse", "mat": "core", "z": 2.3, "c": [1.64, -4.91], "r": [3.27, 2.18]},
     {"name": "pooled underside", "bone": "body", "shape": "line", "mat": "edge", "z": 2.6, "pts": [[-6.55, -1.09], [-2.73, -1.64], [2.73, -1.09], [6.55, -1.64]], "r": [1.53], "shadow": false},
     {"name": "reflected jelly rim", "bone": "body", "shape": "line", "mat": "shine", "z": 3, "pts": [[-4.91, -6.55], [-3.82, -8.73], [-2.18, -9.82]], "r": [1.31], "shadow": false},
-    {"name": "trapped bubble", "bone": "body", "shape": "ellipse", "mat": "shine", "z": 3, "c": [-2.73, -3.82], "r": [1.36, 1.09]}
+    {"name": "trapped bubble", "bone": "body", "shape": "ellipse", "mat": "shine", "z": 3, "c": [-2.73, -3.82], "r": [1.36, 1.09]},
+    {"name": "fluid inclusion", "bone": "body", "shape": "ellipse", "mat": "edge", "z": 3.5, "c": [3, -5], "r": [1.45, 1.1]}
   ],
-  "decals": [
-    {"name": "jelly eyes", "bone": "body", "at": [-2, -7], "rows": ["k..k", "k..k"], "keys": {"k": "1a1422"}, "emissive": []}
-  ],
+  "decals": [],
   "anims": {"move": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "idle": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "hop": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}}
 }

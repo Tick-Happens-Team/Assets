@@ -4,7 +4,7 @@
   "origin": [16, 27],
   "seed": 1,
   "unify": 0.16,
-  "materials": {"cloth": {"ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.22, 0.5, 0.74]}, "hood": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["5e2f24", "b8683f", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "metal": {"ramp": ["2a2340", "4a3f69", "968bb4", "d4c6cf"], "bands": [0.22, 0.5, 0.74]}, "blade": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}},
+  "materials": {"cloth": {"ramp": ["4a1712", "8a1f17", "c9281f", "f2561d"], "bands": [0.22, 0.5, 0.74]}, "hood": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "metal": {"ramp": ["2a2340", "4a3f69", "968bb4", "d4c6cf"], "bands": [0.22, 0.5, 0.74]}, "blade": {"ramp": ["4a1712", "c9281f", "ff8a2a", "fff3a6"], "bands": [0.22, 0.5, 0.74]}},
   "bones": {"root": {"at": [16, 27]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-2.91, 0.0], "r": [2.62, 1.89]},
@@ -20,7 +20,7 @@
     {"name": "bloody edge", "bone": "tool", "shape": "line", "mat": "blade", "z": 4.2, "pts": [[10.91, -15.27], [10.18, -12.36]], "r": [1.31], "shadow": false}
   ],
   "decals": [
-    {"name": "hood eyes", "bone": "body", "at": [-1, -19], "rows": ["k..k"], "keys": {"k": "0e0b14"}, "emissive": []}
+    {"name": "ritual rank embroidery", "bone": "body", "at": [-2, -13], "rows": ["..q..", ".qqq.", "..q.."], "keys": {"q": "e070c0"}, "emissive": []}
   ],
   "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "lurch": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

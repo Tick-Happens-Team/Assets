@@ -4,7 +4,7 @@
   "origin": [24, 41],
   "seed": 1,
   "unify": 0.16,
-  "materials": {"fur": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "tip": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "cloth": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "claw": {"ramp": ["2a2340", "4a3f69", "968bb4", "d4c6cf"], "bands": [0.22, 0.5, 0.74]}},
+  "materials": {"fur": {"ramp": ["574b63", "a596ab", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "tip": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "cloth": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "claw": {"ramp": ["2a2340", "4a3f69", "968bb4", "d4c6cf"], "bands": [0.22, 0.5, 0.74]}},
   "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "fur", "z": 1, "c": [-6.55, 0.0], "r": [3.93, 2.84]},
@@ -16,7 +16,10 @@
     {"name": "wolf muzzle and ears", "bone": "body", "shape": "poly", "mat": "fur", "z": 3, "pts": [[-7.64, -25.09], [-7.64, -36.0], [-3.27, -31.64], [1.09, -34.91], [4.36, -31.64], [5.45, -28.36], [10.91, -26.18], [10.91, -22.91], [6.55, -20.73], [-2.18, -20.73]], "profile": "bevel", "shadow": true},
     {"name": "pale muzzle", "bone": "body", "shape": "poly", "mat": "tip", "z": 3.3, "pts": [[1.09, -26.18], [5.45, -26.18], [9.82, -25.09], [9.82, -22.91], [5.45, -21.82], [2.18, -22.91]], "profile": "bevel", "shadow": true},
     {"name": "extended foreleg", "bone": "tool", "shape": "line", "mat": "fur", "z": 3.4, "pts": [[4.36, -19.64], [9.82, -16.36], [13.09, -12.0]], "r": [5.45], "shadow": true},
-    {"name": "exposed claws", "bone": "tool", "shape": "line", "mat": "claw", "z": 3.5, "pts": [[12.0, -13.09], [15.27, -12.0], [16.36, -9.82]], "r": [3.05], "shadow": true}
+    {"name": "exposed claws", "bone": "tool", "shape": "line", "mat": "claw", "z": 3.5, "pts": [[12.0, -13.09], [15.27, -12.0], [16.36, -9.82]], "r": [3.05], "shadow": true},
+    {"name": "long ivory claw 1", "bone": "tool", "shape": "poly", "mat": "tip", "z": 4.5, "pts": [[13, -13], [16, -12], [19, -9], [16, -10]], "profile": "bevel"},
+    {"name": "long ivory claw 2", "bone": "tool", "shape": "poly", "mat": "tip", "z": 4.51, "pts": [[14, -12], [17, -11], [20, -8], [17, -9]], "profile": "bevel"},
+    {"name": "long ivory claw 3", "bone": "tool", "shape": "poly", "mat": "tip", "z": 4.52, "pts": [[15, -11], [18, -10], [21, -7], [18, -8]], "profile": "bevel"}
   ],
   "decals": [
     {"name": "wolf eye and nose", "bone": "body", "at": [4, -27], "rows": ["e..", "..k"], "keys": {"e": "ffc23d", "k": "0e0b14"}, "emissive": ["e"]}

@@ -13,7 +13,8 @@
     {"name": "right wing ribs", "bone": "right", "shape": "line", "mat": "edge", "z": 1.2, "pts": [[2.73, -7.09], [6.55, -9.27], [8.73, -10.91]], "r": [1.09], "shadow": false},
     {"name": "furry body", "bone": "body", "shape": "ellipse", "mat": "hide", "z": 2, "c": [0.0, -6.0], "r": [3.16, 3.49]},
     {"name": "pointed ears", "bone": "body", "shape": "poly", "mat": "hide", "z": 2.2, "pts": [[-3.27, -7.64], [-3.27, -12.0], [-1.09, -9.27], [1.09, -9.27], [3.27, -12.0], [3.82, -7.64]], "profile": "bevel", "shadow": true},
-    {"name": "muzzle", "bone": "body", "shape": "ellipse", "mat": "fang", "z": 2.4, "c": [0.55, -6.0], "r": [1.64, 1.47]}
+    {"name": "muzzle", "bone": "body", "shape": "ellipse", "mat": "fang", "z": 2.4, "c": [0.55, -6.0], "r": [1.64, 1.47]},
+    {"name": "furred chest", "bone": "body", "shape": "ellipse", "mat": "edge", "z": 3, "c": [0, -5], "r": [2.1, 2.5]}
   ],
   "decals": [
     {"name": "ember eyes", "bone": "body", "at": [-2, -8], "rows": ["e..e"], "keys": {"e": "ffc23d"}, "emissive": ["e"]}

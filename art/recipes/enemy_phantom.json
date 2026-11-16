@@ -7,10 +7,6 @@
   "materials": {"cloth": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "hood": {"ramp": ["2a1433", "4a1f5c", "7a2c84", "b0409a"], "bands": [0.22, 0.5, 0.74]}, "skin": {"ramp": ["2a2340", "4a3f69", "6b5f8e", "968bb4"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "blade": {"ramp": ["1b1d3f", "2c3070", "6a7fe0", "a8b8ff"], "bands": [0.22, 0.5, 0.74]}, "rune": {"ramp": ["10303c", "17566a", "3fc4c0", "8ff0de"], "bands": [0.22, 0.5, 0.74]}},
   "bones": {"root": {"at": [48, 82]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
-    {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-10.91, 0.0], "r": [8.95, 5.67]},
-    {"name": "left shin", "bone": "left", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[-10.91, -13.09], [-10.91, 0.0]], "r": [8.95], "shadow": true},
-    {"name": "right boot", "bone": "right", "shape": "ellipse", "mat": "boot", "z": 1, "c": [10.91, 0.0], "r": [8.95, 5.67]},
-    {"name": "right shin", "bone": "right", "shape": "line", "mat": "boot", "z": 1.1, "pts": [[10.91, -13.09], [10.91, 0.0]], "r": [8.95], "shadow": true},
     {"name": "shadow trailing behind assassin", "bone": "body", "shape": "poly", "mat": "hood", "z": 1.4, "pts": [[-10.91, -48.0], [-28.36, -45.82], [-37.09, -32.73], [-30.55, -26.18], [-41.45, -19.64], [-24.0, -24.0], [-30.55, -10.91], [-13.09, -15.27], [-4.36, -26.18]], "profile": "bevel", "shadow": true},
     {"name": "black fitted coat", "bone": "body", "shape": "poly", "mat": "cloth", "z": 2, "pts": [[-19.64, -41.45], [-8.73, -52.36], [8.73, -52.36], [21.82, -43.64], [17.45, -28.36], [15.27, -15.27], [4.36, -10.91], [-13.09, -13.09], [-17.45, -24.0]], "profile": "bevel", "shadow": true},
     {"name": "violet hood", "bone": "body", "shape": "poly", "mat": "hood", "z": 3, "pts": [[-17.45, -48.0], [-15.27, -61.09], [-8.73, -72.0], [4.36, -74.18], [15.27, -63.27], [17.45, -50.18], [8.73, -45.82], [-6.55, -45.82]], "profile": "bevel", "shadow": true},
@@ -20,14 +16,13 @@
     {"name": "violet waist sash", "bone": "body", "shape": "line", "mat": "hood", "z": 3.4, "pts": [[-13.09, -26.18], [6.55, -24.0], [15.27, -28.36]], "r": [6.55], "shadow": false},
     {"name": "near striking arm", "bone": "body", "shape": "line", "mat": "hood", "z": 3.5, "pts": [[10.91, -41.45], [21.82, -34.91], [24.0, -26.18]], "r": [10.25], "shadow": true},
     {"name": "far striking arm", "bone": "body", "shape": "line", "mat": "skin", "z": 3.5, "pts": [[-13.09, -39.27], [-24.0, -34.91], [-28.36, -26.18]], "r": [9.16], "shadow": true},
-    {"name": "right dagger grip", "bone": "tool", "shape": "line", "mat": "skin", "z": 4, "pts": [[21.82, -21.82], [28.36, -30.55]], "r": [5.45], "shadow": true},
-    {"name": "right hooked blade", "bone": "tool", "shape": "poly", "mat": "blade", "z": 4.1, "pts": [[26.18, -30.55], [28.36, -45.82], [37.09, -56.73], [39.27, -63.27], [41.45, -50.18], [37.09, -37.09], [32.73, -28.36]], "profile": "bevel", "shadow": true},
-    {"name": "right dagger rune", "bone": "tool", "shape": "line", "mat": "rune", "z": 4.2, "pts": [[32.73, -37.09], [37.09, -50.18]], "r": [2.84], "shadow": false},
-    {"name": "left dagger grip", "bone": "body", "shape": "line", "mat": "skin", "z": 3.6, "pts": [[-24.0, -21.82], [-30.55, -26.18]], "r": [5.45], "shadow": true},
-    {"name": "left hooked blade", "bone": "body", "shape": "poly", "mat": "blade", "z": 3.9, "pts": [[-28.36, -26.18], [-39.27, -32.73], [-41.45, -43.64], [-34.91, -41.45], [-26.18, -32.73], [-24.0, -26.18]], "profile": "bevel", "shadow": true}
+    {"name": "torn trailing cape", "bone": "body", "shape": "poly", "mat": "cloth", "z": 2, "pts": [[-19, -43], [17, -44], [23, -33], [19, -19], [34, -10], [20, -12], [25, -4], [13, -8], [6, -3], [7, -16], [-9, -9], [-17, -3], [-15, -19], [-34, -10], [-26, -21], [-38, -20], [-27, -28]], "profile": "bevel"},
+    {"name": "fading near gauntlet", "bone": "tool", "shape": "line", "mat": "hood", "z": 4.3, "pts": [[17, -36], [25, -30], [30, -28]], "r": [2.7], "shadow": false},
+    {"name": "dissolving right fragment", "bone": "right", "shape": "poly", "mat": "hood", "z": 3.5, "pts": [[31, -24], [39, -21], [38, -18], [32, -19]], "profile": "bevel"},
+    {"name": "dissolving left fragment", "bone": "left", "shape": "poly", "mat": "hood", "z": 3.5, "pts": [[-43, -28], [-38, -25], [-40, -23], [-44, -24]], "profile": "bevel"},
+    {"name": "dissolving lower fragment", "bone": "right", "shape": "poly", "mat": "hood", "z": 3.5, "pts": [[30, -6], [34, -8], [38, -6], [34, -4]], "profile": "bevel"},
+    {"name": "fold dissolving into hem", "bone": "body", "shape": "line", "mat": "hood", "z": 3.1, "pts": [[-13, -29], [-11, -19], [-17, -14]], "r": [2], "shadow": false}
   ],
-  "decals": [
-
-  ],
+  "decals": [],
   "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "fly": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }

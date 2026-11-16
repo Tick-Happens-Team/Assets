@@ -4,7 +4,7 @@
   "origin": [24, 41],
   "seed": 1,
   "unify": 0.16,
-  "materials": {"skin": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "cloth": {"ramp": ["142a24", "1e3d2c", "44803e", "9fcf62"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "hair": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "club": {"ramp": ["5e2f24", "b8683f", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "fang": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}},
+  "materials": {"skin": {"ramp": ["3b1f1d", "8a4630", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "cloth": {"ramp": ["142a24", "1e3d2c", "44803e", "9fcf62"], "bands": [0.22, 0.5, 0.74]}, "boot": {"ramp": ["0e0b14", "1a1422", "2b2433", "574b63"], "bands": [0.22, 0.5, 0.74]}, "hair": {"ramp": ["5e2f24", "b8683f", "ffc23d", "fff3a6"], "bands": [0.22, 0.5, 0.74]}, "club": {"ramp": ["5e2f24", "b8683f", "d99a63", "f0c896"], "bands": [0.22, 0.5, 0.74]}, "fang": {"ramp": ["3d3447", "7a6c85", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}, "iron": {"ramp": ["574b63", "a596ab", "d4c6cf", "f4ecea"], "bands": [0.22, 0.5, 0.74]}},
   "bones": {"root": {"at": [24, 41]}, "body": {"parent": "root", "at": [0.0, 0.0]}, "tool": {"parent": "body", "at": [0.0, 0.0]}, "left": {"parent": "root", "at": [0.0, 0.0]}, "right": {"parent": "root", "at": [0.0, 0.0]}},
   "parts": [
     {"name": "left boot", "bone": "left", "shape": "ellipse", "mat": "boot", "z": 1, "c": [-8.73, 0.0], "r": [5.45, 2.84]},
@@ -20,7 +20,12 @@
     {"name": "club arm", "bone": "body", "shape": "line", "mat": "skin", "z": 3.4, "pts": [[8.73, -20.73], [13.09, -15.27], [14.18, -12.0]], "r": [6.55], "shadow": true},
     {"name": "club shaft", "bone": "tool", "shape": "line", "mat": "club", "z": 4, "pts": [[12.0, -13.09], [16.36, -25.09]], "r": [3.71], "shadow": true},
     {"name": "knotty wooden club", "bone": "tool", "shape": "poly", "mat": "club", "z": 4.2, "pts": [[13.09, -24.0], [12.0, -30.55], [15.27, -34.91], [18.55, -34.91], [19.64, -31.64], [18.55, -24.0], [16.36, -21.82]], "profile": "bevel", "shadow": true},
-    {"name": "wood ridge", "bone": "tool", "shape": "line", "mat": "hair", "z": 4.4, "pts": [[15.27, -31.64], [16.36, -27.27], [15.27, -24.0]], "r": [1.85], "shadow": false}
+    {"name": "wood ridge", "bone": "tool", "shape": "line", "mat": "hair", "z": 4.4, "pts": [[15.27, -31.64], [16.36, -27.27], [15.27, -24.0]], "r": [1.85], "shadow": false},
+    {"name": "salvaged shoulder armor", "bone": "body", "shape": "poly", "mat": "iron", "z": 2.6, "pts": [[-15, -16], [-15, -21], [-10, -25], [-6, -23], [-8, -17], [-10, -15]], "profile": "bevel"},
+    {"name": "tied metal knee plate", "bone": "right", "shape": "poly", "mat": "iron", "z": 2.8, "pts": [[5, -7], [10, -7], [11, -4], [8, -2], [6, -3]], "profile": "bevel"},
+    {"name": "club stone 1", "bone": "tool", "shape": "poly", "mat": "iron", "z": 4.5, "pts": [[11, -31], [13, -34], [15, -31], [14, -29]], "profile": "bevel"},
+    {"name": "club stone 2", "bone": "tool", "shape": "poly", "mat": "iron", "z": 4.5, "pts": [[16, -31], [18, -34], [20, -31], [19, -29]], "profile": "bevel"},
+    {"name": "club stone 3", "bone": "tool", "shape": "poly", "mat": "iron", "z": 4.5, "pts": [[15, -25], [17, -28], [19, -25], [18, -23]], "profile": "bevel"}
   ],
   "decals": [
     {"name": "ogre eyebrows", "bone": "body", "at": [-4, -27], "rows": ["kk.kk"], "keys": {"k": "1a1422"}, "emissive": []}

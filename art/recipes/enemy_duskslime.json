@@ -12,10 +12,9 @@
     {"name": "pooled underside", "bone": "body", "shape": "line", "mat": "edge", "z": 2.6, "pts": [[-6.55, -1.09], [-2.73, -1.64], [2.73, -1.09], [6.55, -1.64]], "r": [1.53], "shadow": false},
     {"name": "reflected jelly rim", "bone": "body", "shape": "line", "mat": "shine", "z": 3, "pts": [[-4.91, -6.55], [-3.82, -8.73], [-2.18, -9.82]], "r": [1.31], "shadow": false},
     {"name": "top crystal", "bone": "body", "shape": "poly", "mat": "core", "z": 3, "pts": [[-0.55, -9.27], [0.55, -13.09], [2.18, -12.0], [2.73, -9.27], [1.09, -7.64]], "profile": "bevel", "shadow": true},
-    {"name": "side crystal", "bone": "body", "shape": "poly", "mat": "edge", "z": 2.9, "pts": [[4.36, -4.36], [6.0, -9.27], [7.64, -8.18], [7.64, -4.36], [6.55, -2.73]], "profile": "bevel", "shadow": true}
+    {"name": "side crystal", "bone": "body", "shape": "poly", "mat": "edge", "z": 2.9, "pts": [[4.36, -4.36], [6.0, -9.27], [7.64, -8.18], [7.64, -4.36], [6.55, -2.73]], "profile": "bevel", "shadow": true},
+    {"name": "fluid inclusion", "bone": "body", "shape": "ellipse", "mat": "edge", "z": 3.5, "c": [3, -5], "r": [1.45, 1.1]}
   ],
-  "decals": [
-    {"name": "jelly eyes", "bone": "body", "at": [-2, -7], "rows": ["k..k", "k..k"], "keys": {"k": "1a1422"}, "emissive": []}
-  ],
+  "decals": [],
   "anims": {"move": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "hop": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}, "idle": {"fps": 5, "frames": [{}, {"bones": {"body": [0, -1]}}, {"bones": {"body": [0, -2]}}, {"bones": {"body": [0, -1]}}]}}
 }

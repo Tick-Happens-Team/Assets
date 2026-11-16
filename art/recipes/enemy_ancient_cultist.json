@@ -25,7 +25,8 @@
     {"name": "serrated ritual dagger", "bone": "tool", "shape": "poly", "mat": "magic", "z": 4.2, "pts": [[28.36, -45.82], [24.0, -54.55], [34.91, -54.55], [30.55, -61.09], [39.27, -67.64], [39.27, -50.18], [34.91, -41.45]], "profile": "bevel", "shadow": true}
   ],
   "decals": [
-    {"name": "ancient mask", "bone": "body", "at": [-7, -52], "rows": ["d...d", "..d..", ".ddd."], "keys": {"d": "1a1422"}, "emissive": []}
+    {"name": "ancient mask", "bone": "body", "at": [-5, -53], "rows": ["ddd.....ddd", "dd.......dd", ".....d.....", "....ddd....", "...d.d.d..."], "keys": {"d": "1a1422"}, "emissive": []},
+    {"name": "ritual rank embroidery", "bone": "body", "at": [-6, -36], "rows": [".....q.....", "....qqq....", "...qq.qq...", "q.qq...qq.q", ".qq.....qq.", "...qq.qq...", "....qqq....", ".....q....."], "keys": {"q": "ffc23d"}, "emissive": ["q"]}
   ],
   "anims": {"move": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "flicker": {"fps": 8, "frames": [{}, {"bones": {"body": [0, -1], "left": [-1, -1], "right": [1, 0]}}, {"bones": {"body": [0, 0], "left": [-1, 0], "right": [1, -1]}}, {"bones": {"body": [0, -1], "left": [0, 0], "right": [0, -1]}}]}, "attack": {"fps": 12, "loop": false, "frames": [{"bones": {"body": [-1, -1], "tool": [-1, 0]}}, {"bones": {"body": [0, -1], "tool": [0, -2]}}, {"bones": {"body": [1, 0], "tool": [1, 1]}}]}}
 }
